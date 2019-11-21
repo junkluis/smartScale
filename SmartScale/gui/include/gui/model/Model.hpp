@@ -2,6 +2,8 @@
 #define MODEL_HPP
 
 #include <touchgfx/Utils.hpp>
+#include <string>
+
 
 class ModelListener;
 
@@ -37,11 +39,24 @@ public:
      * the ModelListener interface.
      */
     void tick();
+
+    void setTecladoAccion(std::string accion){
+        tecladoAccion = accion;
+    }
+
+    std::string getTecladoAccion(){
+        return tecladoAccion;
+    }
+
 protected:
     /**
      * Pointer to the currently active presenter.
      */
     ModelListener* modelListener;
+    
+    std::string tecladoAccion;
+    
+
 };
 
 #endif /* MODEL_HPP */

@@ -27,6 +27,12 @@ public:
 
     virtual ~Screen1Presenter() {};
 
+    void setTecladoAccion(std::string accion){
+        model->setTecladoAccion(accion);
+    }
+
+    
+
 private:
     Screen1Presenter();
 

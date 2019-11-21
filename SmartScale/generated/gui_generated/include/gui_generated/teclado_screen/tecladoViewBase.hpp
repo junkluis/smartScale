@@ -9,7 +9,7 @@
 #include <gui/teclado_screen/tecladoPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Button.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class tecladoViewBase : public touchgfx::View<tecladoPresenter>
 {
@@ -18,6 +18,15 @@ public:
     virtual ~tecladoViewBase() {}
 
     virtual void setupScreen();
+    virtual void afterTransition();
+
+    /*
+     * Custom Action Handlers
+     */
+    virtual void obtenerAccion()
+    {
+        // Override and implement this function in tecladoView
+    }
 
 protected:
     FrontendApplication& application() {
@@ -29,7 +38,13 @@ protected:
      */
     touchgfx::Box backgroundBox;
     touchgfx::Button button1;
-    touchgfx::TextArea textArea1;
+    touchgfx::TextAreaWithOneWildcard txt_accion;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t TXT_ACCION_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar txt_accionBuffer[TXT_ACCION_SIZE];
 
 private:
 

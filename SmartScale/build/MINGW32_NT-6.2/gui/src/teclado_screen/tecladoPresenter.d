@@ -47,6 +47,7 @@ build/MINGW32_NT-6.2/gui/src/teclado_screen/tecladoPresenter.o: \
  touchgfx//framework/include/touchgfx/widgets/Widget.hpp \
  touchgfx//framework/include/touchgfx/widgets/Button.hpp \
  touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp \
+ touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  touchgfx//framework/include/touchgfx/widgets/TextArea.hpp \
  touchgfx//framework/include/touchgfx/FontManager.hpp \
  touchgfx//framework/include/touchgfx/TypedText.hpp \
@@ -54,7 +55,6 @@ build/MINGW32_NT-6.2/gui/src/teclado_screen/tecladoPresenter.o: \
  gui/include/gui/common/CustomKeyboard.hpp \
  touchgfx//framework/include/touchgfx/widgets/Keyboard.hpp \
  touchgfx//framework/include/touchgfx/widgets/Image.hpp \
- touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  touchgfx//framework/include/touchgfx/Color.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp \
  gui/include/gui/common/KeyboardLayout.hpp \
@@ -157,6 +157,8 @@ touchgfx//framework/include/touchgfx/widgets/Button.hpp:
 
 touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp:
 
+touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
 touchgfx//framework/include/touchgfx/widgets/TextArea.hpp:
 
 touchgfx//framework/include/touchgfx/FontManager.hpp:
@@ -170,8 +172,6 @@ gui/include/gui/common/CustomKeyboard.hpp:
 touchgfx//framework/include/touchgfx/widgets/Keyboard.hpp:
 
 touchgfx//framework/include/touchgfx/widgets/Image.hpp:
-
-touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 touchgfx//framework/include/touchgfx/Color.hpp:
 

@@ -27,6 +27,10 @@ public:
 
     virtual ~tecladoPresenter() {};
 
+    std::string getTecladoAccion(){
+        return model->getTecladoAccion();
+    }
+
 private:
     tecladoPresenter();
 

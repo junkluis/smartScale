@@ -20,6 +20,14 @@ public:
 
     virtual void setupScreen();
 
+    /*
+     * Custom Action Handlers
+     */
+    virtual void ingresarUsuarioPorTeclado()
+    {
+        // Override and implement this function in Screen1View
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(Application::getInstance());

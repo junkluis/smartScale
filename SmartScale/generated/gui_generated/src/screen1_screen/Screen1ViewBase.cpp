@@ -74,10 +74,15 @@ void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     }
     else if (&src == &img_usuario)
     {
-        //Interaction1
+        //accederTeclado
         //When img_usuario clicked change screen to teclado
         //Go to teclado with no screen transition
         application().gototecladoScreenNoTransition();
+
+        //accionIngresarUsuario
+        //When img_usuario clicked call virtual function
+        //Call ingresarUsuarioPorTeclado
+        ingresarUsuarioPorTeclado();
     }
     else if (&src == &img_clave)
     {

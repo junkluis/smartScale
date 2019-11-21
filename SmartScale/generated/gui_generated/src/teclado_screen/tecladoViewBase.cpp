@@ -11,20 +11,32 @@ tecladoViewBase::tecladoViewBase()
     backgroundBox.setPosition(0, 0, 480, 272);
     backgroundBox.setColor(touchgfx::Color::getColorFrom24BitRGB(214, 211, 214));
 
-    button1.setXY(343, 136);
+    button1.setXY(343, 104);
     button1.setBitmaps(Bitmap(BITMAP_BTN_OK_ID), Bitmap(BITMAP_BTN_OK_PRESSED_ID));
 
-    textArea1.setXY(352, 91);
-    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(TypedText(T_SINGLEUSEID7));
+    txt_accion.setXY(352, 30);
+    txt_accion.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    txt_accion.setLinespacing(0);
+    Unicode::snprintf(txt_accionBuffer, TXT_ACCION_SIZE, "%s", TypedText(T_SINGLEUSEID8).getText());
+    txt_accion.setWildcard(txt_accionBuffer);
+    txt_accion.resizeToCurrentText();
+    txt_accion.setTypedText(TypedText(T_SINGLEUSEID7));
 
     add(backgroundBox);
     add(button1);
-    add(textArea1);
+    add(txt_accion);
 }
 
 void tecladoViewBase::setupScreen()
 {
 
+}
+
+//Called when the screen is done with transition/load
+void tecladoViewBase::afterTransition()
+{
+    //obtenerAccionDelTeclado
+    //When screen is entered call virtual function
+    //Call obtenerAccion
+    obtenerAccion();
 }

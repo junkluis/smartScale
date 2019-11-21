@@ -14,3 +14,8 @@ void Screen1View::tearDownScreen()
 {
     Screen1ViewBase::tearDownScreen();
 }
+
+void Screen1View::ingresarUsuarioPorTeclado()
+{
+	presenter->setTecladoAccion("inUser");
+}

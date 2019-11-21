@@ -24,6 +24,7 @@ typedef enum
     T_NUMMODE,
     T_ALPHAMODE,
     T_SINGLEUSEID7,
+    T_SINGLEUSEID8,
     NUMBER_OF_TEXT_KEYS
 } TEXTS;
 

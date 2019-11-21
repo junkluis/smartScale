@@ -63,9 +63,9 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  generated/gui_generated/include/gui_generated/teclado_screen/tecladoViewBase.hpp \
  gui/include/gui/teclado_screen/tecladoPresenter.hpp \
  touchgfx//framework/include/touchgfx/widgets/Box.hpp \
+ touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  gui/include/gui/common/CustomKeyboard.hpp \
  touchgfx//framework/include/touchgfx/widgets/Keyboard.hpp \
- touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  touchgfx//framework/include/touchgfx/Color.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp \
  gui/include/gui/common/KeyboardLayout.hpp \
@@ -201,11 +201,11 @@ gui/include/gui/teclado_screen/tecladoPresenter.hpp:
 
 touchgfx//framework/include/touchgfx/widgets/Box.hpp:
 
+touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
 gui/include/gui/common/CustomKeyboard.hpp:
 
 touchgfx//framework/include/touchgfx/widgets/Keyboard.hpp:
-
-touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 touchgfx//framework/include/touchgfx/Color.hpp:
 

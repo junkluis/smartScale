@@ -13,6 +13,7 @@ public:
     virtual ~tecladoView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void obtenerAccion();
 protected:
 
 	CustomKeyboard keyboard;

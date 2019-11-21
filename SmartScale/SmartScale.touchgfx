@@ -196,8 +196,8 @@
         ],
         "Interactions": [
           {
-            "InteractionName": "Interaction1",
-            "HasCompletedTrigger": false,
+            "InteractionName": "accederTeclado",
+            "HasCompletedTrigger": true,
             "Trigger": {
               "TriggerComponent": "img_usuario",
               "Type": "TriggerClicked"
@@ -206,6 +206,18 @@
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "teclado",
               "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "accionIngresarUsuario",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "img_usuario",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "ingresarUsuarioPorTeclado",
+              "Type": "ActionCustom"
             }
           }
         ],
@@ -294,9 +306,9 @@
             "Alpha": 255,
             "Name": "button1",
             "X": 343,
-            "Y": 136,
-            "Width": 120,
-            "Height": 61,
+            "Y": 104,
+            "Width": 121,
+            "Height": 120,
             "Type": "Button",
             "Visible": true,
             "Draggable": false,
@@ -315,10 +327,15 @@
             "Alpha": 255,
             "AutoSize": true,
             "LineSpacing": 0,
-            "Name": "textArea1",
+            "Wildcard1": {
+              "TextId": "SingleUseId8",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "txt_accion",
             "X": 352,
-            "Y": 91,
-            "Width": 103,
+            "Y": 30,
+            "Width": 86,
             "Height": 30,
             "Type": "TextArea",
             "Visible": true,
@@ -328,7 +345,19 @@
             "Moveable": false
           }
         ],
-        "Interactions": [],
+        "Interactions": [
+          {
+            "InteractionName": "obtenerAccionDelTeclado",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "FunctionName": "obtenerAccion",
+              "Type": "ActionCustom"
+            }
+          }
+        ],
         "Name": "teclado",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
@@ -374,6 +403,10 @@
       },
       {
         "TextEntryId": "SingleUseId7",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId8",
         "IsResource": false
       }
     ],

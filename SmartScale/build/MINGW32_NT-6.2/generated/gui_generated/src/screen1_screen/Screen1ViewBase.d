@@ -41,7 +41,19 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/screen1_screen/Screen1ViewBase.
  touchgfx//framework/include/mvp/MVPHeap.hpp \
  gui/include/gui/model/Model.hpp \
  gui/include/gui/screen1_screen/Screen1Presenter.hpp \
- gui/include/gui/model/ModelListener.hpp
+ gui/include/gui/model/ModelListener.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Image.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Widget.hpp \
+ touchgfx//framework/include/touchgfx/widgets/TextArea.hpp \
+ touchgfx//framework/include/touchgfx/FontManager.hpp \
+ touchgfx//framework/include/touchgfx/TypedText.hpp \
+ touchgfx//framework/include/touchgfx/Texts.hpp \
+ touchgfx//framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Button.hpp \
+ touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp \
+ generated/images/include/BitmapDatabase.hpp \
+ generated/texts/include/texts/TextKeysAndLanguages.hpp \
+ touchgfx//framework/include/touchgfx/Color.hpp
 
 generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
 
@@ -126,3 +138,27 @@ gui/include/gui/model/Model.hpp:
 gui/include/gui/screen1_screen/Screen1Presenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Image.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Widget.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/TextArea.hpp:
+
+touchgfx//framework/include/touchgfx/FontManager.hpp:
+
+touchgfx//framework/include/touchgfx/TypedText.hpp:
+
+touchgfx//framework/include/touchgfx/Texts.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Button.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+generated/images/include/BitmapDatabase.hpp:
+
+generated/texts/include/texts/TextKeysAndLanguages.hpp:
+
+touchgfx//framework/include/touchgfx/Color.hpp:

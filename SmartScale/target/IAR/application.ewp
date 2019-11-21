@@ -988,16 +988,31 @@
           <name>$PROJ_DIR$\..\..\generated\fonts\src\ApplicationFontProvider.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_FRADM_TTF_18_4bpp.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_10_4bpp.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_20_4bpp.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_24_4bpp.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_28_4bpp.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_40_4bpp.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdanab_24_4bpp.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\FontGetters.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_FRADM_TTF_18_4bpp.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_10_4bpp.cpp</name>
@@ -1006,7 +1021,19 @@
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_20_4bpp.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_24_4bpp.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_28_4bpp.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_40_4bpp.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdanab_24_4bpp.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_FRADM_TTF_18_4bpp.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_10_4bpp.cpp</name>
@@ -1015,7 +1042,16 @@
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_20_4bpp.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_24_4bpp.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_28_4bpp.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_40_4bpp.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdanab_24_4bpp.cpp</name>
         </file>
       </group>
       <group>
@@ -1032,15 +1068,84 @@
             <name>$PROJ_DIR$\..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp</name>
           </file>
         </group>
+        <group>
+          <name>screensaver_screen</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\gui_generated\src\screensaver_screen\ScreenSaverViewBase.cpp</name>
+          </file>
+        </group>
+        <group>
+          <name>teclado_screen</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\gui_generated\src\teclado_screen\tecladoViewBase.cpp</name>
+          </file>
+        </group>
       </group>
       <group>
         <name>images</name>
+        <group>
+          <name>__designer</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\images\src\__designer\blue_backgrounds_main_bg_480x272px.cpp</name>
+          </file>
+        </group>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\background-title.cpp</name>
+        </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\BitmapDatabase.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\btn-ok-pressed.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\btn-ok.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\btn-pressed.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\btn.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\icon_keyboard_even_row.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\icon_keyboard_highlighted.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\icon_keyboard_odd_row.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\keyboard_background.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\keyboard_key_delete_highlighted.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\keyboard_key_highlighted.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\keyboard_key_num_highlighted.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\keyboard_key_shift_highlighted.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\keyboard_space_highlighted.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\ScreenSaver.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\text-field.cpp</name>
         </file>
       </group>
       <group>
         <name>texts</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\texts\src\LanguageGb.cpp</name>
+        </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\texts\src\Texts.cpp</name>
         </file>
@@ -1053,6 +1158,9 @@
       <name>gui</name>
       <group>
         <name>common</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\common\CustomKeyboard.cpp</name>
+        </file>
         <file>
           <name>$PROJ_DIR$\..\..\gui\src\common\FrontendApplication.cpp</name>
         </file>
@@ -1070,6 +1178,24 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\gui\src\screen1_screen\Screen1View.cpp</name>
+        </file>
+      </group>
+      <group>
+        <name>screensaver_screen</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\screensaver_screen\ScreenSaverPresenter.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\screensaver_screen\ScreenSaverView.cpp</name>
+        </file>
+      </group>
+      <group>
+        <name>teclado_screen</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\teclado_screen\tecladoPresenter.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\teclado_screen\tecladoView.cpp</name>
         </file>
       </group>
     </group>

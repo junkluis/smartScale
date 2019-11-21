@@ -8,11 +8,18 @@
 #include <common/Partition.hpp>
 #include <mvp/MVPHeap.hpp>
 #include <touchgfx/transitions/NoTransition.hpp>
+
+#include <touchgfx/transitions/CoverTransition.hpp>
+
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/screensaver_screen/ScreenSaverView.hpp>
+#include <gui/screensaver_screen/ScreenSaverPresenter.hpp>
+#include <gui/teclado_screen/tecladoView.hpp>
+#include <gui/teclado_screen/tecladoPresenter.hpp>
 
 
 /**
@@ -36,7 +43,9 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef meta::TypeList< Screen1View,
-            meta::Nil
+            meta::TypeList< ScreenSaverView,
+            meta::TypeList< tecladoView,
+            meta::Nil > >
             > GeneratedViewTypes;
 
     /**
@@ -49,7 +58,9 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef meta::TypeList< Screen1Presenter,
-            meta::Nil
+            meta::TypeList< ScreenSaverPresenter,
+            meta::TypeList< tecladoPresenter,
+            meta::Nil > >
             > GeneratedPresenterTypes;
 
     /**
@@ -62,7 +73,8 @@ public:
      * @note All transition types used in the application MUST be added to this list!
      */
     typedef meta::TypeList< NoTransition,
-            meta::Nil
+            meta::TypeList< CoverTransition<SOUTH>,
+            meta::Nil >
             > GeneratedTransitionTypes;
 
     /**
@@ -72,7 +84,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoScreen1ScreenNoTransition();
+        app.gotoScreenSaverScreenNoTransition();
     }
 protected:
     FrontendHeapBase(AbstractPartition& presenters, AbstractPartition& views, AbstractPartition& transitions, FrontendApplication& app)

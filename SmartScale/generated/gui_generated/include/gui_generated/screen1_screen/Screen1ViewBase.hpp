@@ -7,6 +7,10 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/Button.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -21,7 +25,30 @@ protected:
         return *static_cast<FrontendApplication*>(Application::getInstance());
     }
 
+    /*
+     * Member Declarations
+     */
+    touchgfx::Image fondo;
+    touchgfx::TextArea txt_titulo_inicio_sesion;
+    touchgfx::ButtonWithLabel btn_iniciar_sesion;
+    touchgfx::Button img_usuario;
+    touchgfx::Button img_clave;
+    touchgfx::TextArea txt_usuario;
+    touchgfx::TextArea txt_clave;
+    touchgfx::TextArea input_user;
+    touchgfx::TextArea input_clave;
+
 private:
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
 
 };
 

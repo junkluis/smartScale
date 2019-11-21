@@ -40,13 +40,38 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  gui/include/gui/model/Model.hpp gui/include/gui/common/FrontendHeap.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp \
  touchgfx//framework/include/touchgfx/transitions/NoTransition.hpp \
+ touchgfx//framework/include/touchgfx/transitions/CoverTransition.hpp \
+ touchgfx//framework/include/touchgfx/EasingEquations.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Widget.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
  gui/include/gui/screen1_screen/Screen1View.hpp \
  generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
  gui/include/gui/screen1_screen/Screen1Presenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Image.hpp \
+ touchgfx//framework/include/touchgfx/widgets/TextArea.hpp \
+ touchgfx//framework/include/touchgfx/FontManager.hpp \
+ touchgfx//framework/include/touchgfx/TypedText.hpp \
+ touchgfx//framework/include/touchgfx/Texts.hpp \
+ touchgfx//framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Button.hpp \
+ touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp \
+ gui/include/gui/screensaver_screen/ScreenSaverView.hpp \
+ generated/gui_generated/include/gui_generated/screensaver_screen/ScreenSaverViewBase.hpp \
+ gui/include/gui/screensaver_screen/ScreenSaverPresenter.hpp \
+ gui/include/gui/teclado_screen/tecladoView.hpp \
+ generated/gui_generated/include/gui_generated/teclado_screen/tecladoViewBase.hpp \
+ gui/include/gui/teclado_screen/tecladoPresenter.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Box.hpp \
+ gui/include/gui/common/CustomKeyboard.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Keyboard.hpp \
+ touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ touchgfx//framework/include/touchgfx/Color.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp \
- touchgfx//framework/include/touchgfx/Texts.hpp
+ gui/include/gui/common/KeyboardLayout.hpp \
+ generated/fonts/include/fonts/ApplicationFontProvider.hpp \
+ generated/images/include/BitmapDatabase.hpp \
+ gui/include/gui/common/KeyboardKeyMapping.hpp
 
 generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 
@@ -130,6 +155,12 @@ generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
 
 touchgfx//framework/include/touchgfx/transitions/NoTransition.hpp:
 
+touchgfx//framework/include/touchgfx/transitions/CoverTransition.hpp:
+
+touchgfx//framework/include/touchgfx/EasingEquations.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Widget.hpp:
+
 gui/include/gui/common/FrontendApplication.hpp:
 
 gui/include/gui/screen1_screen/Screen1View.hpp:
@@ -140,6 +171,50 @@ gui/include/gui/screen1_screen/Screen1Presenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 
-generated/texts/include/texts/TextKeysAndLanguages.hpp:
+touchgfx//framework/include/touchgfx/widgets/Image.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/TextArea.hpp:
+
+touchgfx//framework/include/touchgfx/FontManager.hpp:
+
+touchgfx//framework/include/touchgfx/TypedText.hpp:
 
 touchgfx//framework/include/touchgfx/Texts.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Button.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+gui/include/gui/screensaver_screen/ScreenSaverView.hpp:
+
+generated/gui_generated/include/gui_generated/screensaver_screen/ScreenSaverViewBase.hpp:
+
+gui/include/gui/screensaver_screen/ScreenSaverPresenter.hpp:
+
+gui/include/gui/teclado_screen/tecladoView.hpp:
+
+generated/gui_generated/include/gui_generated/teclado_screen/tecladoViewBase.hpp:
+
+gui/include/gui/teclado_screen/tecladoPresenter.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Box.hpp:
+
+gui/include/gui/common/CustomKeyboard.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Keyboard.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+touchgfx//framework/include/touchgfx/Color.hpp:
+
+generated/texts/include/texts/TextKeysAndLanguages.hpp:
+
+gui/include/gui/common/KeyboardLayout.hpp:
+
+generated/fonts/include/fonts/ApplicationFontProvider.hpp:
+
+generated/images/include/BitmapDatabase.hpp:
+
+gui/include/gui/common/KeyboardKeyMapping.hpp:

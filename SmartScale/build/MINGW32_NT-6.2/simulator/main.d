@@ -50,17 +50,20 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  touchgfx//framework/include/mvp/MVPHeap.hpp \
  touchgfx//framework/include/touchgfx/transitions/NoTransition.hpp \
  touchgfx//framework/include/touchgfx/transitions/Transition.hpp \
+ touchgfx//framework/include/touchgfx/transitions/CoverTransition.hpp \
+ touchgfx//framework/include/touchgfx/containers/Container.hpp \
+ touchgfx//framework/include/touchgfx/Drawable.hpp \
+ touchgfx//framework/include/touchgfx/Application.hpp \
+ touchgfx//framework/include/touchgfx/Utils.hpp \
+ touchgfx//framework/include/touchgfx/Callback.hpp \
+ touchgfx//framework/include/touchgfx/EasingEquations.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Widget.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  touchgfx//framework/include/mvp/MVPApplication.hpp \
- touchgfx//framework/include/touchgfx/Application.hpp \
- touchgfx//framework/include/touchgfx/Callback.hpp \
  touchgfx//framework/include/mvp/View.hpp \
  touchgfx//framework/include/touchgfx/Screen.hpp \
  touchgfx//framework/include/touchgfx/Application.hpp \
- touchgfx//framework/include/touchgfx/containers/Container.hpp \
- touchgfx//framework/include/touchgfx/Drawable.hpp \
- touchgfx//framework/include/touchgfx/Utils.hpp \
  touchgfx//framework/include/touchgfx/JSMOCHelper.hpp \
  touchgfx//framework/include/mvp/Presenter.hpp \
  gui/include/gui/model/Model.hpp \
@@ -68,7 +71,26 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
  gui/include/gui/screen1_screen/Screen1Presenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Image.hpp \
+ touchgfx//framework/include/touchgfx/widgets/TextArea.hpp \
+ touchgfx//framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Button.hpp \
+ touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp \
+ gui/include/gui/screensaver_screen/ScreenSaverView.hpp \
+ generated/gui_generated/include/gui_generated/screensaver_screen/ScreenSaverViewBase.hpp \
+ gui/include/gui/screensaver_screen/ScreenSaverPresenter.hpp \
+ gui/include/gui/teclado_screen/tecladoView.hpp \
+ generated/gui_generated/include/gui_generated/teclado_screen/tecladoViewBase.hpp \
+ gui/include/gui/teclado_screen/tecladoPresenter.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Box.hpp \
+ gui/include/gui/common/CustomKeyboard.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Keyboard.hpp \
+ touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ touchgfx//framework/include/touchgfx/Color.hpp \
+ generated/texts/include/texts/TextKeysAndLanguages.hpp \
+ gui/include/gui/common/KeyboardLayout.hpp \
  generated/images/include/BitmapDatabase.hpp \
+ gui/include/gui/common/KeyboardKeyMapping.hpp \
  generated/gui_generated/include/gui_generated/common/SimConstants.hpp \
  touchgfx//framework/include/platform/driver/touch/SDL2TouchController.hpp \
  touchgfx//framework/include/platform/driver/lcd/LCD16bpp.hpp \
@@ -176,27 +198,33 @@ touchgfx//framework/include/touchgfx/transitions/NoTransition.hpp:
 
 touchgfx//framework/include/touchgfx/transitions/Transition.hpp:
 
+touchgfx//framework/include/touchgfx/transitions/CoverTransition.hpp:
+
+touchgfx//framework/include/touchgfx/containers/Container.hpp:
+
+touchgfx//framework/include/touchgfx/Drawable.hpp:
+
+touchgfx//framework/include/touchgfx/Application.hpp:
+
+touchgfx//framework/include/touchgfx/Utils.hpp:
+
+touchgfx//framework/include/touchgfx/Callback.hpp:
+
+touchgfx//framework/include/touchgfx/EasingEquations.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Widget.hpp:
+
 gui/include/gui/common/FrontendApplication.hpp:
 
 generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 
 touchgfx//framework/include/mvp/MVPApplication.hpp:
 
-touchgfx//framework/include/touchgfx/Application.hpp:
-
-touchgfx//framework/include/touchgfx/Callback.hpp:
-
 touchgfx//framework/include/mvp/View.hpp:
 
 touchgfx//framework/include/touchgfx/Screen.hpp:
 
 touchgfx//framework/include/touchgfx/Application.hpp:
-
-touchgfx//framework/include/touchgfx/containers/Container.hpp:
-
-touchgfx//framework/include/touchgfx/Drawable.hpp:
-
-touchgfx//framework/include/touchgfx/Utils.hpp:
 
 touchgfx//framework/include/touchgfx/JSMOCHelper.hpp:
 
@@ -212,7 +240,45 @@ gui/include/gui/screen1_screen/Screen1Presenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 
+touchgfx//framework/include/touchgfx/widgets/Image.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/TextArea.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Button.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+gui/include/gui/screensaver_screen/ScreenSaverView.hpp:
+
+generated/gui_generated/include/gui_generated/screensaver_screen/ScreenSaverViewBase.hpp:
+
+gui/include/gui/screensaver_screen/ScreenSaverPresenter.hpp:
+
+gui/include/gui/teclado_screen/tecladoView.hpp:
+
+generated/gui_generated/include/gui_generated/teclado_screen/tecladoViewBase.hpp:
+
+gui/include/gui/teclado_screen/tecladoPresenter.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Box.hpp:
+
+gui/include/gui/common/CustomKeyboard.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Keyboard.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+touchgfx//framework/include/touchgfx/Color.hpp:
+
+generated/texts/include/texts/TextKeysAndLanguages.hpp:
+
+gui/include/gui/common/KeyboardLayout.hpp:
+
 generated/images/include/BitmapDatabase.hpp:
+
+gui/include/gui/common/KeyboardKeyMapping.hpp:
 
 generated/gui_generated/include/gui_generated/common/SimConstants.hpp:
 

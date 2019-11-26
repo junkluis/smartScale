@@ -26,6 +26,10 @@ public:
     // teclado
     void gototecladoScreenNoTransition();
 
+
+    // MenuPrincipal
+    void gotoMenuPrincipalScreenSlideTransitionEast();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -41,6 +45,10 @@ protected:
 
     // teclado
     void gototecladoScreenNoTransitionImpl();
+
+
+    // MenuPrincipal
+    void gotoMenuPrincipalScreenSlideTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

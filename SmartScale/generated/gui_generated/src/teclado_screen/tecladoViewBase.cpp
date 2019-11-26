@@ -6,24 +6,25 @@
 #include "BitmapDatabase.hpp"
 #include <texts/TextKeysAndLanguages.hpp>
 
-tecladoViewBase::tecladoViewBase()
+tecladoViewBase::tecladoViewBase() :
+    buttonCallback(this, &tecladoViewBase::buttonCallbackHandler)
 {
     backgroundBox.setPosition(0, 0, 480, 272);
     backgroundBox.setColor(touchgfx::Color::getColorFrom24BitRGB(214, 211, 214));
 
-    button1.setXY(343, 104);
-    button1.setBitmaps(Bitmap(BITMAP_BTN_OK_ID), Bitmap(BITMAP_BTN_OK_PRESSED_ID));
+    btn_ok.setXY(343, 104);
+    btn_ok.setBitmaps(Bitmap(BITMAP_BTN_OK_ID), Bitmap(BITMAP_BTN_OK_PRESSED_ID));
+    btn_ok.setAction(buttonCallback);
 
-    txt_accion.setXY(352, 30);
+    txt_accion.setPosition(342, 30, 122, 35);
     txt_accion.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     txt_accion.setLinespacing(0);
     Unicode::snprintf(txt_accionBuffer, TXT_ACCION_SIZE, "%s", TypedText(T_SINGLEUSEID8).getText());
     txt_accion.setWildcard(txt_accionBuffer);
-    txt_accion.resizeToCurrentText();
     txt_accion.setTypedText(TypedText(T_SINGLEUSEID7));
 
     add(backgroundBox);
-    add(button1);
+    add(btn_ok);
     add(txt_accion);
 }
 
@@ -39,4 +40,15 @@ void tecladoViewBase::afterTransition()
     //When screen is entered call virtual function
     //Call obtenerAccion
     obtenerAccion();
+}
+
+void tecladoViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &btn_ok)
+    {
+        //GuardarEntradaPorTeclado
+        //When btn_ok clicked call virtual function
+        //Call registrarEntradaTeclado
+        registrarEntradaTeclado();
+    }
 }

@@ -9,7 +9,9 @@
 #include <mvp/MVPHeap.hpp>
 #include <touchgfx/transitions/NoTransition.hpp>
 
+
 #include <touchgfx/transitions/CoverTransition.hpp>
+#include <touchgfx/transitions/SlideTransition.hpp>
 
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
@@ -20,6 +22,10 @@
 #include <gui/screensaver_screen/ScreenSaverPresenter.hpp>
 #include <gui/teclado_screen/tecladoView.hpp>
 #include <gui/teclado_screen/tecladoPresenter.hpp>
+#include <gui/menuprincipal_screen/MenuPrincipalView.hpp>
+#include <gui/menuprincipal_screen/MenuPrincipalPresenter.hpp>
+#include <gui/screen2_screen/Screen2View.hpp>
+#include <gui/screen2_screen/Screen2Presenter.hpp>
 
 
 /**
@@ -45,7 +51,9 @@ public:
     typedef meta::TypeList< Screen1View,
             meta::TypeList< ScreenSaverView,
             meta::TypeList< tecladoView,
-            meta::Nil > >
+            meta::TypeList< MenuPrincipalView,
+            meta::TypeList< Screen2View,
+            meta::Nil > > > >
             > GeneratedViewTypes;
 
     /**
@@ -60,7 +68,9 @@ public:
     typedef meta::TypeList< Screen1Presenter,
             meta::TypeList< ScreenSaverPresenter,
             meta::TypeList< tecladoPresenter,
-            meta::Nil > >
+            meta::TypeList< MenuPrincipalPresenter,
+            meta::TypeList< Screen2Presenter,
+            meta::Nil > > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -74,7 +84,8 @@ public:
      */
     typedef meta::TypeList< NoTransition,
             meta::TypeList< CoverTransition<SOUTH>,
-            meta::Nil >
+            meta::TypeList< SlideTransition<EAST>,
+            meta::Nil > >
             > GeneratedTransitionTypes;
 
     /**

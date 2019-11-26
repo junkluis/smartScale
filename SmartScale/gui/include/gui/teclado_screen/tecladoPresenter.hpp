@@ -3,6 +3,7 @@
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
+#include <string>
 
 using namespace touchgfx;
 
@@ -30,6 +31,16 @@ public:
     std::string getTecladoAccion(){
         return model->getTecladoAccion();
     }
+
+    void setUsuario(touchgfx::Unicode::UnicodeChar* usuarioInput){
+        model->setUsuario(usuarioInput);
+    }
+
+    void setClave(touchgfx::Unicode::UnicodeChar* claveInput){
+        model->setClave(claveInput);
+    }
+
+
 
 private:
     tecladoPresenter();

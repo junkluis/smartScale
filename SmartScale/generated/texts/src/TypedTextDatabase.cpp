@@ -13,9 +13,9 @@ extern touchgfx::InternalFlashFont& getFont_verdana_20_4bpp();
 extern touchgfx::InternalFlashFont& getFont_verdana_40_4bpp();
 extern touchgfx::InternalFlashFont& getFont_verdana_10_4bpp();
 extern touchgfx::InternalFlashFont& getFont_FRADM_TTF_18_4bpp();
-extern touchgfx::InternalFlashFont& getFont_verdanab_24_4bpp();
-extern touchgfx::InternalFlashFont& getFont_verdana_28_4bpp();
 extern touchgfx::InternalFlashFont& getFont_verdana_24_4bpp();
+extern touchgfx::InternalFlashFont& getFont_verdana_28_4bpp();
+extern touchgfx::InternalFlashFont& getFont_verdana_18_4bpp();
 
 const touchgfx::Font* const _fonts[] =
 {
@@ -23,9 +23,9 @@ const touchgfx::Font* const _fonts[] =
     &(getFont_verdana_40_4bpp()),
     &(getFont_verdana_10_4bpp()),
     &(getFont_FRADM_TTF_18_4bpp()),
-    &(getFont_verdanab_24_4bpp()),
+    &(getFont_verdana_24_4bpp()),
     &(getFont_verdana_28_4bpp()),
-    &(getFont_verdana_24_4bpp())
+    &(getFont_verdana_18_4bpp())
 };
 
 TEXT_LOCATION_FLASH_PRAGMA
@@ -35,13 +35,21 @@ const touchgfx::TypedText::TypedTextData typedText_database_DEFAULT[] TEXT_LOCAT
     { 0, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
     { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 5, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 6, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 6, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 4, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR }
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 6, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR }
 };
 
 

@@ -1,12 +1,1 @@
 Converting images
-Compiling gui/src/common/CustomKeyboard.cpp
-Compiling gui/src/teclado_screen/tecladoView.cpp
-Compiling gui/src/teclado_screen/tecladoPresenter.cpp
-Compiling generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp
-Compiling generated/gui_generated/src/screensaver_screen/ScreenSaverViewBase.cpp
-Compiling generated/gui_generated/src/common/FrontendApplicationBase.cpp
-Compiling generated/gui_generated/src/teclado_screen/tecladoViewBase.cpp
-Compiling generated/images/src/icon_keyboard_even_row.cpp
-Compiling generated/images/src/BitmapDatabase.cpp
-Compiling simulator/main.cpp
-Linking build/bin/simulator.exe

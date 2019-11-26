@@ -852,6 +852,16 @@
               <FilePath>../../gui/src/common/frontendapplication.cpp</FilePath>
             </File>
             <File>
+              <FileName>MenuPrincipalPresenter.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/menuprincipal_screen/menuprincipalpresenter.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>MenuPrincipalView.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/menuprincipal_screen/menuprincipalview.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Model.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../gui/src/model/model.cpp</FilePath>
@@ -865,6 +875,16 @@
               <FileName>Screen1View.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../gui/src/screen1_screen/screen1view.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Screen2Presenter.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/screen2_screen/screen2presenter.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Screen2View.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/screen2_screen/screen2view.cpp</FilePath>
             </File>
             <File>
               <FileName>ScreenSaverPresenter.cpp</FileName>
@@ -912,6 +932,16 @@
               <FilePath>../../generated/images/src/__designer/blue_backgrounds_main_bg_480x272px.cpp</FilePath>
             </File>
             <File>
+              <FileName>blue_buttons_round_edge_small.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_buttons_round_edge_small.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>blue_buttons_round_edge_small_pressed.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_buttons_round_edge_small_pressed.cpp</FilePath>
+            </File>
+            <File>
               <FileName>btn-ok-pressed.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/images/src/btn-ok-pressed.cpp</FilePath>
@@ -942,6 +972,11 @@
               <FilePath>../../generated/fonts/src/font_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
+              <FileName>Font_verdana_18_4bpp.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/font_verdana_18_4bpp.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Font_verdana_20_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/font_verdana_20_4bpp.cpp</FilePath>
@@ -960,11 +995,6 @@
               <FileName>Font_verdana_40_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/font_verdana_40_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_verdanab_24_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/font_verdanab_24_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>FontGetters.cpp</FileName>
@@ -1002,6 +1032,11 @@
               <FilePath>../../generated/fonts/src/kerning_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
+              <FileName>Kerning_verdana_18_4bpp.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/kerning_verdana_18_4bpp.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Kerning_verdana_20_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/kerning_verdana_20_4bpp.cpp</FilePath>
@@ -1020,11 +1055,6 @@
               <FileName>Kerning_verdana_40_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/kerning_verdana_40_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_verdanab_24_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/kerning_verdanab_24_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>keyboard_background.cpp</FileName>
@@ -1062,9 +1092,24 @@
               <FilePath>../../generated/texts/src/languagegb.cpp</FilePath>
             </File>
             <File>
+              <FileName>MenuPrincipalViewBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/gui_generated/src/menuprincipal_screen/menuprincipalviewbase.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>modal_background.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/modal_background.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Screen1ViewBase.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/gui_generated/src/screen1_screen/screen1viewbase.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Screen2ViewBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/gui_generated/src/screen2_screen/screen2viewbase.cpp</FilePath>
             </File>
             <File>
               <FileName>ScreenSaver.cpp</FileName>
@@ -1087,6 +1132,11 @@
               <FilePath>../../generated/fonts/src/table_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
+              <FileName>Table_verdana_18_4bpp.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/table_verdana_18_4bpp.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Table_verdana_20_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/table_verdana_20_4bpp.cpp</FilePath>
@@ -1107,11 +1157,6 @@
               <FilePath>../../generated/fonts/src/table_verdana_40_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>Table_verdanab_24_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/table_verdanab_24_4bpp.cpp</FilePath>
-            </File>
-            <File>
               <FileName>tecladoViewBase.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/gui_generated/src/teclado_screen/tecladoviewbase.cpp</FilePath>
@@ -1130,6 +1175,11 @@
               <FileName>TypedTextDatabase.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/texts/src/typedtextdatabase.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>warning.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/warning.cpp</FilePath>
             </File>
           </Files>
         </Group>

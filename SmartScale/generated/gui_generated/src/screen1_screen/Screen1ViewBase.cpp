@@ -22,6 +22,7 @@ Screen1ViewBase::Screen1ViewBase() :
     btn_iniciar_sesion.setLabelText(TypedText(T_SINGLEUSEID2));
     btn_iniciar_sesion.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     btn_iniciar_sesion.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    btn_iniciar_sesion.setAction(buttonCallback);
 
     img_usuario.setXY(177, 85);
     img_usuario.setBitmaps(Bitmap(BITMAP_TEXT_FIELD_ID), Bitmap(BITMAP_TEXT_FIELD_ID));
@@ -29,6 +30,7 @@ Screen1ViewBase::Screen1ViewBase() :
 
     img_clave.setXY(177, 147);
     img_clave.setBitmaps(Bitmap(BITMAP_TEXT_FIELD_ID), Bitmap(BITMAP_TEXT_FIELD_ID));
+    img_clave.setAction(buttonCallback);
 
     txt_usuario.setXY(48, 89);
     txt_usuario.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
@@ -40,15 +42,53 @@ Screen1ViewBase::Screen1ViewBase() :
     txt_clave.setLinespacing(0);
     txt_clave.setTypedText(TypedText(T_SINGLEUSEID4));
 
-    input_user.setXY(184, 89);
+    input_user.setPosition(184, 87, 249, 30);
     input_user.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     input_user.setLinespacing(0);
+    Unicode::snprintf(input_userBuffer, INPUT_USER_SIZE, "%s", TypedText(T_SINGLEUSEID10).getText());
+    input_user.setWildcard(input_userBuffer);
     input_user.setTypedText(TypedText(T_SINGLEUSEID5));
 
-    input_clave.setXY(184, 150);
+    input_clave.setPosition(184, 150, 249, 30);
     input_clave.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     input_clave.setLinespacing(0);
+    Unicode::snprintf(input_claveBuffer, INPUT_CLAVE_SIZE, "%s", TypedText(T_SINGLEUSEID9).getText());
+    input_clave.setWildcard(input_claveBuffer);
     input_clave.setTypedText(TypedText(T_SINGLEUSEID6));
+
+    alertaError.setXY(0, 0);
+    alertaError.setBackground(BitmapId(BITMAP_MODAL_BACKGROUND_ID), 70, 16);
+    alertaError.setShadeColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    alertaError.setShadeAlpha(150);
+    alertaError.hide();
+
+    iconoError.setXY(25, 23);
+    iconoError.setBitmap(Bitmap(BITMAP_WARNING_ID));
+    alertaError.add(iconoError);
+
+    cerrarModal.setXY(85, 158);
+    cerrarModal.setBitmaps(Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    cerrarModal.setLabelText(TypedText(T_SINGLEUSEID12));
+    cerrarModal.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    cerrarModal.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    cerrarModal.setAction(buttonCallback);
+    alertaError.add(cerrarModal);
+
+    tituloError.setPosition(136, 29, 176, 27);
+    tituloError.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    tituloError.setLinespacing(0);
+    Unicode::snprintf(tituloErrorBuffer, TITULOERROR_SIZE, "%s", TypedText(T_SINGLEUSEID15).getText());
+    tituloError.setWildcard(tituloErrorBuffer);
+    tituloError.setTypedText(TypedText(T_SINGLEUSEID13));
+    alertaError.add(tituloError);
+
+    cuerpoError.setPosition(136, 69, 191, 54);
+    cuerpoError.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    cuerpoError.setLinespacing(0);
+    cuerpoErrorBuffer[0] = 0;
+    cuerpoError.setWildcard(cuerpoErrorBuffer);
+    cuerpoError.setTypedText(TypedText(T_SINGLEUSEID14));
+    alertaError.add(cuerpoError);
 
     add(fondo);
     add(txt_titulo_inicio_sesion);
@@ -59,6 +99,7 @@ Screen1ViewBase::Screen1ViewBase() :
     add(txt_clave);
     add(input_user);
     add(input_clave);
+    add(alertaError);
 }
 
 void Screen1ViewBase::setupScreen()
@@ -66,11 +107,23 @@ void Screen1ViewBase::setupScreen()
 
 }
 
+//Called when the screen is done with transition/load
+void Screen1ViewBase::afterTransition()
+{
+    //actualizarCamposInicioSesion
+    //When screen is entered call virtual function
+    //Call actualizarCampos
+    actualizarCampos();
+}
+
 void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
     if (&src == &btn_iniciar_sesion)
     {
-
+        //iniciarSesion
+        //When btn_iniciar_sesion clicked call virtual function
+        //Call iniciarSesion
+        iniciarSesion();
     }
     else if (&src == &img_usuario)
     {
@@ -86,6 +139,22 @@ void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     }
     else if (&src == &img_clave)
     {
+        //accionIngresarClave
+        //When img_clave clicked call virtual function
+        //Call ingresarClavePorTeclado
+        ingresarClavePorTeclado();
 
+        //AccederTeclado2
+        //When img_clave clicked change screen to teclado
+        //Go to teclado with no screen transition
+        application().gototecladoScreenNoTransition();
+    }
+    else if (&src == &cerrarModal)
+    {
+        //cerrarModal
+        //When cerrarModal clicked hide alertaError
+        //Hide alertaError
+        alertaError.setVisible(false);
+        alertaError.invalidate();
     }
 }

@@ -11,6 +11,9 @@
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/containers/ModalWindow.hpp>
+#include <touchgfx/Color.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -19,11 +22,27 @@ public:
     virtual ~Screen1ViewBase() {}
 
     virtual void setupScreen();
+    virtual void afterTransition();
 
     /*
      * Custom Action Handlers
      */
     virtual void ingresarUsuarioPorTeclado()
+    {
+        // Override and implement this function in Screen1View
+    }
+
+    virtual void actualizarCampos()
+    {
+        // Override and implement this function in Screen1View
+    }
+
+    virtual void ingresarClavePorTeclado()
+    {
+        // Override and implement this function in Screen1View
+    }
+
+    virtual void iniciarSesion()
     {
         // Override and implement this function in Screen1View
     }
@@ -43,8 +62,26 @@ protected:
     touchgfx::Button img_clave;
     touchgfx::TextArea txt_usuario;
     touchgfx::TextArea txt_clave;
-    touchgfx::TextArea input_user;
-    touchgfx::TextArea input_clave;
+    touchgfx::TextAreaWithOneWildcard input_user;
+    touchgfx::TextAreaWithOneWildcard input_clave;
+    touchgfx::ModalWindow alertaError;
+    touchgfx::Image iconoError;
+    touchgfx::ButtonWithLabel cerrarModal;
+    touchgfx::TextAreaWithOneWildcard tituloError;
+    touchgfx::TextAreaWithOneWildcard cuerpoError;
+
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t INPUT_USER_SIZE = 18;
+    touchgfx::Unicode::UnicodeChar input_userBuffer[INPUT_USER_SIZE];
+    static const uint16_t INPUT_CLAVE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar input_claveBuffer[INPUT_CLAVE_SIZE];
+    static const uint16_t TITULOERROR_SIZE = 15;
+    touchgfx::Unicode::UnicodeChar tituloErrorBuffer[TITULOERROR_SIZE];
+    static const uint16_t CUERPOERROR_SIZE = 30;
+    touchgfx::Unicode::UnicodeChar cuerpoErrorBuffer[CUERPOERROR_SIZE];
 
 private:
 

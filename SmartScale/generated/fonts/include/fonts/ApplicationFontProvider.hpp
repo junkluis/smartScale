@@ -16,6 +16,7 @@ struct Typography
     static const touchgfx::FontId DISPLAY = 5;
     static const touchgfx::FontId KEYBOARD = 6;
     static const touchgfx::FontId MODE = 7;
+    static const touchgfx::FontId INPUTS = 8;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

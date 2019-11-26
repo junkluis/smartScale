@@ -994,6 +994,9 @@
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_10_4bpp.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_18_4bpp.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_20_4bpp.cpp</name>
         </file>
         <file>
@@ -1006,9 +1009,6 @@
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_40_4bpp.cpp</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdanab_24_4bpp.cpp</name>
-        </file>
-        <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\FontGetters.cpp</name>
         </file>
         <file>
@@ -1016,6 +1016,9 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_10_4bpp.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_18_4bpp.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_20_4bpp.cpp</name>
@@ -1030,13 +1033,13 @@
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_40_4bpp.cpp</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdanab_24_4bpp.cpp</name>
-        </file>
-        <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_FRADM_TTF_18_4bpp.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_10_4bpp.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_18_4bpp.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_20_4bpp.cpp</name>
@@ -1050,9 +1053,6 @@
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_40_4bpp.cpp</name>
         </file>
-        <file>
-          <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdanab_24_4bpp.cpp</name>
-        </file>
       </group>
       <group>
         <name>gui_generated</name>
@@ -1063,9 +1063,21 @@
           </file>
         </group>
         <group>
+          <name>menuprincipal_screen</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\gui_generated\src\menuprincipal_screen\MenuPrincipalViewBase.cpp</name>
+          </file>
+        </group>
+        <group>
           <name>screen1_screen</name>
           <file>
             <name>$PROJ_DIR$\..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp</name>
+          </file>
+        </group>
+        <group>
+          <name>screen2_screen</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\gui_generated\src\screen2_screen\Screen2ViewBase.cpp</name>
           </file>
         </group>
         <group>
@@ -1087,6 +1099,12 @@
           <name>__designer</name>
           <file>
             <name>$PROJ_DIR$\..\..\generated\images\src\__designer\blue_backgrounds_main_bg_480x272px.cpp</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\images\src\__designer\blue_buttons_round_edge_small.cpp</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\images\src\__designer\blue_buttons_round_edge_small_pressed.cpp</name>
           </file>
         </group>
         <file>
@@ -1135,10 +1153,16 @@
           <name>$PROJ_DIR$\..\..\generated\images\src\keyboard_space_highlighted.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\modal_background.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\ScreenSaver.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\text-field.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\warning.cpp</name>
         </file>
       </group>
       <group>
@@ -1166,6 +1190,15 @@
         </file>
       </group>
       <group>
+        <name>menuprincipal_screen</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\menuprincipal_screen\MenuPrincipalPresenter.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\menuprincipal_screen\MenuPrincipalView.cpp</name>
+        </file>
+      </group>
+      <group>
         <name>model</name>
         <file>
           <name>$PROJ_DIR$\..\..\gui\src\model\Model.cpp</name>
@@ -1178,6 +1211,15 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\gui\src\screen1_screen\Screen1View.cpp</name>
+        </file>
+      </group>
+      <group>
+        <name>screen2_screen</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\screen2_screen\Screen2Presenter.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\screen2_screen\Screen2View.cpp</name>
         </file>
       </group>
       <group>

@@ -19,6 +19,9 @@ CustomKeyboard::CustomKeyboard() : keyboard(),
     keyboard.setPosition(0, 0, 320, 240);
     keyboard.setTextIndentation();
     //Allocate the buffer associated with keyboard.
+    
+    buffer  = (Unicode::UnicodeChar*) malloc(BUFFER_SIZE*sizeof(Unicode::UnicodeChar));
+
     memset(buffer, 0, sizeof(buffer));
     keyboard.setBuffer(buffer, BUFFER_SIZE);
 
@@ -60,6 +63,10 @@ void CustomKeyboard::setKeyMappingList()
             keyboard.setKeymappingList(&keyMappingListNumLower);
         }
     }
+}
+
+TextArea CustomKeyboard::getTextKeyboard(){
+    return modeBtnTextArea;
 }
 
 void CustomKeyboard::backspacePressedHandler()

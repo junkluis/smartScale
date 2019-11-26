@@ -43,6 +43,8 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  touchgfx//framework/include/touchgfx/transitions/CoverTransition.hpp \
  touchgfx//framework/include/touchgfx/EasingEquations.hpp \
  touchgfx//framework/include/touchgfx/widgets/Widget.hpp \
+ touchgfx//framework/include/touchgfx/transitions/SlideTransition.hpp \
+ touchgfx//framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
  gui/include/gui/screen1_screen/Screen1View.hpp \
  generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
@@ -56,22 +58,29 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  touchgfx//framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  touchgfx//framework/include/touchgfx/widgets/Button.hpp \
  touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp \
+ touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ touchgfx//framework/include/touchgfx/containers/ModalWindow.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Box.hpp \
+ touchgfx//framework/include/touchgfx/Color.hpp \
  gui/include/gui/screensaver_screen/ScreenSaverView.hpp \
  generated/gui_generated/include/gui_generated/screensaver_screen/ScreenSaverViewBase.hpp \
  gui/include/gui/screensaver_screen/ScreenSaverPresenter.hpp \
  gui/include/gui/teclado_screen/tecladoView.hpp \
  generated/gui_generated/include/gui_generated/teclado_screen/tecladoViewBase.hpp \
  gui/include/gui/teclado_screen/tecladoPresenter.hpp \
- touchgfx//framework/include/touchgfx/widgets/Box.hpp \
- touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  gui/include/gui/common/CustomKeyboard.hpp \
  touchgfx//framework/include/touchgfx/widgets/Keyboard.hpp \
- touchgfx//framework/include/touchgfx/Color.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp \
  gui/include/gui/common/KeyboardLayout.hpp \
  generated/fonts/include/fonts/ApplicationFontProvider.hpp \
  generated/images/include/BitmapDatabase.hpp \
- gui/include/gui/common/KeyboardKeyMapping.hpp
+ gui/include/gui/common/KeyboardKeyMapping.hpp \
+ gui/include/gui/menuprincipal_screen/MenuPrincipalView.hpp \
+ generated/gui_generated/include/gui_generated/menuprincipal_screen/MenuPrincipalViewBase.hpp \
+ gui/include/gui/menuprincipal_screen/MenuPrincipalPresenter.hpp \
+ gui/include/gui/screen2_screen/Screen2View.hpp \
+ generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
+ gui/include/gui/screen2_screen/Screen2Presenter.hpp
 
 generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 
@@ -161,6 +170,10 @@ touchgfx//framework/include/touchgfx/EasingEquations.hpp:
 
 touchgfx//framework/include/touchgfx/widgets/Widget.hpp:
 
+touchgfx//framework/include/touchgfx/transitions/SlideTransition.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/SnapshotWidget.hpp:
+
 gui/include/gui/common/FrontendApplication.hpp:
 
 gui/include/gui/screen1_screen/Screen1View.hpp:
@@ -187,6 +200,14 @@ touchgfx//framework/include/touchgfx/widgets/Button.hpp:
 
 touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp:
 
+touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+touchgfx//framework/include/touchgfx/containers/ModalWindow.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Box.hpp:
+
+touchgfx//framework/include/touchgfx/Color.hpp:
+
 gui/include/gui/screensaver_screen/ScreenSaverView.hpp:
 
 generated/gui_generated/include/gui_generated/screensaver_screen/ScreenSaverViewBase.hpp:
@@ -199,15 +220,9 @@ generated/gui_generated/include/gui_generated/teclado_screen/tecladoViewBase.hpp
 
 gui/include/gui/teclado_screen/tecladoPresenter.hpp:
 
-touchgfx//framework/include/touchgfx/widgets/Box.hpp:
-
-touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
-
 gui/include/gui/common/CustomKeyboard.hpp:
 
 touchgfx//framework/include/touchgfx/widgets/Keyboard.hpp:
-
-touchgfx//framework/include/touchgfx/Color.hpp:
 
 generated/texts/include/texts/TextKeysAndLanguages.hpp:
 
@@ -218,3 +233,15 @@ generated/fonts/include/fonts/ApplicationFontProvider.hpp:
 generated/images/include/BitmapDatabase.hpp:
 
 gui/include/gui/common/KeyboardKeyMapping.hpp:
+
+gui/include/gui/menuprincipal_screen/MenuPrincipalView.hpp:
+
+generated/gui_generated/include/gui_generated/menuprincipal_screen/MenuPrincipalViewBase.hpp:
+
+gui/include/gui/menuprincipal_screen/MenuPrincipalPresenter.hpp:
+
+gui/include/gui/screen2_screen/Screen2View.hpp:
+
+generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:
+
+gui/include/gui/screen2_screen/Screen2Presenter.hpp:

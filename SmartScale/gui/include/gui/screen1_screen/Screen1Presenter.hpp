@@ -31,7 +31,14 @@ public:
         model->setTecladoAccion(accion);
     }
 
-    
+    touchgfx::Unicode::UnicodeChar* getUsuarioInput(){
+        return model->getUsuario();
+    }
+
+    touchgfx::Unicode::UnicodeChar* getClaveInput(){
+        return model->getClave();
+    }
+
 
 private:
     Screen1Presenter();

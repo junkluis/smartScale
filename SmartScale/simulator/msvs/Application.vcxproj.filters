@@ -187,6 +187,30 @@
     <Filter Include="Source Files\generated\gui_generated\teclado_screen">
       <UniqueIdentifier>EE2A9249-38C3-44F3-898E-41E28330A5DD</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\menuprincipal_screen">
+      <UniqueIdentifier>F885B4F8-4AA0-4046-B16D-F6EA1BB93518</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\menuprincipal_screen">
+      <UniqueIdentifier>39F12E1D-8DB8-44E7-B3A3-B1D0D0E3394E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\menuprincipal_screen">
+      <UniqueIdentifier>98C98CA2-68CE-4399-A9A5-E28B0A152B91</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\menuprincipal_screen">
+      <UniqueIdentifier>528F2A67-6F24-4163-A70F-2159DAA86EBE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screen2_screen">
+      <UniqueIdentifier>5854DF1E-2DFC-4A2E-A601-5C8A503B52CD</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screen2_screen">
+      <UniqueIdentifier>B56106B8-8B7F-48DF-A697-A3E16EFC010C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screen2_screen">
+      <UniqueIdentifier>3725A9CD-0D26-42F9-B89B-5A2990DB6AFF</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screen2_screen">
+      <UniqueIdentifier>033DC687-F6D0-4003-A32D-FA3A2EE6A904</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -242,6 +266,24 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\teclado_screen\tecladoViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\teclado_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\menuprincipal_screen\MenuPrincipalPresenter.cpp">
+      <Filter>Source Files\gui\menuprincipal_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\menuprincipal_screen\MenuPrincipalView.cpp">
+      <Filter>Source Files\gui\menuprincipal_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\menuprincipal_screen\MenuPrincipalViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\menuprincipal_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen2_screen\Screen2Presenter.cpp">
+      <Filter>Source Files\gui\screen2_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screen2_screen\Screen2View.cpp">
+      <Filter>Source Files\gui\screen2_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen2_screen\Screen2ViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screen2_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -708,6 +750,24 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\teclado_screen\tecladoViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\teclado_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\menuprincipal_screen\MenuPrincipalPresenter.hpp">
+      <Filter>Header Files\gui\menuprincipal_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\menuprincipal_screen\MenuPrincipalView.hpp">
+      <Filter>Header Files\gui\menuprincipal_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\menuprincipal_screen\MenuPrincipalViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\menuprincipal_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2Presenter.hpp">
+      <Filter>Header Files\gui\screen2_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2View.hpp">
+      <Filter>Header Files\gui\screen2_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen2_screen\Screen2ViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screen2_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

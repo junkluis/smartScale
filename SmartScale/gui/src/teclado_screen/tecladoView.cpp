@@ -19,6 +19,24 @@ void tecladoView::tearDownScreen()
 void tecladoView::obtenerAccion()
 {
 	std::string accion = presenter->getTecladoAccion();
-	Unicode::snprintf(txt_accionBuffer, TXT_ACCION_SIZE, "%s", "luis");
-	touchgfx_printf(accion.c_str());
+	Unicode::strncpy(txt_accionBuffer, accion.c_str(), TXT_ACCION_SIZE);
+	txt_accion.invalidate();
+
+}
+
+void tecladoView::registrarEntradaTeclado()
+{	
+	std::string accion = presenter->getTecladoAccion();
+	Unicode::strncpy(txt_accionBuffer, keyboard.buffer, TXT_ACCION_SIZE);
+	txt_accion.invalidate();
+	
+	if(accion == "Usuario")
+	{
+		presenter->setUsuario(keyboard.buffer);
+	} else if(accion == "Clave")
+	{
+		presenter->setClave(keyboard.buffer);
+	}
+	
+    application().gotoScreen1ScreenCoverTransitionSouth();
 }

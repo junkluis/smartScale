@@ -3,6 +3,8 @@
 
 #include <touchgfx/Utils.hpp>
 #include <string>
+#include <touchgfx/Unicode.hpp>
+
 
 
 class ModelListener;
@@ -48,6 +50,23 @@ public:
         return tecladoAccion;
     }
 
+    void setUsuario(touchgfx::Unicode::UnicodeChar* usuarioInput){
+        usuario = usuarioInput;
+    }
+
+    touchgfx::Unicode::UnicodeChar* getUsuario(){
+        return usuario;
+    }
+
+    void setClave(touchgfx::Unicode::UnicodeChar* claveInput){
+        clave = claveInput;
+    }
+
+    touchgfx::Unicode::UnicodeChar* getClave(){
+        return clave;
+    }
+
+
 protected:
     /**
      * Pointer to the currently active presenter.
@@ -55,6 +74,9 @@ protected:
     ModelListener* modelListener;
     
     std::string tecladoAccion;
+
+    touchgfx::Unicode::UnicodeChar* usuario;
+    touchgfx::Unicode::UnicodeChar* clave;
     
 
 };

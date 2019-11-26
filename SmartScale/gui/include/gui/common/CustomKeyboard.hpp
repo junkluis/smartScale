@@ -30,22 +30,29 @@ public:
      */
     void setTouchable(bool touch);
 
-private:
+    TextArea getTextKeyboard();
+
     /*
      * The size of the buffer that is used by the keyboard.
      * The size determines how much text the keyboard can contain in its textfield.
      */
     static const uint8_t BUFFER_SIZE = 18;
 
+     /**
+     * The buffer used by the keyboard for text input.
+     */
+    //Unicode::UnicodeChar buffer[BUFFER_SIZE];
+    Unicode::UnicodeChar* buffer;
+
+private:
+    
+
     /**
      * The keyboard which this CustomKeyboard wraps.
      */
     Keyboard keyboard;
 
-    /**
-     * The buffer used by the keyboard for text input.
-     */
-    Unicode::UnicodeChar buffer[BUFFER_SIZE];
+   
 
     /**
      * Used to display text on top of the button for changing keyboard mode.
@@ -112,6 +119,9 @@ private:
      * @param keyChar The UnicodeChar for the key that was pressed.
      */
     void keyPressedhandler(Unicode::UnicodeChar keyChar);
+
+
+
 };
 
 #endif /* TGFXKEYBOARD_HPP_ */

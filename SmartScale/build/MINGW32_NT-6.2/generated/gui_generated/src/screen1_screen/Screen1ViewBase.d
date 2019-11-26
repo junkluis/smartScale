@@ -51,9 +51,12 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/screen1_screen/Screen1ViewBase.
  touchgfx//framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  touchgfx//framework/include/touchgfx/widgets/Button.hpp \
  touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp \
+ touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ touchgfx//framework/include/touchgfx/containers/ModalWindow.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Box.hpp \
+ touchgfx//framework/include/touchgfx/Color.hpp \
  generated/images/include/BitmapDatabase.hpp \
- generated/texts/include/texts/TextKeysAndLanguages.hpp \
- touchgfx//framework/include/touchgfx/Color.hpp
+ generated/texts/include/texts/TextKeysAndLanguages.hpp
 
 generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
 
@@ -157,8 +160,14 @@ touchgfx//framework/include/touchgfx/widgets/Button.hpp:
 
 touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp:
 
+touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+touchgfx//framework/include/touchgfx/containers/ModalWindow.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Box.hpp:
+
+touchgfx//framework/include/touchgfx/Color.hpp:
+
 generated/images/include/BitmapDatabase.hpp:
 
 generated/texts/include/texts/TextKeysAndLanguages.hpp:
-
-touchgfx//framework/include/touchgfx/Color.hpp:

@@ -13,6 +13,10 @@
 #include <gui/screensaver_screen/ScreenSaverPresenter.hpp>
 #include <gui/teclado_screen/tecladoView.hpp>
 #include <gui/teclado_screen/tecladoPresenter.hpp>
+#include <gui/menuprincipal_screen/MenuPrincipalView.hpp>
+#include <gui/menuprincipal_screen/MenuPrincipalPresenter.hpp>
+#include <gui/screen2_screen/Screen2View.hpp>
+#include <gui/screen2_screen/Screen2Presenter.hpp>
 
 using namespace touchgfx;
 
@@ -66,5 +70,18 @@ void FrontendApplicationBase::gototecladoScreenNoTransition()
 void FrontendApplicationBase::gototecladoScreenNoTransitionImpl()
 {
     makeTransition<tecladoView, tecladoPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// MenuPrincipal
+
+void FrontendApplicationBase::gotoMenuPrincipalScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoMenuPrincipalScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoMenuPrincipalScreenSlideTransitionEastImpl()
+{
+    makeTransition<MenuPrincipalView, MenuPrincipalPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 

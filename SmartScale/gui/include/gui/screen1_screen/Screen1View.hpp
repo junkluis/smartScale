@@ -12,6 +12,9 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void ingresarUsuarioPorTeclado();
+    virtual void ingresarClavePorTeclado();
+    virtual void actualizarCampos();
+	virtual void iniciarSesion();
 protected:
 };
 

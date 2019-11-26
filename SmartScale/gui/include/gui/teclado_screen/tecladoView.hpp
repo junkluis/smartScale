@@ -14,6 +14,7 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void obtenerAccion();
+    virtual void registrarEntradaTeclado();
 protected:
 
 	CustomKeyboard keyboard;

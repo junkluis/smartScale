@@ -51,7 +51,11 @@ build/MINGW32_NT-6.2/gui/src/screen1_screen/Screen1View.o: \
  touchgfx//framework/include/touchgfx/Texts.hpp \
  touchgfx//framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  touchgfx//framework/include/touchgfx/widgets/Button.hpp \
- touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp
+ touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp \
+ touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ touchgfx//framework/include/touchgfx/containers/ModalWindow.hpp \
+ touchgfx//framework/include/touchgfx/widgets/Box.hpp \
+ touchgfx//framework/include/touchgfx/Color.hpp
 
 gui/include/gui/screen1_screen/Screen1View.hpp:
 
@@ -156,3 +160,11 @@ touchgfx//framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 touchgfx//framework/include/touchgfx/widgets/Button.hpp:
 
 touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+touchgfx//framework/include/touchgfx/containers/ModalWindow.hpp:
+
+touchgfx//framework/include/touchgfx/widgets/Box.hpp:
+
+touchgfx//framework/include/touchgfx/Color.hpp:

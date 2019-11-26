@@ -115,7 +115,7 @@
             "Name": "txt_usuario",
             "X": 48,
             "Y": 89,
-            "Width": 103,
+            "Width": 91,
             "Height": 30,
             "Type": "TextArea",
             "Visible": true,
@@ -138,7 +138,7 @@
             "Name": "txt_clave",
             "X": 78,
             "Y": 149,
-            "Width": 73,
+            "Width": 66,
             "Height": 30,
             "Type": "TextArea",
             "Visible": true,
@@ -156,13 +156,18 @@
               "Blue": 0
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId10",
+              "UseBuffer": true,
+              "BufferSize": 18
+            },
             "Name": "input_user",
             "X": 184,
-            "Y": 89,
-            "Width": 38,
-            "Height": 25,
+            "Y": 87,
+            "Width": 249,
+            "Height": 30,
             "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
@@ -179,15 +184,147 @@
               "Blue": 0
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId9",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
             "Name": "input_clave",
             "X": 184,
             "Y": 150,
-            "Width": 38,
-            "Height": 25,
+            "Width": 249,
+            "Height": 30,
             "Type": "TextArea",
             "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Components": [
+              {
+                "RelativeFilename": "warning.png",
+                "Alpha": 255,
+                "Name": "iconoError",
+                "X": 25,
+                "Y": 23,
+                "Width": 100,
+                "Height": 100,
+                "Type": "Image",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Pressed": "__designer\\blue_buttons_round_edge_small_pressed.png",
+                "Released": "__designer\\blue_buttons_round_edge_small.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId12",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style4",
+                "Name": "cerrarModal",
+                "X": 85,
+                "Y": 158,
+                "Width": 170,
+                "Height": 60,
+                "Type": "ButtonWithLabel",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "TextId": "SingleUseId13",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": false,
+                "LineSpacing": 0,
+                "Wildcard1": {
+                  "TextId": "SingleUseId15",
+                  "UseBuffer": true,
+                  "BufferSize": 15
+                },
+                "Name": "tituloError",
+                "X": 136,
+                "Y": 29,
+                "Width": 176,
+                "Height": 27,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "TextId": "SingleUseId14",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": false,
+                "LineSpacing": 0,
+                "Wildcard1": {
+                  "UseBuffer": true,
+                  "BufferSize": 30
+                },
+                "Name": "cuerpoError",
+                "X": 136,
+                "Y": 69,
+                "Width": 191,
+                "Height": 54,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "FileName": "modal_background.png",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "ModalX": 70,
+            "ModalY": 16,
+            "ModalWidth": 340,
+            "ModalHeight": 240,
+            "ContX": 0,
+            "ContY": 0,
+            "Alpha": 150,
+            "Name": "alertaError",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "ModalWindow",
+            "Visible": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -218,6 +355,66 @@
             "Action": {
               "FunctionName": "ingresarUsuarioPorTeclado",
               "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "actualizarCamposInicioSesion",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "FunctionName": "actualizarCampos",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "accionIngresarClave",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "img_clave",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "ingresarClavePorTeclado",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "AccederTeclado2",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "img_clave",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "teclado",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "iniciarSesion",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "btn_iniciar_sesion",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "iniciarSesion",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "cerrarModal",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "cerrarModal",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ActionComponent": "alertaError",
+              "Type": "ActionHide"
             }
           }
         ],
@@ -304,7 +501,7 @@
             "Pressed": "btn-ok-pressed.png",
             "Released": "btn-ok.png",
             "Alpha": 255,
-            "Name": "button1",
+            "Name": "btn_ok",
             "X": 343,
             "Y": 104,
             "Width": 121,
@@ -325,7 +522,7 @@
               "Blue": 0
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
               "TextId": "SingleUseId8",
@@ -333,10 +530,10 @@
               "BufferSize": 10
             },
             "Name": "txt_accion",
-            "X": 352,
+            "X": 342,
             "Y": 30,
-            "Width": 86,
-            "Height": 30,
+            "Width": 122,
+            "Height": 35,
             "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
@@ -356,9 +553,160 @@
               "FunctionName": "obtenerAccion",
               "Type": "ActionCustom"
             }
+          },
+          {
+            "InteractionName": "GuardarEntradaPorTeclado",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "btn_ok",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "registrarEntradaTeclado",
+              "Type": "ActionCustom"
+            }
           }
         ],
         "Name": "teclado",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "",
+            "Alpha": 255,
+            "Name": "image1",
+            "X": 0,
+            "Y": 0,
+            "Width": 80,
+            "Height": 80,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "background-title.png",
+            "Alpha": 255,
+            "Name": "backgroundmenu",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId16",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 167,
+            "Y": 124,
+            "Width": 146,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "MenuPrincipal",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "background-title.png",
+            "Alpha": 255,
+            "Name": "manejoUsuarios",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId17",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 152,
+            "Y": 124,
+            "Width": 195,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\blue_buttons_round_edge_small_pressed.png",
+            "Released": "__designer\\blue_buttons_round_edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "back",
+            "X": 155,
+            "Y": 174,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "regresar",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "back",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "MenuPrincipal",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "Screen2",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       }
@@ -407,6 +755,38 @@
       },
       {
         "TextEntryId": "SingleUseId8",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId9",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId10",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId12",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId13",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId14",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId15",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId16",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId17",
         "IsResource": false
       }
     ],

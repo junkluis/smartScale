@@ -28,6 +28,11 @@ public:
         // Override and implement this function in tecladoView
     }
 
+    virtual void registrarEntradaTeclado()
+    {
+        // Override and implement this function in tecladoView
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(Application::getInstance());
@@ -37,7 +42,7 @@ protected:
      * Member Declarations
      */
     touchgfx::Box backgroundBox;
-    touchgfx::Button button1;
+    touchgfx::Button btn_ok;
     touchgfx::TextAreaWithOneWildcard txt_accion;
 
     /*
@@ -47,6 +52,16 @@ protected:
     touchgfx::Unicode::UnicodeChar txt_accionBuffer[TXT_ACCION_SIZE];
 
 private:
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<tecladoViewBase, const touchgfx::AbstractButton&> buttonCallback;
 
 };
 

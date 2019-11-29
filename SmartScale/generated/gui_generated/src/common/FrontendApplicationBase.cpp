@@ -7,6 +7,7 @@
 #include <touchgfx/transitions/NoTransition.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Texts.hpp>
+#include <touchgfx/hal/HAL.hpp>
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <gui/screensaver_screen/ScreenSaverView.hpp>
@@ -27,7 +28,8 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
       frontendHeap(heap),
       model(m)
 {
-    Texts::setLanguage(GB);
+    touchgfx::HAL::getInstance()->setDisplayOrientation(touchgfx::ORIENTATION_LANDSCAPE);
+    touchgfx::Texts::setLanguage(GB);
 }
 
 /*
@@ -43,7 +45,7 @@ void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionSouth()
 
 void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionSouthImpl()
 {
-    makeTransition<Screen1View, Screen1Presenter, touchgfx::CoverTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<Screen1View, Screen1Presenter, touchgfx::CoverTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // ScreenSaver
@@ -56,7 +58,7 @@ void FrontendApplicationBase::gotoScreenSaverScreenNoTransition()
 
 void FrontendApplicationBase::gotoScreenSaverScreenNoTransitionImpl()
 {
-    makeTransition<ScreenSaverView, ScreenSaverPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<ScreenSaverView, ScreenSaverPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // teclado
@@ -69,7 +71,7 @@ void FrontendApplicationBase::gototecladoScreenNoTransition()
 
 void FrontendApplicationBase::gototecladoScreenNoTransitionImpl()
 {
-    makeTransition<tecladoView, tecladoPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<tecladoView, tecladoPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // MenuPrincipal
@@ -82,6 +84,6 @@ void FrontendApplicationBase::gotoMenuPrincipalScreenSlideTransitionEast()
 
 void FrontendApplicationBase::gotoMenuPrincipalScreenSlideTransitionEastImpl()
 {
-    makeTransition<MenuPrincipalView, MenuPrincipalPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MenuPrincipalView, MenuPrincipalPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 

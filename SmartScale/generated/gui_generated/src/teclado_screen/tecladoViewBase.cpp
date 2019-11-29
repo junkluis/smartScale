@@ -13,15 +13,15 @@ tecladoViewBase::tecladoViewBase() :
     backgroundBox.setColor(touchgfx::Color::getColorFrom24BitRGB(214, 211, 214));
 
     btn_ok.setXY(343, 104);
-    btn_ok.setBitmaps(Bitmap(BITMAP_BTN_OK_ID), Bitmap(BITMAP_BTN_OK_PRESSED_ID));
+    btn_ok.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_OK_ID), touchgfx::Bitmap(BITMAP_BTN_OK_PRESSED_ID));
     btn_ok.setAction(buttonCallback);
 
     txt_accion.setPosition(342, 30, 122, 35);
     txt_accion.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     txt_accion.setLinespacing(0);
-    Unicode::snprintf(txt_accionBuffer, TXT_ACCION_SIZE, "%s", TypedText(T_SINGLEUSEID8).getText());
+    Unicode::snprintf(txt_accionBuffer, TXT_ACCION_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID8).getText());
     txt_accion.setWildcard(txt_accionBuffer);
-    txt_accion.setTypedText(TypedText(T_SINGLEUSEID7));
+    txt_accion.setTypedText(touchgfx::TypedText(T_SINGLEUSEID7));
 
     add(backgroundBox);
     add(btn_ok);

@@ -11,12 +11,12 @@ MenuPrincipalViewBase::MenuPrincipalViewBase()
     image1.setXY(0, 0);
 
     backgroundmenu.setXY(0, 0);
-    backgroundmenu.setBitmap(Bitmap(BITMAP_BACKGROUND_TITLE_ID));
+    backgroundmenu.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_TITLE_ID));
 
     textArea1.setXY(167, 124);
     textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea1.setLinespacing(0);
-    textArea1.setTypedText(TypedText(T_SINGLEUSEID16));
+    textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID16));
 
     add(image1);
     add(backgroundmenu);

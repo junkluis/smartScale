@@ -10,65 +10,64 @@ Screen1ViewBase::Screen1ViewBase() :
     buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
 {
     fondo.setXY(0, 0);
-    fondo.setBitmap(Bitmap(BITMAP_BACKGROUND_TITLE_ID));
+    fondo.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_TITLE_ID));
 
     txt_titulo_inicio_sesion.setXY(20, 24);
     txt_titulo_inicio_sesion.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     txt_titulo_inicio_sesion.setLinespacing(0);
-    txt_titulo_inicio_sesion.setTypedText(TypedText(T_SINGLEUSEID1));
+    txt_titulo_inicio_sesion.setTypedText(touchgfx::TypedText(T_SINGLEUSEID1));
 
     btn_iniciar_sesion.setXY(4, 219);
-    btn_iniciar_sesion.setBitmaps(Bitmap(BITMAP_BTN_ID), Bitmap(BITMAP_BTN_PRESSED_ID));
-    btn_iniciar_sesion.setLabelText(TypedText(T_SINGLEUSEID2));
+    btn_iniciar_sesion.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ID), touchgfx::Bitmap(BITMAP_BTN_PRESSED_ID));
+    btn_iniciar_sesion.setLabelText(touchgfx::TypedText(T_SINGLEUSEID2));
     btn_iniciar_sesion.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     btn_iniciar_sesion.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     btn_iniciar_sesion.setAction(buttonCallback);
 
     img_usuario.setXY(177, 85);
-    img_usuario.setBitmaps(Bitmap(BITMAP_TEXT_FIELD_ID), Bitmap(BITMAP_TEXT_FIELD_ID));
+    img_usuario.setBitmaps(touchgfx::Bitmap(BITMAP_TEXT_FIELD_ID), touchgfx::Bitmap(BITMAP_TEXT_FIELD_ID));
     img_usuario.setAction(buttonCallback);
 
     img_clave.setXY(177, 147);
-    img_clave.setBitmaps(Bitmap(BITMAP_TEXT_FIELD_ID), Bitmap(BITMAP_TEXT_FIELD_ID));
+    img_clave.setBitmaps(touchgfx::Bitmap(BITMAP_TEXT_FIELD_ID), touchgfx::Bitmap(BITMAP_TEXT_FIELD_ID));
     img_clave.setAction(buttonCallback);
 
     txt_usuario.setXY(48, 89);
     txt_usuario.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     txt_usuario.setLinespacing(0);
-    txt_usuario.setTypedText(TypedText(T_SINGLEUSEID3));
+    txt_usuario.setTypedText(touchgfx::TypedText(T_SINGLEUSEID3));
 
     txt_clave.setXY(78, 149);
     txt_clave.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     txt_clave.setLinespacing(0);
-    txt_clave.setTypedText(TypedText(T_SINGLEUSEID4));
+    txt_clave.setTypedText(touchgfx::TypedText(T_SINGLEUSEID4));
 
     input_user.setPosition(184, 87, 249, 30);
     input_user.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     input_user.setLinespacing(0);
-    Unicode::snprintf(input_userBuffer, INPUT_USER_SIZE, "%s", TypedText(T_SINGLEUSEID10).getText());
+    Unicode::snprintf(input_userBuffer, INPUT_USER_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID10).getText());
     input_user.setWildcard(input_userBuffer);
-    input_user.setTypedText(TypedText(T_SINGLEUSEID5));
+    input_user.setTypedText(touchgfx::TypedText(T_SINGLEUSEID5));
 
     input_clave.setPosition(184, 150, 249, 30);
     input_clave.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     input_clave.setLinespacing(0);
-    Unicode::snprintf(input_claveBuffer, INPUT_CLAVE_SIZE, "%s", TypedText(T_SINGLEUSEID9).getText());
+    Unicode::snprintf(input_claveBuffer, INPUT_CLAVE_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID9).getText());
     input_clave.setWildcard(input_claveBuffer);
-    input_clave.setTypedText(TypedText(T_SINGLEUSEID6));
+    input_clave.setTypedText(touchgfx::TypedText(T_SINGLEUSEID6));
 
-    alertaError.setXY(0, 0);
-    alertaError.setBackground(BitmapId(BITMAP_MODAL_BACKGROUND_ID), 70, 16);
+    alertaError.setBackground(touchgfx::BitmapId(BITMAP_MODAL_BACKGROUND_ID), 70, 16);
     alertaError.setShadeColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     alertaError.setShadeAlpha(150);
     alertaError.hide();
 
     iconoError.setXY(25, 23);
-    iconoError.setBitmap(Bitmap(BITMAP_WARNING_ID));
+    iconoError.setBitmap(touchgfx::Bitmap(BITMAP_WARNING_ID));
     alertaError.add(iconoError);
 
     cerrarModal.setXY(85, 158);
-    cerrarModal.setBitmaps(Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
-    cerrarModal.setLabelText(TypedText(T_SINGLEUSEID12));
+    cerrarModal.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    cerrarModal.setLabelText(touchgfx::TypedText(T_SINGLEUSEID12));
     cerrarModal.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     cerrarModal.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     cerrarModal.setAction(buttonCallback);
@@ -77,9 +76,9 @@ Screen1ViewBase::Screen1ViewBase() :
     tituloError.setPosition(136, 29, 176, 27);
     tituloError.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     tituloError.setLinespacing(0);
-    Unicode::snprintf(tituloErrorBuffer, TITULOERROR_SIZE, "%s", TypedText(T_SINGLEUSEID15).getText());
+    Unicode::snprintf(tituloErrorBuffer, TITULOERROR_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID15).getText());
     tituloError.setWildcard(tituloErrorBuffer);
-    tituloError.setTypedText(TypedText(T_SINGLEUSEID13));
+    tituloError.setTypedText(touchgfx::TypedText(T_SINGLEUSEID13));
     alertaError.add(tituloError);
 
     cuerpoError.setPosition(136, 69, 191, 54);
@@ -87,7 +86,7 @@ Screen1ViewBase::Screen1ViewBase() :
     cuerpoError.setLinespacing(0);
     cuerpoErrorBuffer[0] = 0;
     cuerpoError.setWildcard(cuerpoErrorBuffer);
-    cuerpoError.setTypedText(TypedText(T_SINGLEUSEID14));
+    cuerpoError.setTypedText(touchgfx::TypedText(T_SINGLEUSEID14));
     alertaError.add(cuerpoError);
 
     add(fondo);

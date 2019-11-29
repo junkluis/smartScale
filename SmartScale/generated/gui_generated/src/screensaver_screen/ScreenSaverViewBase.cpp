@@ -8,10 +8,10 @@ ScreenSaverViewBase::ScreenSaverViewBase() :
     buttonCallback(this, &ScreenSaverViewBase::buttonCallbackHandler)
 {
     image1.setXY(0, 0);
-    image1.setBitmap(Bitmap(BITMAP_BLUE_BACKGROUNDS_MAIN_BG_480X272PX_ID));
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_BACKGROUNDS_MAIN_BG_480X272PX_ID));
 
     button1.setXY(0, 0);
-    button1.setBitmaps(Bitmap(BITMAP_SCREENSAVER_ID), Bitmap(BITMAP_SCREENSAVER_ID));
+    button1.setBitmaps(touchgfx::Bitmap(BITMAP_SCREENSAVER_ID), touchgfx::Bitmap(BITMAP_SCREENSAVER_ID));
     button1.setAction(buttonCallback);
 
     add(image1);

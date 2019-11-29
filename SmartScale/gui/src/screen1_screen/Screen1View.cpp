@@ -1,4 +1,6 @@
 #include <gui/screen1_screen/Screen1View.hpp>
+#include <stdio.h>
+
 
 Screen1View::Screen1View()
 {
@@ -32,6 +34,8 @@ void Screen1View::iniciarSesion()
 
 	usuario = presenter->getUsuarioInput();
 	clave = presenter->getClaveInput();
+
+	printf("Characters:");
 
 	touchgfx_printf("BUSCAR EN MEMORIA SI EL USUARIO Y CLAVE COINCIDEN\n");
 	touchgfx_printf("%d\n", touchgfx::Unicode::strlen(usuario));
@@ -67,6 +71,9 @@ void Screen1View::actualizarCampos()
 
 	Unicode::strncpy(input_userBuffer, usuario, INPUT_USER_SIZE);
 	Unicode::strncpy(input_claveBuffer, clave, INPUT_CLAVE_SIZE);
+	
+	
+
 
 	
 }

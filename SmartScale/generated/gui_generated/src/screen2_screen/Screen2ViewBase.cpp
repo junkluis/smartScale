@@ -10,15 +10,15 @@ Screen2ViewBase::Screen2ViewBase() :
     buttonCallback(this, &Screen2ViewBase::buttonCallbackHandler)
 {
     manejoUsuarios.setXY(0, 0);
-    manejoUsuarios.setBitmap(Bitmap(BITMAP_BACKGROUND_TITLE_ID));
+    manejoUsuarios.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_TITLE_ID));
 
     textArea1.setXY(152, 124);
     textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea1.setLinespacing(0);
-    textArea1.setTypedText(TypedText(T_SINGLEUSEID17));
+    textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID17));
 
     back.setXY(155, 174);
-    back.setBitmaps(Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    back.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
     back.setAction(buttonCallback);
 
     add(manejoUsuarios);

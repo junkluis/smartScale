@@ -962,49 +962,74 @@
               <FilePath>../../generated/images/src/btn.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_FRADM_TTF_18_4bpp.cpp</FileName>
+              <FileName>CachedFont.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/font_fradm_ttf_18_4bpp.cpp</FilePath>
+              <FilePath>../../generated/fonts/src/cachedfont.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_verdana_10_4bpp.cpp</FileName>
+              <FileName>Font_FRADM_TTF_18_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/font_verdana_10_4bpp.cpp</FilePath>
+              <FilePath>../../generated/fonts/src/font_fradm_ttf_18_4bpp_0.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_verdana_18_4bpp.cpp</FileName>
+              <FileName>Font_verdana_10_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/font_verdana_18_4bpp.cpp</FilePath>
+              <FilePath>../../generated/fonts/src/font_verdana_10_4bpp_0.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_verdana_20_4bpp.cpp</FileName>
+              <FileName>Font_verdana_18_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/font_verdana_20_4bpp.cpp</FilePath>
+              <FilePath>../../generated/fonts/src/font_verdana_18_4bpp_0.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_verdana_24_4bpp.cpp</FileName>
+              <FileName>Font_verdana_18_4bpp_4.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/font_verdana_24_4bpp.cpp</FilePath>
+              <FilePath>../../generated/fonts/src/font_verdana_18_4bpp_4.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_verdana_28_4bpp.cpp</FileName>
+              <FileName>Font_verdana_20_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/font_verdana_28_4bpp.cpp</FilePath>
+              <FilePath>../../generated/fonts/src/font_verdana_20_4bpp_0.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_verdana_40_4bpp.cpp</FileName>
+              <FileName>Font_verdana_20_4bpp_4.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/font_verdana_40_4bpp.cpp</FilePath>
+              <FilePath>../../generated/fonts/src/font_verdana_20_4bpp_4.cpp</FilePath>
             </File>
             <File>
-              <FileName>FontGetters.cpp</FileName>
+              <FileName>Font_verdana_24_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/fontgetters.cpp</FilePath>
+              <FilePath>../../generated/fonts/src/font_verdana_24_4bpp_0.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Font_verdana_28_4bpp_0.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/font_verdana_28_4bpp_0.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Font_verdana_28_4bpp_4.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/font_verdana_28_4bpp_4.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Font_verdana_40_4bpp_0.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/font_verdana_40_4bpp_0.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>FontCache.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/fontcache.cpp</FilePath>
             </File>
             <File>
               <FileName>FrontendApplicationBase.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/gui_generated/src/common/frontendapplicationbase.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>GeneratedFont.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/generatedfont.cpp</FilePath>
             </File>
             <File>
               <FileName>icon_keyboard_even_row.cpp</FileName>

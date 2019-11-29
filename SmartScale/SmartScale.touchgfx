@@ -809,16 +809,10 @@
         16,
         24
       ],
-      "AvailableImageFormats": {
-        "16": {
-          "Opaque": "RGB565",
-          "NonOpaque": "ARGB8888"
-        },
-        "24": {
-          "Opaque": "RGB888",
-          "NonOpaque": "ARGB8888"
-        }
-      },
+      "AvailableSections": [
+        "ExtFlashSection",
+        "IntFlashSection"
+      ],
       "AvailableResolutions": [
         {
           "Width": 480,
@@ -837,8 +831,13 @@
       "RunSimulatorCommand": "build\\bin\\simulator.exe",
       "CompileTargetCommand": "make -f target/gcc/../gcc/Makefile -j8",
       "FlashTargetCommand": "make -f target/gcc/Makefile -j8 flash"
-    }
+    },
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape"
   },
-  "Version": "4.10.0",
+  "Version": "4.12.3",
   "CreatedBy": "4.10.0"
 }

@@ -30,21 +30,16 @@ void Screen1View::ingresarClavePorTeclado()
 void Screen1View::iniciarSesion() 
 {
 	touchgfx::Unicode::UnicodeChar* usuario;
+	
 	touchgfx::Unicode::UnicodeChar* clave;
+	
 
 	usuario = presenter->getUsuarioInput();
 	clave = presenter->getClaveInput();
 
-	printf("Characters:");
-
-	touchgfx_printf("BUSCAR EN MEMORIA SI EL USUARIO Y CLAVE COINCIDEN\n");
-	touchgfx_printf("%d\n", touchgfx::Unicode::strlen(usuario));
-	touchgfx_printf("%d\n", touchgfx::Unicode::strlen(clave));
-	touchgfx_printf("%s\n", usuario);
-
-
+	
 	if (touchgfx::Unicode::strlen(usuario) == 0 
-		&& touchgfx::Unicode::strlen(usuario) == 0 ) {
+		&& touchgfx::Unicode::strlen(clave) == 0 ) {
 		touchgfx_printf("Usuario y contrasena incorrecto");
 
 		alertaError.setVisible(true);
@@ -57,7 +52,7 @@ void Screen1View::iniciarSesion()
 		touchgfx_printf("COINCIDIERON => ACCEDER A MENU\n");
 		application().gotoMenuPrincipalScreenSlideTransitionEast();
 	}
-
+	
 	
 }
 
@@ -72,8 +67,8 @@ void Screen1View::actualizarCampos()
 	Unicode::strncpy(input_userBuffer, usuario, INPUT_USER_SIZE);
 	Unicode::strncpy(input_claveBuffer, clave, INPUT_CLAVE_SIZE);
 	
-	
-
+	input_user.invalidate();
+	input_clave.invalidate();
 
 	
 }

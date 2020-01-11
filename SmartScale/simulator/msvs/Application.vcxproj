@@ -35,6 +35,21 @@
     <ClCompile Include="..\..\gui\src\screen2_screen\Screen2Presenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen2_screen\Screen2View.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen2_screen\Screen2ViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\balanzainteligente_screen\BalanzaInteligentePresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\balanzainteligente_screen\BalanzaInteligenteView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\balanzainteligente_screen\BalanzaInteligenteViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\configuracion_screen\ConfiguracionPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\configuracion_screen\ConfiguracionView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\configuracion_screen\ConfiguracionViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\estadisticas_screen\EstadisticasPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\estadisticas_screen\EstadisticasView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\estadisticas_screen\EstadisticasViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\perfilproductos_screen\PerfilProductosPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\perfilproductos_screen\PerfilProductosView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\perfilproductos_screen\PerfilProductosViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\usuarios_screen\UsuariosPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\usuarios_screen\UsuariosView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\usuarios_screen\UsuariosViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\assets\texts\texts.xlsx"/>
@@ -199,6 +214,21 @@
     <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2Presenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2View.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen2_screen\Screen2ViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\balanzainteligente_screen\BalanzaInteligentePresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\balanzainteligente_screen\BalanzaInteligenteView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\balanzainteligente_screen\BalanzaInteligenteViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\configuracion_screen\ConfiguracionPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\configuracion_screen\ConfiguracionView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\configuracion_screen\ConfiguracionViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\estadisticas_screen\EstadisticasPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\estadisticas_screen\EstadisticasView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\estadisticas_screen\EstadisticasViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\perfilproductos_screen\PerfilProductosPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\perfilproductos_screen\PerfilProductosView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\perfilproductos_screen\PerfilProductosViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\usuarios_screen\UsuariosPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\usuarios_screen\UsuariosView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\usuarios_screen\UsuariosViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\touchgfx.rc"/>

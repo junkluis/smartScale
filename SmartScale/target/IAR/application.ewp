@@ -994,13 +994,22 @@
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_FRADM_TTF_18_4bpp_0.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_FRADM_TTF_18_4bpp_4.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_10_4bpp_0.cpp</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_18_4bpp_0.cpp</name>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_10_4bpp_4.cpp</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_18_4bpp_4.cpp</name>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_15_4bpp_0.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_15_4bpp_4.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_18_4bpp_0.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_20_4bpp_0.cpp</name>
@@ -1021,6 +1030,15 @@
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_40_4bpp_0.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdana_40_4bpp_4.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdanab_25_4bpp_0.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Font_verdanab_25_4bpp_4.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\FontCache.cpp</name>
         </file>
         <file>
@@ -1031,6 +1049,9 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_10_4bpp.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_15_4bpp.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_18_4bpp.cpp</name>
@@ -1048,10 +1069,16 @@
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdana_40_4bpp.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Kerning_verdanab_25_4bpp.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_FRADM_TTF_18_4bpp.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_10_4bpp.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_15_4bpp.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_18_4bpp.cpp</name>
@@ -1068,9 +1095,18 @@
         <file>
           <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdana_40_4bpp.cpp</name>
         </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\fonts\src\Table_verdanab_25_4bpp.cpp</name>
+        </file>
       </group>
       <group>
         <name>gui_generated</name>
+        <group>
+          <name>balanzainteligente_screen</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\gui_generated\src\balanzainteligente_screen\BalanzaInteligenteViewBase.cpp</name>
+          </file>
+        </group>
         <group>
           <name>common</name>
           <file>
@@ -1078,9 +1114,27 @@
           </file>
         </group>
         <group>
+          <name>configuracion_screen</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\gui_generated\src\configuracion_screen\ConfiguracionViewBase.cpp</name>
+          </file>
+        </group>
+        <group>
+          <name>estadisticas_screen</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\gui_generated\src\estadisticas_screen\EstadisticasViewBase.cpp</name>
+          </file>
+        </group>
+        <group>
           <name>menuprincipal_screen</name>
           <file>
             <name>$PROJ_DIR$\..\..\generated\gui_generated\src\menuprincipal_screen\MenuPrincipalViewBase.cpp</name>
+          </file>
+        </group>
+        <group>
+          <name>perfilproductos_screen</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\gui_generated\src\perfilproductos_screen\PerfilProductosViewBase.cpp</name>
           </file>
         </group>
         <group>
@@ -1107,6 +1161,12 @@
             <name>$PROJ_DIR$\..\..\generated\gui_generated\src\teclado_screen\tecladoViewBase.cpp</name>
           </file>
         </group>
+        <group>
+          <name>usuarios_screen</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\gui_generated\src\usuarios_screen\UsuariosViewBase.cpp</name>
+          </file>
+        </group>
       </group>
       <group>
         <name>images</name>
@@ -1121,12 +1181,51 @@
           <file>
             <name>$PROJ_DIR$\..\..\generated\images\src\__designer\blue_buttons_round_edge_small_pressed.cpp</name>
           </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\images\src\__designer\Blue_Buttons_Round_icon_button.cpp</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\images\src\__designer\Blue_Buttons_Round_icon_button_pressed.cpp</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\images\src\__designer\Blue_Buttons_Round_small.cpp</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\images\src\__designer\Blue_Buttons_Round_small_pressed.cpp</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\images\src\__designer\Blue_PageIndicator_dot_indicator_small_highlight.cpp</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\images\src\__designer\Blue_PageIndicator_dot_indicator_small_normal.cpp</name>
+          </file>
         </group>
         <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\background-title.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\background.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\BitmapDatabase.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\botonPerfil.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\botonPerfilPressed.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\bottom_slide_menu_background.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\bottom_slide_menu_button.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\btn-central-push.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\btn-central.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\btn-ok-pressed.cpp</name>
@@ -1139,6 +1238,18 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\btn.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\container.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\edit.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\erase.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\home.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\icon_keyboard_even_row.cpp</name>
@@ -1168,13 +1279,115 @@
           <name>$PROJ_DIR$\..\..\generated\images\src\keyboard_space_highlighted.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\left_slide_menu_background.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\left_slide_menu_button.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_button_00.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_button_01.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_button_02.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_button_03.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_button_04.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_button_pressed_00.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_button_pressed_01.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_button_pressed_02.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_button_pressed_03.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_button_pressed_04.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_icon.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_toggle_button_00.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_toggle_button_01.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_toggle_button_02.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_toggle_button_03.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_toggle_button_selected_00.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_toggle_button_selected_01.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_toggle_button_selected_02.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menu_toggle_button_selected_03.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menuA.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menuB.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menuC.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menuD.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menuE.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\menuF.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\modal_background.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\right_slide_menu_background.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\right_slide_menu_button.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\ScreenSaver.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\send.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\sigfox.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\sigfoxPressed.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\text-field.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\top_slide_menu_background.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\top_slide_menu_button.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\warning.cpp</name>
@@ -1196,12 +1409,39 @@
     <group>
       <name>gui</name>
       <group>
+        <name>balanzainteligente_screen</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\balanzainteligente_screen\BalanzaInteligentePresenter.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\balanzainteligente_screen\BalanzaInteligenteView.cpp</name>
+        </file>
+      </group>
+      <group>
         <name>common</name>
         <file>
           <name>$PROJ_DIR$\..\..\gui\src\common\CustomKeyboard.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\gui\src\common\FrontendApplication.cpp</name>
+        </file>
+      </group>
+      <group>
+        <name>configuracion_screen</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\configuracion_screen\ConfiguracionPresenter.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\configuracion_screen\ConfiguracionView.cpp</name>
+        </file>
+      </group>
+      <group>
+        <name>estadisticas_screen</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\estadisticas_screen\EstadisticasPresenter.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\estadisticas_screen\EstadisticasView.cpp</name>
         </file>
       </group>
       <group>
@@ -1217,6 +1457,15 @@
         <name>model</name>
         <file>
           <name>$PROJ_DIR$\..\..\gui\src\model\Model.cpp</name>
+        </file>
+      </group>
+      <group>
+        <name>perfilproductos_screen</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\perfilproductos_screen\PerfilProductosPresenter.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\perfilproductos_screen\PerfilProductosView.cpp</name>
         </file>
       </group>
       <group>
@@ -1253,6 +1502,15 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\gui\src\teclado_screen\tecladoView.cpp</name>
+        </file>
+      </group>
+      <group>
+        <name>usuarios_screen</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\usuarios_screen\UsuariosPresenter.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\usuarios_screen\UsuariosView.cpp</name>
         </file>
       </group>
     </group>

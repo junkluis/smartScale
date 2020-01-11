@@ -842,9 +842,39 @@
           <GroupName>gui</GroupName>
           <Files>
             <File>
+              <FileName>BalanzaInteligentePresenter.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/balanzainteligente_screen/balanzainteligentepresenter.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>BalanzaInteligenteView.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/balanzainteligente_screen/balanzainteligenteview.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ConfiguracionPresenter.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/configuracion_screen/configuracionpresenter.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ConfiguracionView.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/configuracion_screen/configuracionview.cpp</FilePath>
+            </File>
+            <File>
               <FileName>CustomKeyboard.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../gui/src/common/customkeyboard.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>EstadisticasPresenter.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/estadisticas_screen/estadisticaspresenter.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>EstadisticasView.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/estadisticas_screen/estadisticasview.cpp</FilePath>
             </File>
             <File>
               <FileName>FrontendApplication.cpp</FileName>
@@ -865,6 +895,16 @@
               <FileName>Model.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../gui/src/model/model.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>PerfilProductosPresenter.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/perfilproductos_screen/perfilproductospresenter.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>PerfilProductosView.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/perfilproductos_screen/perfilproductosview.cpp</FilePath>
             </File>
             <File>
               <FileName>Screen1Presenter.cpp</FileName>
@@ -906,6 +946,16 @@
               <FileType>8</FileType>
               <FilePath>../../gui/src/teclado_screen/tecladoview.cpp</FilePath>
             </File>
+            <File>
+              <FileName>UsuariosPresenter.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/usuarios_screen/usuariospresenter.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>UsuariosView.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/usuarios_screen/usuariosview.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -920,6 +970,16 @@
               <FileName>background-title.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/images/src/background-title.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>background.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/background.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>BalanzaInteligenteViewBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/gui_generated/src/balanzainteligente_screen/balanzainteligenteviewbase.cpp</FilePath>
             </File>
             <File>
               <FileName>BitmapDatabase.cpp</FileName>
@@ -940,6 +1000,66 @@
               <FileName>blue_buttons_round_edge_small_pressed.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/images/src/__designer/blue_buttons_round_edge_small_pressed.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_Buttons_Round_icon_button.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_buttons_round_icon_button.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_Buttons_Round_icon_button_pressed.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_buttons_round_icon_button_pressed.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_Buttons_Round_small.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_buttons_round_small.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_Buttons_Round_small_pressed.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_buttons_round_small_pressed.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_PageIndicator_dot_indicator_small_highlight.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_pageindicator_dot_indicator_small_highlight.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_PageIndicator_dot_indicator_small_normal.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_pageindicator_dot_indicator_small_normal.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>botonPerfil.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/botonperfil.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>botonPerfilPressed.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/botonperfilpressed.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>bottom_slide_menu_background.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/bottom_slide_menu_background.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>bottom_slide_menu_button.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/bottom_slide_menu_button.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>btn-central-push.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/btn-central-push.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>btn-central.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/btn-central.cpp</FilePath>
             </File>
             <File>
               <FileName>btn-ok-pressed.cpp</FileName>
@@ -967,9 +1087,39 @@
               <FilePath>../../generated/fonts/src/cachedfont.cpp</FilePath>
             </File>
             <File>
+              <FileName>ConfiguracionViewBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/gui_generated/src/configuracion_screen/configuracionviewbase.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>container.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/container.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>edit.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/edit.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>erase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/erase.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>EstadisticasViewBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/gui_generated/src/estadisticas_screen/estadisticasviewbase.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Font_FRADM_TTF_18_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/font_fradm_ttf_18_4bpp_0.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Font_FRADM_TTF_18_4bpp_4.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/font_fradm_ttf_18_4bpp_4.cpp</FilePath>
             </File>
             <File>
               <FileName>Font_verdana_10_4bpp_0.cpp</FileName>
@@ -977,14 +1127,24 @@
               <FilePath>../../generated/fonts/src/font_verdana_10_4bpp_0.cpp</FilePath>
             </File>
             <File>
+              <FileName>Font_verdana_10_4bpp_4.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/font_verdana_10_4bpp_4.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Font_verdana_15_4bpp_0.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/font_verdana_15_4bpp_0.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Font_verdana_15_4bpp_4.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/font_verdana_15_4bpp_4.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Font_verdana_18_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/font_verdana_18_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_verdana_18_4bpp_4.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../../generated/fonts/src/font_verdana_18_4bpp_4.cpp</FilePath>
             </File>
             <File>
               <FileName>Font_verdana_20_4bpp_0.cpp</FileName>
@@ -1017,6 +1177,21 @@
               <FilePath>../../generated/fonts/src/font_verdana_40_4bpp_0.cpp</FilePath>
             </File>
             <File>
+              <FileName>Font_verdana_40_4bpp_4.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/font_verdana_40_4bpp_4.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Font_verdanab_25_4bpp_0.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/font_verdanab_25_4bpp_0.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Font_verdanab_25_4bpp_4.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/font_verdanab_25_4bpp_4.cpp</FilePath>
+            </File>
+            <File>
               <FileName>FontCache.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/fontcache.cpp</FilePath>
@@ -1030,6 +1205,11 @@
               <FileName>GeneratedFont.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/generatedfont.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>home.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/home.cpp</FilePath>
             </File>
             <File>
               <FileName>icon_keyboard_even_row.cpp</FileName>
@@ -1057,6 +1237,11 @@
               <FilePath>../../generated/fonts/src/kerning_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
+              <FileName>Kerning_verdana_15_4bpp.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/kerning_verdana_15_4bpp.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Kerning_verdana_18_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/kerning_verdana_18_4bpp.cpp</FilePath>
@@ -1080,6 +1265,11 @@
               <FileName>Kerning_verdana_40_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/kerning_verdana_40_4bpp.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Kerning_verdanab_25_4bpp.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/kerning_verdanab_25_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>keyboard_background.cpp</FileName>
@@ -1117,6 +1307,141 @@
               <FilePath>../../generated/texts/src/languagegb.cpp</FilePath>
             </File>
             <File>
+              <FileName>left_slide_menu_background.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/left_slide_menu_background.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>left_slide_menu_button.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/left_slide_menu_button.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_button_00.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_button_00.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_button_01.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_button_01.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_button_02.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_button_02.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_button_03.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_button_03.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_button_04.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_button_04.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_button_pressed_00.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_button_pressed_00.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_button_pressed_01.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_button_pressed_01.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_button_pressed_02.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_button_pressed_02.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_button_pressed_03.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_button_pressed_03.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_button_pressed_04.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_button_pressed_04.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_icon.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_icon.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_toggle_button_00.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_toggle_button_00.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_toggle_button_01.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_toggle_button_01.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_toggle_button_02.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_toggle_button_02.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_toggle_button_03.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_toggle_button_03.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_toggle_button_selected_00.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_toggle_button_selected_00.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_toggle_button_selected_01.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_toggle_button_selected_01.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_toggle_button_selected_02.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_toggle_button_selected_02.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menu_toggle_button_selected_03.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menu_toggle_button_selected_03.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menuA.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menua.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menuB.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menub.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menuC.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menuc.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menuD.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menud.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menuE.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menue.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>menuF.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/menuf.cpp</FilePath>
+            </File>
+            <File>
               <FileName>MenuPrincipalViewBase.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/gui_generated/src/menuprincipal_screen/menuprincipalviewbase.cpp</FilePath>
@@ -1125,6 +1450,21 @@
               <FileName>modal_background.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/images/src/modal_background.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>PerfilProductosViewBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/gui_generated/src/perfilproductos_screen/perfilproductosviewbase.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>right_slide_menu_background.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/right_slide_menu_background.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>right_slide_menu_button.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/right_slide_menu_button.cpp</FilePath>
             </File>
             <File>
               <FileName>Screen1ViewBase.cpp</FileName>
@@ -1147,6 +1487,21 @@
               <FilePath>../../generated/gui_generated/src/screensaver_screen/screensaverviewbase.cpp</FilePath>
             </File>
             <File>
+              <FileName>send.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/send.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>sigfox.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/sigfox.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>sigfoxPressed.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/sigfoxpressed.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Table_FRADM_TTF_18_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/table_fradm_ttf_18_4bpp.cpp</FilePath>
@@ -1155,6 +1510,11 @@
               <FileName>Table_verdana_10_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/table_verdana_10_4bpp.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Table_verdana_15_4bpp.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/table_verdana_15_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>Table_verdana_18_4bpp.cpp</FileName>
@@ -1182,6 +1542,11 @@
               <FilePath>../../generated/fonts/src/table_verdana_40_4bpp.cpp</FilePath>
             </File>
             <File>
+              <FileName>Table_verdanab_25_4bpp.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/fonts/src/table_verdanab_25_4bpp.cpp</FilePath>
+            </File>
+            <File>
               <FileName>tecladoViewBase.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/gui_generated/src/teclado_screen/tecladoviewbase.cpp</FilePath>
@@ -1197,9 +1562,24 @@
               <FilePath>../../generated/texts/src/texts.cpp</FilePath>
             </File>
             <File>
+              <FileName>top_slide_menu_background.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/top_slide_menu_background.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>top_slide_menu_button.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/top_slide_menu_button.cpp</FilePath>
+            </File>
+            <File>
               <FileName>TypedTextDatabase.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/texts/src/typedtextdatabase.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>UsuariosViewBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/gui_generated/src/usuarios_screen/usuariosviewbase.cpp</FilePath>
             </File>
             <File>
               <FileName>warning.cpp</FileName>

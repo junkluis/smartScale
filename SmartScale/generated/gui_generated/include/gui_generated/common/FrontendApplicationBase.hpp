@@ -18,6 +18,8 @@ public:
     // Screen1
     void gotoScreen1ScreenCoverTransitionSouth();
 
+    void gotoScreen1ScreenCoverTransitionEast();
+
 
     // ScreenSaver
     void gotoScreenSaverScreenNoTransition();
@@ -30,6 +32,16 @@ public:
     // MenuPrincipal
     void gotoMenuPrincipalScreenSlideTransitionEast();
 
+    void gotoMenuPrincipalScreenCoverTransitionNorth();
+
+
+    // BalanzaInteligente
+    void gotoBalanzaInteligenteScreenCoverTransitionSouth();
+
+
+    // PerfilProductos
+    void gotoPerfilProductosScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -37,6 +49,8 @@ protected:
 
     // Screen1
     void gotoScreen1ScreenCoverTransitionSouthImpl();
+
+    void gotoScreen1ScreenCoverTransitionEastImpl();
 
 
     // ScreenSaver
@@ -49,6 +63,16 @@ protected:
 
     // MenuPrincipal
     void gotoMenuPrincipalScreenSlideTransitionEastImpl();
+
+    void gotoMenuPrincipalScreenCoverTransitionNorthImpl();
+
+
+    // BalanzaInteligente
+    void gotoBalanzaInteligenteScreenCoverTransitionSouthImpl();
+
+
+    // PerfilProductos
+    void gotoPerfilProductosScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

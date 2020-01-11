@@ -1,6 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SmartScale",
+    "\\SmartScale\\gui",
+    "\\SmartScale\\gui\\include",
+    "\\SmartScale\\gui\\include\\gui",
+    "\\SmartScale\\gui\\include\\gui\\teclado_screen",
+    "\\SmartScale\\gui\\src",
+    "\\SmartScale\\gui\\src\\perfilproductos_screen",
+    "\\SmartScale\\gui\\src\\screen1_screen",
+    "\\SmartScale\\gui\\src\\teclado_screen"
   ],
+  "SelectedNode": "\\SmartScale\\gui\\include\\gui\\teclado_screen\\tecladoPresenter.hpp",
   "PreviewInSolutionExplorer": false
 }

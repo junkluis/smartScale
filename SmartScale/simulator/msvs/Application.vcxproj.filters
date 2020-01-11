@@ -211,6 +211,66 @@
     <Filter Include="Header Files\generated\gui_generated\screen2_screen">
       <UniqueIdentifier>033DC687-F6D0-4003-A32D-FA3A2EE6A904</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\balanzainteligente_screen">
+      <UniqueIdentifier>6DAA5050-B6B1-56B4-74D1-63843F67FB0C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\balanzainteligente_screen">
+      <UniqueIdentifier>3B9304CF-A674-7180-FAAC-D79E7AED3BB7</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\perfilproductos_screen">
+      <UniqueIdentifier>3C517A27-57D9-5F4D-5653-F2456157EBA2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\perfilproductos_screen">
+      <UniqueIdentifier>3F3BE586-D5E0-4664-5A04-2210A05F30BE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\usuarios_screen">
+      <UniqueIdentifier>92779BE6-3A86-8D74-4BD4-0C4DFB5B756A</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\usuarios_screen">
+      <UniqueIdentifier>194953BD-0530-5E39-C76C-C57EF8741E16</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\configuracion_screen">
+      <UniqueIdentifier>BA76009B-595E-1032-2CBA-F96BCD0CC139</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\configuracion_screen">
+      <UniqueIdentifier>6DCF346E-8526-3364-9AF1-44F3792236ED</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\estadisticas_screen">
+      <UniqueIdentifier>63ED254A-1A4A-BAAA-644B-6C1C56E438EB</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\estadisticas_screen">
+      <UniqueIdentifier>0735794D-3099-2637-6964-E8F8C3907A35</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\configuracion_screen">
+      <UniqueIdentifier>505A093C-A6D2-8F7D-FBA1-2C35655619D4</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\configuracion_screen">
+      <UniqueIdentifier>B2F65AA2-5B01-27C1-98B1-BFEAD42F4814</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\estadisticas_screen">
+      <UniqueIdentifier>5731CD21-D318-D5FE-177F-436CF52651A7</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\estadisticas_screen">
+      <UniqueIdentifier>539CB558-689A-1DB4-EA22-9281F7E0A224</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\balanzainteligente_screen">
+      <UniqueIdentifier>92D55B97-B72C-B8A6-2D6D-9280C994AABB</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\balanzainteligente_screen">
+      <UniqueIdentifier>4FFFA7E6-6DB9-9AD8-C030-93813DC26561</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\usuarios_screen">
+      <UniqueIdentifier>E0173BA0-2EA1-AB72-2C4B-2F89E47B0AAA</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\perfilproductos_screen">
+      <UniqueIdentifier>C45F5008-A9AE-09E0-5437-169CA6EC4BCC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\perfilproductos_screen">
+      <UniqueIdentifier>145DE862-655F-D697-310E-6E001A083BC0</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\usuarios_screen">
+      <UniqueIdentifier>F1444E21-091C-5BAE-757E-3F0E994F0ECD</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -284,6 +344,51 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screen2_screen\Screen2ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen2_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\balanzainteligente_screen\BalanzaInteligentePresenter.cpp">
+      <Filter>Source Files\gui\balanzainteligente_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\balanzainteligente_screen\BalanzaInteligenteView.cpp">
+      <Filter>Source Files\gui\balanzainteligente_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\balanzainteligente_screen\BalanzaInteligenteViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\balanzainteligente_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\configuracion_screen\ConfiguracionPresenter.cpp">
+      <Filter>Source Files\gui\configuracion_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\configuracion_screen\ConfiguracionView.cpp">
+      <Filter>Source Files\gui\configuracion_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\configuracion_screen\ConfiguracionViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\configuracion_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\estadisticas_screen\EstadisticasPresenter.cpp">
+      <Filter>Source Files\gui\estadisticas_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\estadisticas_screen\EstadisticasView.cpp">
+      <Filter>Source Files\gui\estadisticas_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\estadisticas_screen\EstadisticasViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\estadisticas_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\perfilproductos_screen\PerfilProductosPresenter.cpp">
+      <Filter>Source Files\gui\perfilproductos_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\perfilproductos_screen\PerfilProductosView.cpp">
+      <Filter>Source Files\gui\perfilproductos_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\perfilproductos_screen\PerfilProductosViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\perfilproductos_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\usuarios_screen\UsuariosPresenter.cpp">
+      <Filter>Source Files\gui\usuarios_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\usuarios_screen\UsuariosView.cpp">
+      <Filter>Source Files\gui\usuarios_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\usuarios_screen\UsuariosViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\usuarios_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -768,6 +873,51 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen2_screen\Screen2ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screen2_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\balanzainteligente_screen\BalanzaInteligentePresenter.hpp">
+      <Filter>Header Files\gui\balanzainteligente_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\balanzainteligente_screen\BalanzaInteligenteView.hpp">
+      <Filter>Header Files\gui\balanzainteligente_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\balanzainteligente_screen\BalanzaInteligenteViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\balanzainteligente_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\configuracion_screen\ConfiguracionPresenter.hpp">
+      <Filter>Header Files\gui\configuracion_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\configuracion_screen\ConfiguracionView.hpp">
+      <Filter>Header Files\gui\configuracion_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\configuracion_screen\ConfiguracionViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\configuracion_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\estadisticas_screen\EstadisticasPresenter.hpp">
+      <Filter>Header Files\gui\estadisticas_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\estadisticas_screen\EstadisticasView.hpp">
+      <Filter>Header Files\gui\estadisticas_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\estadisticas_screen\EstadisticasViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\estadisticas_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\perfilproductos_screen\PerfilProductosPresenter.hpp">
+      <Filter>Header Files\gui\perfilproductos_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\perfilproductos_screen\PerfilProductosView.hpp">
+      <Filter>Header Files\gui\perfilproductos_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\perfilproductos_screen\PerfilProductosViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\perfilproductos_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\usuarios_screen\UsuariosPresenter.hpp">
+      <Filter>Header Files\gui\usuarios_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\usuarios_screen\UsuariosView.hpp">
+      <Filter>Header Files\gui\usuarios_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\usuarios_screen\UsuariosViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\usuarios_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

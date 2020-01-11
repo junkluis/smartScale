@@ -40,6 +40,14 @@ public:
         model->setClave(claveInput);
     }
 
+	void setDescPerfil(touchgfx::Unicode::UnicodeChar* descripcion) {
+		model->setDescPerfil(descripcion);
+	}
+
+	void setTituloPerfil(touchgfx::Unicode::UnicodeChar* titulo) {
+		model->setTituloPerfil(titulo);
+	}
+
 
 
 private:

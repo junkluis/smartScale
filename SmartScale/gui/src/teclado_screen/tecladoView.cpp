@@ -37,6 +37,13 @@ void tecladoView::registrarEntradaTeclado()
 	{
 		presenter->setClave(keyboard.buffer);
 	}
+	else if (accion == "Titulo") {
+		presenter->setDescPerfil(keyboard.buffer);
+	}
+	else if (accion == "Descripcion") {
+		presenter->setTituloPerfil(keyboard.buffer);
+	}
+
 	
     application().gotoScreen1ScreenCoverTransitionSouth();
 }

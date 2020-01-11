@@ -18,6 +18,16 @@
 #include <gui/menuprincipal_screen/MenuPrincipalPresenter.hpp>
 #include <gui/screen2_screen/Screen2View.hpp>
 #include <gui/screen2_screen/Screen2Presenter.hpp>
+#include <gui/balanzainteligente_screen/BalanzaInteligenteView.hpp>
+#include <gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp>
+#include <gui/perfilproductos_screen/PerfilProductosView.hpp>
+#include <gui/perfilproductos_screen/PerfilProductosPresenter.hpp>
+#include <gui/configuracion_screen/ConfiguracionView.hpp>
+#include <gui/configuracion_screen/ConfiguracionPresenter.hpp>
+#include <gui/estadisticas_screen/EstadisticasView.hpp>
+#include <gui/estadisticas_screen/EstadisticasPresenter.hpp>
+#include <gui/usuarios_screen/UsuariosView.hpp>
+#include <gui/usuarios_screen/UsuariosPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -46,6 +56,18 @@ void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionSouth()
 void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionSouthImpl()
 {
     touchgfx::makeTransition<Screen1View, Screen1Presenter, touchgfx::CoverTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+
+void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen1ScreenCoverTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionEastImpl()
+{
+    touchgfx::makeTransition<Screen1View, Screen1Presenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // ScreenSaver
@@ -85,5 +107,43 @@ void FrontendApplicationBase::gotoMenuPrincipalScreenSlideTransitionEast()
 void FrontendApplicationBase::gotoMenuPrincipalScreenSlideTransitionEastImpl()
 {
     touchgfx::makeTransition<MenuPrincipalView, MenuPrincipalPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+
+void FrontendApplicationBase::gotoMenuPrincipalScreenCoverTransitionNorth()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoMenuPrincipalScreenCoverTransitionNorthImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoMenuPrincipalScreenCoverTransitionNorthImpl()
+{
+    touchgfx::makeTransition<MenuPrincipalView, MenuPrincipalPresenter, touchgfx::CoverTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// BalanzaInteligente
+
+void FrontendApplicationBase::gotoBalanzaInteligenteScreenCoverTransitionSouth()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoBalanzaInteligenteScreenCoverTransitionSouthImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoBalanzaInteligenteScreenCoverTransitionSouthImpl()
+{
+    touchgfx::makeTransition<BalanzaInteligenteView, BalanzaInteligentePresenter, touchgfx::CoverTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// PerfilProductos
+
+void FrontendApplicationBase::gotoPerfilProductosScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoPerfilProductosScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoPerfilProductosScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<PerfilProductosView, PerfilProductosPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 

@@ -78,9 +78,63 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  gui/include/gui/menuprincipal_screen/MenuPrincipalView.hpp \
  generated/gui_generated/include/gui_generated/menuprincipal_screen/MenuPrincipalViewBase.hpp \
  gui/include/gui/menuprincipal_screen/MenuPrincipalPresenter.hpp \
+ touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
+ touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
+ touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  gui/include/gui/screen2_screen/Screen2View.hpp \
  generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
- gui/include/gui/screen2_screen/Screen2Presenter.hpp
+ gui/include/gui/screen2_screen/Screen2Presenter.hpp \
+ gui/include/gui/balanzainteligente_screen/BalanzaInteligenteView.hpp \
+ generated/gui_generated/include/gui_generated/balanzainteligente_screen/BalanzaInteligenteViewBase.hpp \
+ gui/include/gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp \
+ touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp \
+ touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/Buttons.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/RepeatButtonTrigger.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/ToggleButtonTrigger.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/TouchButtonTrigger.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/IconButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/ImageButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/AnimatedImageButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/TextButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/TiledImageButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
+ touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+ touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
+ touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
+ touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
+ touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
+ touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
+ touchgfx/framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp \
+ touchgfx/framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp \
+ touchgfx/framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp \
+ touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
+ touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
+ touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
+ touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
+ touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
+ touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
+ gui/include/gui/perfilproductos_screen/PerfilProductosView.hpp \
+ generated/gui_generated/include/gui_generated/perfilproductos_screen/PerfilProductosViewBase.hpp \
+ gui/include/gui/perfilproductos_screen/PerfilProductosPresenter.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
+ gui/include/gui/configuracion_screen/ConfiguracionView.hpp \
+ generated/gui_generated/include/gui_generated/configuracion_screen/ConfiguracionViewBase.hpp \
+ gui/include/gui/configuracion_screen/ConfiguracionPresenter.hpp \
+ gui/include/gui/estadisticas_screen/EstadisticasView.hpp \
+ generated/gui_generated/include/gui_generated/estadisticas_screen/EstadisticasViewBase.hpp \
+ gui/include/gui/estadisticas_screen/EstadisticasPresenter.hpp \
+ gui/include/gui/usuarios_screen/UsuariosView.hpp \
+ generated/gui_generated/include/gui_generated/usuarios_screen/UsuariosViewBase.hpp \
+ gui/include/gui/usuarios_screen/UsuariosPresenter.hpp
 
 generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 
@@ -240,8 +294,116 @@ generated/gui_generated/include/gui_generated/menuprincipal_screen/MenuPrincipal
 
 gui/include/gui/menuprincipal_screen/MenuPrincipalPresenter.hpp:
 
+touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
+
+touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
+
 gui/include/gui/screen2_screen/Screen2View.hpp:
 
 generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:
 
 gui/include/gui/screen2_screen/Screen2Presenter.hpp:
+
+gui/include/gui/balanzainteligente_screen/BalanzaInteligenteView.hpp:
+
+generated/gui_generated/include/gui_generated/balanzainteligente_screen/BalanzaInteligenteViewBase.hpp:
+
+gui/include/gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:
+
+touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/Buttons.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/RepeatButtonTrigger.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/ToggleButtonTrigger.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/TouchButtonTrigger.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/IconButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/ImageButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/AnimatedImageButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/TextButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/TiledImageButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+
+touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
+
+touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp:
+
+touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
+
+touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
+
+touchgfx/framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp:
+
+touchgfx/framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp:
+
+touchgfx/framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp:
+
+touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
+
+touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
+
+touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
+
+gui/include/gui/perfilproductos_screen/PerfilProductosView.hpp:
+
+generated/gui_generated/include/gui_generated/perfilproductos_screen/PerfilProductosViewBase.hpp:
+
+gui/include/gui/perfilproductos_screen/PerfilProductosPresenter.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
+
+gui/include/gui/configuracion_screen/ConfiguracionView.hpp:
+
+generated/gui_generated/include/gui_generated/configuracion_screen/ConfiguracionViewBase.hpp:
+
+gui/include/gui/configuracion_screen/ConfiguracionPresenter.hpp:
+
+gui/include/gui/estadisticas_screen/EstadisticasView.hpp:
+
+generated/gui_generated/include/gui_generated/estadisticas_screen/EstadisticasViewBase.hpp:
+
+gui/include/gui/estadisticas_screen/EstadisticasPresenter.hpp:
+
+gui/include/gui/usuarios_screen/UsuariosView.hpp:
+
+generated/gui_generated/include/gui_generated/usuarios_screen/UsuariosViewBase.hpp:
+
+gui/include/gui/usuarios_screen/UsuariosPresenter.hpp:

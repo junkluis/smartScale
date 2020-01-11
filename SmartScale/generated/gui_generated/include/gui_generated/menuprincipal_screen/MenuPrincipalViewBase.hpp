@@ -8,7 +8,10 @@
 #include <mvp/View.hpp>
 #include <gui/menuprincipal_screen/MenuPrincipalPresenter.hpp>
 #include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/containers/SwipeContainer.hpp>
+#include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class MenuPrincipalViewBase : public touchgfx::View<MenuPrincipalPresenter>
 {
@@ -25,11 +28,54 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::Image image1;
     touchgfx::Image backgroundmenu;
-    touchgfx::TextArea textArea1;
+    touchgfx::SwipeContainer MenuSwap;
+    touchgfx::Container Balanza;
+    touchgfx::Image imgBalanza;
+    touchgfx::TextArea txt_balanzaInteligente;
+    touchgfx::ButtonWithLabel empezarBalanza;
+
+    touchgfx::Container Perfil;
+    touchgfx::Image imgPerfil;
+    touchgfx::TextArea txt_perfiles;
+    touchgfx::ButtonWithLabel empezarPerfiles;
+    touchgfx::TextArea subtxt_perfiles;
+
+    touchgfx::Container Configuracion;
+    touchgfx::Image imgConfig;
+    touchgfx::TextArea txt_configuracion;
+    touchgfx::ButtonWithLabel empezarConfiguracion;
+    touchgfx::TextArea subtxt_configuracion;
+
+    touchgfx::Container Estadisticas;
+    touchgfx::Image imgEstat;
+    touchgfx::TextArea txt_balanzaInteligente_2_1;
+    touchgfx::ButtonWithLabel empezarBalanza_2_1;
+    touchgfx::TextArea textArea1_2;
+
+    touchgfx::Container Usuarios;
+    touchgfx::Image imgUsr;
+    touchgfx::TextArea txt_balanzaInteligente_2_2;
+    touchgfx::ButtonWithLabel empezarBalanza_2_2;
+    touchgfx::TextArea textArea1_3;
+
+    touchgfx::Container CerrarSesion;
+    touchgfx::Image imgOut;
+    touchgfx::ButtonWithLabel cerrarSesion;
+
+    touchgfx::TextArea txt_tituloMenu;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<MenuPrincipalViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

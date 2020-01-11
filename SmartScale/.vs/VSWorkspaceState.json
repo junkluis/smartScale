@@ -1,19 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\generated",
-    "\\generated\\gui_generated",
-    "\\generated\\gui_generated\\include",
-    "\\generated\\gui_generated\\include\\gui_generated",
-    "\\generated\\gui_generated\\include\\gui_generated\\screen1_screen",
     "\\gui",
+    "\\gui\\include",
     "\\gui\\src",
-    "\\gui\\src\\screen1_screen",
-    "\\touchgfx",
-    "\\touchgfx\\framework",
-    "\\touchgfx\\framework\\include",
-    "\\touchgfx\\framework\\include\\touchgfx"
+    "\\gui\\src\\screen1_screen"
   ],
-  "SelectedNode": "\\gui\\src\\screen1_screen\\Screen1View.cpp",
+  "SelectedNode": "\\gui\\src\\teclado_screen",
   "PreviewInSolutionExplorer": false
 }

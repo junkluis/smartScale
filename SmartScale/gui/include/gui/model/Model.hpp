@@ -66,19 +66,94 @@ public:
         return clave;
     }
 
+	void setSlotInfo(std::string slot, int id) {
+		if (id == 1) {
+			slot1 = slot;
+		}
+		else if (id == 2) {
+			slot2 = slot;
+		}
+		else if (id == 3) {
+			slot3 = slot;
+		}
+		else if (id == 4) {
+			slot4 = slot;
+		}
+		else if (id == 5) {
+			slot5 = slot;
+		}
+		
+	}
+
+	std::string getSlotInfo(int id) {
+		std::string slot;
+		if (id == 1) {
+			slot = slot1;
+		}
+		else if (id == 2) {
+			slot = slot2;
+		}
+		else if (id == 3) {
+			slot = slot3;
+		}
+		else if (id == 4) {
+			slot = slot4;
+		}
+		else if (id == 5) {
+			slot = slot5;
+		}
+		return slot;
+
+	} 
+
+
+	void setTituloPerfil(touchgfx::Unicode::UnicodeChar* titulo) {
+		tituloPerfil = titulo;
+	}
+
+	touchgfx::Unicode::UnicodeChar* getTituloPerfil() {
+		return usuario;
+	}
+
+	void setDescPerfil(touchgfx::Unicode::UnicodeChar* descripcion) {
+		descPerfil = descripcion;
+	}
+
+	touchgfx::Unicode::UnicodeChar* getDescPerfil() {
+		return descPerfil;
+	}
+
+
+	void seleccionarSlot(int id) {
+		slotSeleccionado = id;
+	}
+
+	int getSeleccion() {
+		return slotSeleccionado;
+	}
+
+
+
 
 protected:
     /**
      * Pointer to the currently active presenter.
      */
     ModelListener* modelListener;
-    
     std::string tecladoAccion;
-
     touchgfx::Unicode::UnicodeChar* usuario;
     touchgfx::Unicode::UnicodeChar* clave;
-    
+	touchgfx::Unicode::UnicodeChar* tituloPerfil;
+	touchgfx::Unicode::UnicodeChar* descPerfil;
 
+	std::string slot1;
+	std::string slot2;
+	std::string slot3;
+	std::string slot4;
+	std::string slot5;
+
+	int slotSeleccionado;
+    
 };
 
 #endif /* MODEL_HPP */

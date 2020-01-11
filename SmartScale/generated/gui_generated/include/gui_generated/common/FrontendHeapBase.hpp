@@ -11,7 +11,13 @@
 
 
 #include <touchgfx/transitions/CoverTransition.hpp>
+#include <touchgfx/transitions/CoverTransition.hpp>
+#include <touchgfx/transitions/CoverTransition.hpp>
+
 #include <touchgfx/transitions/SlideTransition.hpp>
+#include <touchgfx/transitions/CoverTransition.hpp>
+
+
 
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
@@ -26,6 +32,16 @@
 #include <gui/menuprincipal_screen/MenuPrincipalPresenter.hpp>
 #include <gui/screen2_screen/Screen2View.hpp>
 #include <gui/screen2_screen/Screen2Presenter.hpp>
+#include <gui/balanzainteligente_screen/BalanzaInteligenteView.hpp>
+#include <gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp>
+#include <gui/perfilproductos_screen/PerfilProductosView.hpp>
+#include <gui/perfilproductos_screen/PerfilProductosPresenter.hpp>
+#include <gui/configuracion_screen/ConfiguracionView.hpp>
+#include <gui/configuracion_screen/ConfiguracionPresenter.hpp>
+#include <gui/estadisticas_screen/EstadisticasView.hpp>
+#include <gui/estadisticas_screen/EstadisticasPresenter.hpp>
+#include <gui/usuarios_screen/UsuariosView.hpp>
+#include <gui/usuarios_screen/UsuariosPresenter.hpp>
 
 
 /**
@@ -53,7 +69,12 @@ public:
             touchgfx::meta::TypeList< tecladoView,
             touchgfx::meta::TypeList< MenuPrincipalView,
             touchgfx::meta::TypeList< Screen2View,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::TypeList< BalanzaInteligenteView,
+            touchgfx::meta::TypeList< PerfilProductosView,
+            touchgfx::meta::TypeList< ConfiguracionView,
+            touchgfx::meta::TypeList< EstadisticasView,
+            touchgfx::meta::TypeList< UsuariosView,
+            touchgfx::meta::Nil > > > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -70,7 +91,12 @@ public:
             touchgfx::meta::TypeList< tecladoPresenter,
             touchgfx::meta::TypeList< MenuPrincipalPresenter,
             touchgfx::meta::TypeList< Screen2Presenter,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::TypeList< BalanzaInteligentePresenter,
+            touchgfx::meta::TypeList< PerfilProductosPresenter,
+            touchgfx::meta::TypeList< ConfiguracionPresenter,
+            touchgfx::meta::TypeList< EstadisticasPresenter,
+            touchgfx::meta::TypeList< UsuariosPresenter,
+            touchgfx::meta::Nil > > > > > > > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -84,8 +110,10 @@ public:
      */
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
             touchgfx::meta::TypeList< CoverTransition<SOUTH>,
+            touchgfx::meta::TypeList< CoverTransition<EAST>,
             touchgfx::meta::TypeList< SlideTransition<EAST>,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< CoverTransition<NORTH>,
+            touchgfx::meta::Nil > > > >
             > GeneratedTransitionTypes;
 
     /**

@@ -43,12 +43,6 @@ protected:
     touchgfx::TextArea subtxt_perfiles;
     touchgfx::Image image1_1;
 
-    touchgfx::Container CerrarSesion;
-    touchgfx::Image imgOut;
-    touchgfx::ButtonWithLabel Empezar;
-    touchgfx::Image image1_2;
-    touchgfx::TextArea txt_balanzaInteligente_1;
-
     touchgfx::Container CerrarSesion_1;
     touchgfx::Image imgOut_1;
     touchgfx::ButtonWithLabel cerrarSesion_1;

@@ -163,6 +163,18 @@
     <Filter Include="Source Files\generated\gui_generated\screensaver_screen">
       <UniqueIdentifier>7F133F83-219F-471F-94F0-6EF15EF9C085</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\teclado_screen">
+      <UniqueIdentifier>5CCEAF4B-039A-4196-BB25-9E5DF9C405CC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\teclado_screen">
+      <UniqueIdentifier>D72B170B-5D96-44D0-9C88-C0AF747B0B1E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\teclado_screen">
+      <UniqueIdentifier>B2FB2AAE-52DB-49BE-A824-41A5D2D24BC3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\teclado_screen">
+      <UniqueIdentifier>EE2A9249-38C3-44F3-898E-41E28330A5DD</UniqueIdentifier>
+    </Filter>
     <Filter Include="Header Files\gui\menuprincipal_screen">
       <UniqueIdentifier>F885B4F8-4AA0-4046-B16D-F6EA1BB93518</UniqueIdentifier>
     </Filter>
@@ -246,8 +258,17 @@
     <ClCompile Include="..\..\generated\gui_generated\src\screensaver_screen\ScreenSaverViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screensaver_screen</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gui\src\teclado_screen\tecladoView.cpp">
+      <Filter>Source Files\gui\teclado_screen</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\gui\src\common\CustomKeyboard.cpp">
       <Filter>Source Files\gui\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\teclado_screen\tecladoPresenter.cpp">
+      <Filter>Source Files\gui\teclado_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\teclado_screen\tecladoViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\teclado_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\menuprincipal_screen\MenuPrincipalPresenter.cpp">
       <Filter>Source Files\gui\menuprincipal_screen</Filter>
@@ -724,6 +745,9 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screensaver_screen\ScreenSaverViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screensaver_screen</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\teclado_screen\tecladoView.hpp">
+      <Filter>Header Files\gui\teclado_screen</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\common\CustomKeyboard.hpp">
       <Filter>Header Files\gui\common</Filter>
     </ClInclude>
@@ -732,6 +756,12 @@
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\common\KeyboardLayout.hpp">
       <Filter>Header Files\gui\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\teclado_screen\tecladoPresenter.hpp">
+      <Filter>Header Files\gui\teclado_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\teclado_screen\tecladoViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\teclado_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\menuprincipal_screen\MenuPrincipalPresenter.hpp">
       <Filter>Header Files\gui\menuprincipal_screen</Filter>

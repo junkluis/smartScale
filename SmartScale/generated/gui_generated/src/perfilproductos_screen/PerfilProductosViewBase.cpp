@@ -376,6 +376,11 @@ void PerfilProductosViewBase::flexButtonCallbackHandler(const touchgfx::Abstract
         //When btnTitulo clicked call virtual function
         //Call inputPerfilTitulo
         inputPerfilTitulo();
+
+        //Interaction2
+        //When btnTitulo clicked change screen to teclado
+        //Go to teclado with no screen transition
+        application().gototecladoScreenNoTransition();
     }
     else if (&src == &homeButton)
     {

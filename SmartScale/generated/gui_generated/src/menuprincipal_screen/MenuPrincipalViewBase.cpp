@@ -44,7 +44,7 @@ MenuPrincipalViewBase::MenuPrincipalViewBase() :
     Perfil.setHeight(226);
 
     imgPerfil.setXY(45, 38);
-    imgPerfil.setBitmap(touchgfx::Bitmap(BITMAP_MENUB_ID));
+    imgPerfil.setBitmap(touchgfx::Bitmap(BITMAP_MENUE_ID));
     Perfil.add(imgPerfil);
 
     txt_perfiles.setXY(240, 38);
@@ -71,31 +71,6 @@ MenuPrincipalViewBase::MenuPrincipalViewBase() :
     image1_1.setBitmap(touchgfx::Bitmap(BITMAP_CONT2_ID));
     Perfil.add(image1_1);
     MenuSwap.add(Perfil);
-
-    CerrarSesion.setWidth(480);
-    CerrarSesion.setHeight(226);
-
-    imgOut.setXY(45, 38);
-    imgOut.setBitmap(touchgfx::Bitmap(BITMAP_MENUE_ID));
-    CerrarSesion.add(imgOut);
-
-    Empezar.setXY(240, 93);
-    Empezar.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
-    Empezar.setLabelText(touchgfx::TypedText(T_SINGLEUSEID29));
-    Empezar.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    Empezar.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    CerrarSesion.add(Empezar);
-
-    image1_2.setXY(186, 198);
-    image1_2.setBitmap(touchgfx::Bitmap(BITMAP_CONT3_ID));
-    CerrarSesion.add(image1_2);
-
-    txt_balanzaInteligente_1.setXY(240, 51);
-    txt_balanzaInteligente_1.setColor(touchgfx::Color::getColorFrom24BitRGB(43, 43, 43));
-    txt_balanzaInteligente_1.setLinespacing(0);
-    txt_balanzaInteligente_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID123));
-    CerrarSesion.add(txt_balanzaInteligente_1);
-    MenuSwap.add(CerrarSesion);
 
     CerrarSesion_1.setWidth(480);
     CerrarSesion_1.setHeight(226);

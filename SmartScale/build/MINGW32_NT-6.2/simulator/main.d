@@ -75,21 +75,31 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ gui/include/gui/teclado_screen/tecladoView.hpp \
+ generated/gui_generated/include/gui_generated/teclado_screen/tecladoViewBase.hpp \
+ gui/include/gui/teclado_screen/tecladoPresenter.hpp \
+ touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ gui/include/gui/common/CustomKeyboard.hpp \
+ touchgfx/framework/include/touchgfx/widgets/Keyboard.hpp \
+ touchgfx/framework/include/touchgfx/Color.hpp \
+ generated/texts/include/texts/TextKeysAndLanguages.hpp \
+ gui/include/gui/common/KeyboardLayout.hpp \
+ generated/images/include/BitmapDatabase.hpp \
+ gui/include/gui/common/KeyboardKeyMapping.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  gui/include/gui/menuprincipal_screen/MenuPrincipalView.hpp \
  generated/gui_generated/include/gui_generated/menuprincipal_screen/MenuPrincipalViewBase.hpp \
  gui/include/gui/menuprincipal_screen/MenuPrincipalPresenter.hpp \
  touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
  touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
  touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
- touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  gui/include/gui/balanzainteligente_screen/BalanzaInteligenteView.hpp \
  generated/gui_generated/include/gui_generated/balanzainteligente_screen/BalanzaInteligenteViewBase.hpp \
  gui/include/gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp \
  touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp \
  touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp \
- touchgfx/framework/include/touchgfx/widgets/Box.hpp \
- touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  touchgfx/framework/include/touchgfx/containers/buttons/Buttons.hpp \
  touchgfx/framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp \
  touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp \
@@ -121,7 +131,6 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
  touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
- touchgfx/framework/include/touchgfx/Color.hpp \
  touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
@@ -133,7 +142,6 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  gui/include/gui/numpad_screen/numPadView.hpp \
  generated/gui_generated/include/gui_generated/numpad_screen/numPadViewBase.hpp \
  gui/include/gui/numpad_screen/numPadPresenter.hpp \
- generated/images/include/BitmapDatabase.hpp \
  generated/gui_generated/include/gui_generated/common/SimConstants.hpp \
  touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp \
  touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
@@ -291,6 +299,34 @@ touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
+gui/include/gui/teclado_screen/tecladoView.hpp:
+
+generated/gui_generated/include/gui_generated/teclado_screen/tecladoViewBase.hpp:
+
+gui/include/gui/teclado_screen/tecladoPresenter.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/Box.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+
+gui/include/gui/common/CustomKeyboard.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/Keyboard.hpp:
+
+touchgfx/framework/include/touchgfx/Color.hpp:
+
+generated/texts/include/texts/TextKeysAndLanguages.hpp:
+
+gui/include/gui/common/KeyboardLayout.hpp:
+
+generated/images/include/BitmapDatabase.hpp:
+
+gui/include/gui/common/KeyboardKeyMapping.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
 gui/include/gui/menuprincipal_screen/MenuPrincipalView.hpp:
 
 generated/gui_generated/include/gui_generated/menuprincipal_screen/MenuPrincipalViewBase.hpp:
@@ -303,10 +339,6 @@ touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 
-touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
-
 gui/include/gui/balanzainteligente_screen/BalanzaInteligenteView.hpp:
 
 generated/gui_generated/include/gui_generated/balanzainteligente_screen/BalanzaInteligenteViewBase.hpp:
@@ -316,10 +348,6 @@ gui/include/gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp:
 touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:
 
 touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/Box.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 touchgfx/framework/include/touchgfx/containers/buttons/Buttons.hpp:
 
@@ -383,8 +411,6 @@ touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 
 touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
 
-touchgfx/framework/include/touchgfx/Color.hpp:
-
 touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
 
 touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
@@ -406,8 +432,6 @@ gui/include/gui/numpad_screen/numPadView.hpp:
 generated/gui_generated/include/gui_generated/numpad_screen/numPadViewBase.hpp:
 
 gui/include/gui/numpad_screen/numPadPresenter.hpp:
-
-generated/images/include/BitmapDatabase.hpp:
 
 generated/gui_generated/include/gui_generated/common/SimConstants.hpp:
 

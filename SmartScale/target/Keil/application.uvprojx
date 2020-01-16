@@ -906,6 +906,16 @@
               <FileType>8</FileType>
               <FilePath>../../gui/src/screensaver_screen/screensaverview.cpp</FilePath>
             </File>
+            <File>
+              <FileName>tecladoPresenter.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/teclado_screen/tecladopresenter.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>tecladoView.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/teclado_screen/tecladoview.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1385,6 +1395,11 @@
               <FileName>Table_verdanab_25_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/fonts/src/table_verdanab_25_4bpp.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>tecladoViewBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/gui_generated/src/teclado_screen/tecladoviewbase.cpp</FilePath>
             </File>
             <File>
               <FileName>Texts.cpp</FileName>

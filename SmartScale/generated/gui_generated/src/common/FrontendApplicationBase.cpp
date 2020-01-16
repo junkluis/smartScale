@@ -10,6 +10,8 @@
 #include <touchgfx/hal/HAL.hpp>
 #include <gui/screensaver_screen/ScreenSaverView.hpp>
 #include <gui/screensaver_screen/ScreenSaverPresenter.hpp>
+#include <gui/teclado_screen/tecladoView.hpp>
+#include <gui/teclado_screen/tecladoPresenter.hpp>
 #include <gui/menuprincipal_screen/MenuPrincipalView.hpp>
 #include <gui/menuprincipal_screen/MenuPrincipalPresenter.hpp>
 #include <gui/balanzainteligente_screen/BalanzaInteligenteView.hpp>
@@ -46,6 +48,19 @@ void FrontendApplicationBase::gotoScreenSaverScreenNoTransition()
 void FrontendApplicationBase::gotoScreenSaverScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<ScreenSaverView, ScreenSaverPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// teclado
+
+void FrontendApplicationBase::gototecladoScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gototecladoScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gototecladoScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<tecladoView, tecladoPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // MenuPrincipal

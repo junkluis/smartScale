@@ -57,6 +57,114 @@
       {
         "Components": [
           {
+            "Color": {
+              "Red": 233,
+              "Green": 232,
+              "Blue": 226
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "btn-ok-pressed.png",
+            "Released": "btn-ok.png",
+            "Alpha": 255,
+            "Name": "btn_ok",
+            "X": 343,
+            "Y": 104,
+            "Width": 121,
+            "Height": 120,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId8",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "txt_accion",
+            "X": 342,
+            "Y": 54,
+            "Width": 122,
+            "Height": 35,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "obtenerAccionDelTeclado",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "FunctionName": "obtenerAccion",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "GuardarEntradaPorTeclado",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "btn_ok",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "registrarEntradaTeclado",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "Regresar",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "btn_ok",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "PerfilProductos",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "teclado",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
             "RelativeFilename": "background-title.png",
             "Alpha": 255,
             "Name": "backgroundmenu",
@@ -174,12 +282,12 @@
               {
                 "Components": [
                   {
-                    "RelativeFilename": "menuB.png",
+                    "RelativeFilename": "menuE.png",
                     "Alpha": 255,
                     "Name": "imgPerfil",
                     "X": 45,
                     "Y": 38,
-                    "Width": 138,
+                    "Width": 150,
                     "Height": 128,
                     "Type": "Image",
                     "Visible": true,
@@ -281,104 +389,6 @@
                 ],
                 "IsCacheableContainer": false,
                 "Name": "Perfil",
-                "X": 0,
-                "Y": 0,
-                "Width": 480,
-                "Height": 226,
-                "Type": "Container",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
-                "Components": [
-                  {
-                    "RelativeFilename": "menuE.png",
-                    "Alpha": 255,
-                    "Name": "imgOut",
-                    "X": 45,
-                    "Y": 38,
-                    "Width": 150,
-                    "Height": 128,
-                    "Type": "Image",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-                    "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-                    "Alpha": 255,
-                    "TextId": "SingleUseId29",
-                    "ReleasedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "PressedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "TextRotation": "0",
-                    "Style": "Style4",
-                    "Name": "Empezar",
-                    "X": 240,
-                    "Y": 93,
-                    "Width": 170,
-                    "Height": 60,
-                    "Type": "ButtonWithLabel",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "RelativeFilename": "cont3.png",
-                    "Alpha": 255,
-                    "Name": "image1_2",
-                    "X": 186,
-                    "Y": 198,
-                    "Width": 108,
-                    "Height": 28,
-                    "Type": "Image",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "TextId": "SingleUseId123",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 43,
-                      "Green": 43,
-                      "Blue": 43
-                    },
-                    "Alpha": 255,
-                    "AutoSize": true,
-                    "LineSpacing": 0,
-                    "Name": "txt_balanzaInteligente_1",
-                    "X": 240,
-                    "Y": 51,
-                    "Width": 173,
-                    "Height": 31,
-                    "Type": "TextArea",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  }
-                ],
-                "IsCacheableContainer": false,
-                "Name": "CerrarSesion",
                 "X": 0,
                 "Y": 0,
                 "Width": 480,
@@ -2702,6 +2712,19 @@
             }
           },
           {
+            "InteractionName": "Interaction2",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "btnTitulo",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "teclado",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
             "InteractionName": "regresar",
             "HasCompletedTrigger": false,
             "Trigger": {
@@ -3236,10 +3259,6 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId29",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId30",
         "IsResource": false
       },
@@ -3476,6 +3495,14 @@
         "IsResource": false
       },
       {
+        "TextEntryId": "SingleUseId7",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId8",
+        "IsResource": false
+      },
+      {
         "TextEntryId": "SingleUseId92",
         "IsResource": false
       },
@@ -3493,10 +3520,6 @@
       },
       {
         "TextEntryId": "SingleUseId122",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId123",
         "IsResource": false
       },
       {

@@ -22,7 +22,10 @@
     <ClCompile Include="..\..\gui\src\screensaver_screen\ScreenSaverPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screensaver_screen\ScreenSaverView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screensaver_screen\ScreenSaverViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\teclado_screen\tecladoView.cpp"/>
     <ClCompile Include="..\..\gui\src\common\CustomKeyboard.cpp"/>
+    <ClCompile Include="..\..\gui\src\teclado_screen\tecladoPresenter.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\teclado_screen\tecladoViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\menuprincipal_screen\MenuPrincipalPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\menuprincipal_screen\MenuPrincipalView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\menuprincipal_screen\MenuPrincipalViewBase.cpp"/>
@@ -184,9 +187,12 @@
     <ClInclude Include="..\..\gui\include\gui\screensaver_screen\ScreenSaverPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screensaver_screen\ScreenSaverView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screensaver_screen\ScreenSaverViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\teclado_screen\tecladoView.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\common\CustomKeyboard.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\common\KeyboardKeyMapping.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\common\KeyboardLayout.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\teclado_screen\tecladoPresenter.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\teclado_screen\tecladoViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\menuprincipal_screen\MenuPrincipalPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\menuprincipal_screen\MenuPrincipalView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\menuprincipal_screen\MenuPrincipalViewBase.hpp"/>

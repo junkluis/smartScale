@@ -1140,6 +1140,12 @@
             <name>$PROJ_DIR$\..\..\generated\gui_generated\src\screensaver_screen\ScreenSaverViewBase.cpp</name>
           </file>
         </group>
+        <group>
+          <name>teclado_screen</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\generated\gui_generated\src\teclado_screen\tecladoViewBase.cpp</name>
+          </file>
+        </group>
       </group>
       <group>
         <name>images</name>
@@ -1370,6 +1376,15 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\gui\src\screensaver_screen\ScreenSaverView.cpp</name>
+        </file>
+      </group>
+      <group>
+        <name>teclado_screen</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\teclado_screen\tecladoPresenter.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\gui\src\teclado_screen\tecladoView.cpp</name>
         </file>
       </group>
     </group>

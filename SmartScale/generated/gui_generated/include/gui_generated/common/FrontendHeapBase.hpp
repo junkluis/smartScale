@@ -9,10 +9,12 @@
 #include <mvp/MVPHeap.hpp>
 #include <touchgfx/transitions/NoTransition.hpp>
 
+
 #include <touchgfx/transitions/CoverTransition.hpp>
 
 
 #include <touchgfx/transitions/CoverTransition.hpp>
+
 
 
 
@@ -23,6 +25,8 @@
 
 #include <gui/screensaver_screen/ScreenSaverView.hpp>
 #include <gui/screensaver_screen/ScreenSaverPresenter.hpp>
+#include <gui/teclado_screen/tecladoView.hpp>
+#include <gui/teclado_screen/tecladoPresenter.hpp>
 #include <gui/menuprincipal_screen/MenuPrincipalView.hpp>
 #include <gui/menuprincipal_screen/MenuPrincipalPresenter.hpp>
 #include <gui/balanzainteligente_screen/BalanzaInteligenteView.hpp>
@@ -54,11 +58,12 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< ScreenSaverView,
+            touchgfx::meta::TypeList< tecladoView,
             touchgfx::meta::TypeList< MenuPrincipalView,
             touchgfx::meta::TypeList< BalanzaInteligenteView,
             touchgfx::meta::TypeList< PerfilProductosView,
             touchgfx::meta::TypeList< numPadView,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::Nil > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -71,11 +76,12 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< ScreenSaverPresenter,
+            touchgfx::meta::TypeList< tecladoPresenter,
             touchgfx::meta::TypeList< MenuPrincipalPresenter,
             touchgfx::meta::TypeList< BalanzaInteligentePresenter,
             touchgfx::meta::TypeList< PerfilProductosPresenter,
             touchgfx::meta::TypeList< numPadPresenter,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::Nil > > > > >
             > GeneratedPresenterTypes;
 
     /**

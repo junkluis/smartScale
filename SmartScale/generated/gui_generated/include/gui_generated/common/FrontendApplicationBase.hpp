@@ -19,6 +19,10 @@ public:
     void gotoScreenSaverScreenNoTransition();
 
 
+    // teclado
+    void gototecladoScreenNoTransition();
+
+
     // MenuPrincipal
     void gotoMenuPrincipalScreenNoTransition();
 
@@ -43,6 +47,10 @@ protected:
 
     // ScreenSaver
     void gotoScreenSaverScreenNoTransitionImpl();
+
+
+    // teclado
+    void gototecladoScreenNoTransitionImpl();
 
 
     // MenuPrincipal

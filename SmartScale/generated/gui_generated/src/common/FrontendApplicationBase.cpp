@@ -16,6 +16,8 @@
 #include <gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp>
 #include <gui/perfilproductos_screen/PerfilProductosView.hpp>
 #include <gui/perfilproductos_screen/PerfilProductosPresenter.hpp>
+#include <gui/numpad_screen/numPadView.hpp>
+#include <gui/numpad_screen/numPadPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -95,5 +97,18 @@ void FrontendApplicationBase::gotoPerfilProductosScreenNoTransition()
 void FrontendApplicationBase::gotoPerfilProductosScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<PerfilProductosView, PerfilProductosPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// numPad
+
+void FrontendApplicationBase::gotonumPadScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotonumPadScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotonumPadScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<numPadView, numPadPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 

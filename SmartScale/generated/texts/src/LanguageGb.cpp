@@ -14,51 +14,51 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE =
     380, // T_AlphaMode
     169, // T_SingleUseId18
     329, // T_SingleUseId19
-    311, // T_SingleUseId20
+    320, // T_SingleUseId20
     329, // T_SingleUseId21
     329, // T_SingleUseId29
     0, // T_SingleUseId30
     225, // T_SingleUseId34
     189, // T_SingleUseId35
-    311, // T_SingleUseId36
+    320, // T_SingleUseId36
     240, // T_SingleUseId47
     294, // T_SingleUseId49
     240, // T_SingleUseId50
     294, // T_SingleUseId51
     304, // T_SingleUseId52
-    320, // T_SingleUseId53
+    311, // T_SingleUseId53
     304, // T_SingleUseId54
     240, // T_SingleUseId55
     209, // T_SingleUseId56
     306, // T_SingleUseId57
-    351, // T_SingleUseId58
+    337, // T_SingleUseId58
     240, // T_SingleUseId64
     240, // T_SingleUseId65
     240, // T_SingleUseId66
     240, // T_SingleUseId67
     240, // T_SingleUseId68
-    256, // T_SingleUseId69
-    256, // T_SingleUseId70
-    269, // T_SingleUseId71
-    269, // T_SingleUseId72
-    269, // T_SingleUseId73
+    269, // T_SingleUseId69
+    269, // T_SingleUseId70
+    256, // T_SingleUseId71
+    256, // T_SingleUseId72
+    256, // T_SingleUseId73
     344, // T_SingleUseId74
     358, // T_SingleUseId75
     370, // T_SingleUseId76
     358, // T_SingleUseId77
-    337, // T_SingleUseId78
+    351, // T_SingleUseId78
     56, // T_SingleUseId79
-    384, // T_SingleUseId80
+    391, // T_SingleUseId80
     240, // T_SingleUseId81
-    269, // T_SingleUseId82
+    256, // T_SingleUseId82
     240, // T_SingleUseId83
-    269, // T_SingleUseId84
+    256, // T_SingleUseId84
     240, // T_SingleUseId85
-    269, // T_SingleUseId86
+    256, // T_SingleUseId86
     240, // T_SingleUseId87
-    256, // T_SingleUseId88
+    269, // T_SingleUseId88
     240, // T_SingleUseId89
-    256, // T_SingleUseId90
+    269, // T_SingleUseId90
     240, // T_SingleUseId91
     240, // T_SingleUseId93
     306, // T_SingleUseId94
@@ -66,15 +66,22 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE =
     240, // T_SingleUseId99
     306, // T_SingleUseId100
     148, // T_SingleUseId101
-    256, // T_SingleUseId107
+    269, // T_SingleUseId107
     358, // T_SingleUseId109
     358, // T_SingleUseId110
+    240, // T_SingleUseId111
+    240, // T_SingleUseId113
+    394, // T_SingleUseId114
+    240, // T_SingleUseId115
+    384, // T_SingleUseId116
+    361, // T_SingleUseId117
+    362, // T_SingleUseId118
     240, // T_SingleUseId92
-    387, // T_SingleUseId108
+    388, // T_SingleUseId108
     121, // T_SingleUseId119
-    384, // T_SingleUseId120
+    391, // T_SingleUseId120
     364, // T_SingleUseId122
     282, // T_SingleUseId123
     90, // T_SingleUseId124
-    384  // T_SingleUseId125
+    391  // T_SingleUseId125
 };

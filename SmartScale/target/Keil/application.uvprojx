@@ -877,6 +877,16 @@
               <FilePath>../../gui/src/model/model.cpp</FilePath>
             </File>
             <File>
+              <FileName>numPadPresenter.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/numpad_screen/numpadpresenter.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>numPadView.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/numpad_screen/numpadview.cpp</FilePath>
+            </File>
+            <File>
               <FileName>PerfilProductosPresenter.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../gui/src/perfilproductos_screen/perfilproductospresenter.cpp</FilePath>
@@ -965,6 +975,26 @@
               <FileName>Blue_Buttons_Round_small_pressed.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/images/src/__designer/blue_buttons_round_small_pressed.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_Buttons_Square_icon_button.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_buttons_square_icon_button.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_Buttons_Square_icon_button_pressed.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_buttons_square_icon_button_pressed.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_Icons_Down_arrow_32.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_icons_down_arrow_32.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_Icons_Up_arrow_32.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/blue_icons_up_arrow_32.cpp</FilePath>
             </File>
             <File>
               <FileName>Blue_PageIndicator_dot_indicator_small_highlight.cpp</FileName>
@@ -1270,6 +1300,11 @@
               <FileName>modal_background.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/images/src/modal_background.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>numPadViewBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/gui_generated/src/numpad_screen/numpadviewbase.cpp</FilePath>
             </File>
             <File>
               <FileName>PerfilProductosViewBase.cpp</FileName>

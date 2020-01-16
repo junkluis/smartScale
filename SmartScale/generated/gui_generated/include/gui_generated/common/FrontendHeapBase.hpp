@@ -15,6 +15,9 @@
 #include <touchgfx/transitions/CoverTransition.hpp>
 
 
+
+
+
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
@@ -26,6 +29,8 @@
 #include <gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp>
 #include <gui/perfilproductos_screen/PerfilProductosView.hpp>
 #include <gui/perfilproductos_screen/PerfilProductosPresenter.hpp>
+#include <gui/numpad_screen/numPadView.hpp>
+#include <gui/numpad_screen/numPadPresenter.hpp>
 
 
 /**
@@ -52,7 +57,8 @@ public:
             touchgfx::meta::TypeList< MenuPrincipalView,
             touchgfx::meta::TypeList< BalanzaInteligenteView,
             touchgfx::meta::TypeList< PerfilProductosView,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< numPadView,
+            touchgfx::meta::Nil > > > >
             > GeneratedViewTypes;
 
     /**
@@ -68,7 +74,8 @@ public:
             touchgfx::meta::TypeList< MenuPrincipalPresenter,
             touchgfx::meta::TypeList< BalanzaInteligentePresenter,
             touchgfx::meta::TypeList< PerfilProductosPresenter,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< numPadPresenter,
+            touchgfx::meta::Nil > > > >
             > GeneratedPresenterTypes;
 
     /**

@@ -32,6 +32,9 @@
     <ClCompile Include="..\..\gui\src\perfilproductos_screen\PerfilProductosPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\perfilproductos_screen\PerfilProductosView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\perfilproductos_screen\PerfilProductosViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\numpad_screen\numPadPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\numpad_screen\numPadView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\numpad_screen\numPadViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\assets\texts\texts.xlsx"/>
@@ -193,6 +196,9 @@
     <ClInclude Include="..\..\gui\include\gui\perfilproductos_screen\PerfilProductosPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\perfilproductos_screen\PerfilProductosView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\perfilproductos_screen\PerfilProductosViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\numpad_screen\numPadPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\numpad_screen\numPadView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\numpad_screen\numPadViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\touchgfx.rc"/>

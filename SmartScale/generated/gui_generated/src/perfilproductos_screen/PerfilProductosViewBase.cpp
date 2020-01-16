@@ -352,6 +352,11 @@ void PerfilProductosViewBase::flexButtonCallbackHandler(const touchgfx::Abstract
         //When btnPesoEsp clicked call virtual function
         //Call ingresarPesoEsperado
         ingresarPesoEsperado();
+
+        //abrirNumPad
+        //When ingresarPesoEsperado completed change screen to numPad
+        //Go to numPad with no screen transition
+        application().gotonumPadScreenNoTransition();
     }
     else if (&src == &btnDiferenciaPerm)
     {
@@ -359,6 +364,11 @@ void PerfilProductosViewBase::flexButtonCallbackHandler(const touchgfx::Abstract
         //When btnDiferenciaPerm clicked call virtual function
         //Call ingresarDiferenciaPerm
         ingresarDiferenciaPerm();
+
+        //abrirNumPad2
+        //When ingresarDiferenciaPerm completed change screen to numPad
+        //Go to numPad with no screen transition
+        application().gotonumPadScreenNoTransition();
     }
     else if (&src == &btnTitulo)
     {

@@ -130,6 +130,9 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  generated/gui_generated/include/gui_generated/perfilproductos_screen/PerfilProductosViewBase.hpp \
  gui/include/gui/perfilproductos_screen/PerfilProductosPresenter.hpp \
  touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
+ gui/include/gui/numpad_screen/numPadView.hpp \
+ generated/gui_generated/include/gui_generated/numpad_screen/numPadViewBase.hpp \
+ gui/include/gui/numpad_screen/numPadPresenter.hpp \
  generated/images/include/BitmapDatabase.hpp \
  generated/gui_generated/include/gui_generated/common/SimConstants.hpp \
  touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp \
@@ -397,6 +400,12 @@ generated/gui_generated/include/gui_generated/perfilproductos_screen/PerfilProdu
 gui/include/gui/perfilproductos_screen/PerfilProductosPresenter.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
+
+gui/include/gui/numpad_screen/numPadView.hpp:
+
+generated/gui_generated/include/gui_generated/numpad_screen/numPadViewBase.hpp:
+
+gui/include/gui/numpad_screen/numPadPresenter.hpp:
 
 generated/images/include/BitmapDatabase.hpp:
 

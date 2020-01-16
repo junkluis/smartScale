@@ -2739,6 +2739,19 @@
             }
           },
           {
+            "InteractionName": "abrirNumPad",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "ingresarPesoEsperado",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "numPad",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
             "InteractionName": "vaciarPerfil",
             "HasCompletedTrigger": false,
             "Trigger": {
@@ -2763,6 +2776,19 @@
             }
           },
           {
+            "InteractionName": "abrirNumPad2",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "ingresarDiferenciaPerm",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "numPad",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
             "InteractionName": "cerrarModal",
             "HasCompletedTrigger": false,
             "Trigger": {
@@ -2778,6 +2804,405 @@
         "Name": "PerfilProductos",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 7200
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 233,
+              "Green": 232,
+              "Blue": 226
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "btn-ok-pressed.png",
+            "Released": "btn-ok.png",
+            "Alpha": 255,
+            "Name": "btnGuardarNum",
+            "X": 343,
+            "Y": 131,
+            "Width": 121,
+            "Height": 120,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId111",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 25
+            },
+            "Name": "txt_num",
+            "X": 342,
+            "Y": 81,
+            "Width": 122,
+            "Height": 35,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 241,
+              "Green": 241,
+              "Blue": 241
+            },
+            "BorderColor": {
+              "Red": 135,
+              "Green": 135,
+              "Blue": 135
+            },
+            "BorderSize": 3,
+            "Alpha": 255,
+            "Name": "boxWithBorder1",
+            "X": 55,
+            "Y": 54,
+            "Width": 71,
+            "Height": 72,
+            "Type": "BoxWithBorder",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId113",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId117",
+              "UseBuffer": true,
+              "BufferSize": 4
+            },
+            "Name": "num",
+            "X": 65,
+            "Y": 66,
+            "Width": 51,
+            "Height": 49,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId114",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1_1",
+            "X": 141,
+            "Y": 66,
+            "Width": 14,
+            "Height": 49,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 241,
+              "Green": 241,
+              "Blue": 241
+            },
+            "BorderColor": {
+              "Red": 135,
+              "Green": 135,
+              "Blue": 135
+            },
+            "BorderSize": 3,
+            "Alpha": 255,
+            "Name": "boxWithBorder1_1",
+            "X": 170,
+            "Y": 54,
+            "Width": 71,
+            "Height": 72,
+            "Type": "BoxWithBorder",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId115",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId118",
+              "UseBuffer": true,
+              "BufferSize": 4
+            },
+            "Name": "dec",
+            "X": 180,
+            "Y": 66,
+            "Width": 26,
+            "Height": 49,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Blue_Icons_Up_arrow_32.png",
+            "IconReleased": "__designer\\Blue_Icons_Up_arrow_32.png",
+            "IconX": 15,
+            "IconY": 22,
+            "IconHeight": 17,
+            "IconWidth": 30,
+            "ButtonStyle": "Style9",
+            "Name": "upMainNum",
+            "X": 60,
+            "Y": 136,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Blue_Icons_Up_arrow_32.png",
+            "IconReleased": "__designer\\Blue_Icons_Up_arrow_32.png",
+            "IconX": 15,
+            "IconY": 22,
+            "IconHeight": 17,
+            "IconWidth": 30,
+            "ButtonStyle": "Style9",
+            "Name": "UpDecNum",
+            "X": 175,
+            "Y": 136,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Blue_Icons_Down_arrow_32.png",
+            "IconReleased": "__designer\\Blue_Icons_Down_arrow_32.png",
+            "IconX": 15,
+            "IconY": 22,
+            "IconHeight": 17,
+            "IconWidth": 30,
+            "ButtonStyle": "Style9",
+            "Name": "downMainNum",
+            "X": 61,
+            "Y": 196,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Blue_Icons_Down_arrow_32.png",
+            "IconReleased": "__designer\\Blue_Icons_Down_arrow_32.png",
+            "IconX": 15,
+            "IconY": 22,
+            "IconHeight": 17,
+            "IconWidth": 30,
+            "ButtonStyle": "Style9",
+            "Name": "downDecNum",
+            "X": 175,
+            "Y": 196,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId116",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "medida",
+            "X": 254,
+            "Y": 66,
+            "Width": 67,
+            "Height": 49,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "dowDecNum",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "downDecNum",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "reducirDec",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "downMainNum",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "downMainNum",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "reducirNum",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "UpDecNum",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "UpDecNum",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "incrementoDec",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "upMainNum",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "upMainNum",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "incrementoNum",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "RegresarPerfilEditor",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "TriggerComponent": "btnGuardarNum",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "PerfilProductos",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "registrarCambioNumero",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "RegresarPerfilEditor",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "FunctionName": "registrarCambioNumero",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "cargarDatos",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "FunctionName": "cargarDatos",
+              "Type": "ActionCustom"
+            }
+          }
+        ],
+        "Name": "numPad",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
       }
     ],
     "CustomContainerDefinitions": [],
@@ -3020,6 +3445,34 @@
       },
       {
         "TextEntryId": "SingleUseId110",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId111",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId113",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId114",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId115",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId116",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId117",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId118",
         "IsResource": false
       },
       {

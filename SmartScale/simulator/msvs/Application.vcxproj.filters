@@ -199,6 +199,18 @@
     <Filter Include="Header Files\generated\gui_generated\perfilproductos_screen">
       <UniqueIdentifier>145DE862-655F-D697-310E-6E001A083BC0</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\numpad_screen">
+      <UniqueIdentifier>19058B08-160D-D253-D67F-4FF2DF7E1219</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\numpad_screen">
+      <UniqueIdentifier>FE865A01-D546-F90F-1091-023DC776A2A3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\numpad_screen">
+      <UniqueIdentifier>6947D74A-82F0-0E01-CBFF-5A406185DECD</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\numpad_screen">
+      <UniqueIdentifier>0191AF53-47D4-FE27-2518-FC9167AE6F67</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -263,6 +275,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\perfilproductos_screen\PerfilProductosViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\perfilproductos_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\numpad_screen\numPadPresenter.cpp">
+      <Filter>Source Files\gui\numpad_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\numpad_screen\numPadView.cpp">
+      <Filter>Source Files\gui\numpad_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\numpad_screen\numPadViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\numpad_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -738,6 +759,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\perfilproductos_screen\PerfilProductosViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\perfilproductos_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\numpad_screen\numPadPresenter.hpp">
+      <Filter>Header Files\gui\numpad_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\numpad_screen\numPadView.hpp">
+      <Filter>Header Files\gui\numpad_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\numpad_screen\numPadViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\numpad_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

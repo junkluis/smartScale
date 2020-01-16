@@ -32,6 +32,10 @@ public:
     // PerfilProductos
     void gotoPerfilProductosScreenNoTransition();
 
+
+    // numPad
+    void gotonumPadScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -53,6 +57,10 @@ protected:
 
     // PerfilProductos
     void gotoPerfilProductosScreenNoTransitionImpl();
+
+
+    // numPad
+    void gotonumPadScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

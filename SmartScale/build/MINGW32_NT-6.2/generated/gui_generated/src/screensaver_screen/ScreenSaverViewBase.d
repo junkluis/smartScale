@@ -40,6 +40,7 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/screensaver_screen/ScreenSaverV
  touchgfx/framework/include/mvp/Presenter.hpp \
  touchgfx/framework/include/mvp/MVPHeap.hpp \
  gui/include/gui/model/Model.hpp \
+ touchgfx/framework/include/touchgfx/Perfil.hpp \
  gui/include/gui/screensaver_screen/ScreenSaverPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  touchgfx/framework/include/touchgfx/widgets/Image.hpp \
@@ -127,6 +128,8 @@ touchgfx/framework/include/mvp/Presenter.hpp:
 touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 gui/include/gui/model/Model.hpp:
+
+touchgfx/framework/include/touchgfx/Perfil.hpp:
 
 gui/include/gui/screensaver_screen/ScreenSaverPresenter.hpp:
 

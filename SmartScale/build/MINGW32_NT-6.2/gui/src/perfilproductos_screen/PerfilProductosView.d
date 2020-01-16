@@ -41,6 +41,7 @@ build/MINGW32_NT-6.2/gui/src/perfilproductos_screen/PerfilProductosView.o: \
  touchgfx/framework/include/mvp/Presenter.hpp \
  touchgfx/framework/include/mvp/MVPHeap.hpp \
  gui/include/gui/model/Model.hpp \
+ touchgfx/framework/include/touchgfx/Perfil.hpp \
  gui/include/gui/perfilproductos_screen/PerfilProductosPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  touchgfx/framework/include/touchgfx/widgets/Image.hpp \
@@ -86,7 +87,11 @@ build/MINGW32_NT-6.2/gui/src/perfilproductos_screen/PerfilProductosView.o: \
  touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
  touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
- touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp
+ touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
+ touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
+ touchgfx/framework/include/touchgfx/Color.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp
 
 gui/include/gui/perfilproductos_screen/PerfilProductosView.hpp:
 
@@ -169,6 +174,8 @@ touchgfx/framework/include/mvp/Presenter.hpp:
 touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 gui/include/gui/model/Model.hpp:
+
+touchgfx/framework/include/touchgfx/Perfil.hpp:
 
 gui/include/gui/perfilproductos_screen/PerfilProductosPresenter.hpp:
 
@@ -261,3 +268,11 @@ touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
 touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
+
+touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
+
+touchgfx/framework/include/touchgfx/Color.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:

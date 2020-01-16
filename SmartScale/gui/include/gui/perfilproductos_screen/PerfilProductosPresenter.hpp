@@ -55,6 +55,96 @@ public:
 		model->setTecladoAccion(accion);
 	}
 
+
+	//GET SET INFO SLOT
+	void setTitulo(std::string titulo, int id) {
+		model->setTitulo(titulo, id);
+	}
+
+	std::string getTitulo(int id) {
+		return model->getTitulo(id);
+	}
+
+	void setDescripcion(std::string descr, int id) {
+		model->setDescripcion(descr, id);
+	}
+
+	std::string getDescripcion(int id) {
+		return model->getDescripcion(id);
+	}
+
+	void setPesoPromedio(float peso, int id) {
+		model->setPesoPromedio(peso, id);
+	}
+
+	float getPesoPromedio(int id) {
+		return model->getPesoPromedio(id);
+	}
+
+	void setDiferenciaPermitida(float diferencia, int id) {
+		model->setDiferenciaPermitida(diferencia, id);
+	}
+
+	float getDiferenciaPermitida(int id) {
+		return model->getDiferenciaPermitida(id);
+	}
+	//FIN GET SET INFO SLOT
+
+	//GET SET EDITOR
+	void setEditor(bool mode) {
+		model->setEditor(mode);
+	}
+
+	bool getEditor() {
+		return model->getEditor();
+	}
+
+	void setTituloEditable(uint8_t* titulo) {
+		model->setTituloEditable(titulo);
+	}
+
+	uint8_t* getTituloEditable() {
+		return model->getTituloEditable();
+	}
+
+	void setDescriEditable(uint8_t* desc) {
+		model->setTituloEditable(desc);
+	}
+
+	uint8_t* getDescriEditable() {
+		return model->getDescriEditable();
+	}
+
+	void setPesoEditable(float peso) {
+		model->setPesoEditable(peso);
+	}
+
+	float getPesoEditable() {
+		return model->getPesoEditable();
+	}
+
+	void setDifeEditable(float diferencia) {
+		model->setDifeEditable(diferencia);
+	}
+
+	float getDifeEditable() {
+		return model->getDifeEditable();
+	}
+
+	void setNumPadAccion(std::string numPadAccion) {
+		model->setNumPadAccion(numPadAccion);
+	}
+
+	std::string getNumPadAccion() {
+		return model->getNumPadAccion();
+	}
+
+	std::string getTecladoAccion() {
+		return model->getTecladoAccion();
+	}
+	//FIN GET SET EDITOR
+
+
 private:
     PerfilProductosPresenter();
 

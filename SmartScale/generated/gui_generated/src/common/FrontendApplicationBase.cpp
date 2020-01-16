@@ -8,26 +8,14 @@
 #include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <gui/screensaver_screen/ScreenSaverView.hpp>
 #include <gui/screensaver_screen/ScreenSaverPresenter.hpp>
-#include <gui/teclado_screen/tecladoView.hpp>
-#include <gui/teclado_screen/tecladoPresenter.hpp>
 #include <gui/menuprincipal_screen/MenuPrincipalView.hpp>
 #include <gui/menuprincipal_screen/MenuPrincipalPresenter.hpp>
-#include <gui/screen2_screen/Screen2View.hpp>
-#include <gui/screen2_screen/Screen2Presenter.hpp>
 #include <gui/balanzainteligente_screen/BalanzaInteligenteView.hpp>
 #include <gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp>
 #include <gui/perfilproductos_screen/PerfilProductosView.hpp>
 #include <gui/perfilproductos_screen/PerfilProductosPresenter.hpp>
-#include <gui/configuracion_screen/ConfiguracionView.hpp>
-#include <gui/configuracion_screen/ConfiguracionPresenter.hpp>
-#include <gui/estadisticas_screen/EstadisticasView.hpp>
-#include <gui/estadisticas_screen/EstadisticasPresenter.hpp>
-#include <gui/usuarios_screen/UsuariosView.hpp>
-#include <gui/usuarios_screen/UsuariosPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -45,31 +33,6 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
 /*
  * Screen Transition Declarations
  */
-// Screen1
-
-void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionSouth()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen1ScreenCoverTransitionSouthImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionSouthImpl()
-{
-    touchgfx::makeTransition<Screen1View, Screen1Presenter, touchgfx::CoverTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-
-void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionEast()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen1ScreenCoverTransitionEastImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionEastImpl()
-{
-    touchgfx::makeTransition<Screen1View, Screen1Presenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
 // ScreenSaver
 
 void FrontendApplicationBase::gotoScreenSaverScreenNoTransition()
@@ -83,30 +46,17 @@ void FrontendApplicationBase::gotoScreenSaverScreenNoTransitionImpl()
     touchgfx::makeTransition<ScreenSaverView, ScreenSaverPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// teclado
-
-void FrontendApplicationBase::gototecladoScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gototecladoScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gototecladoScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<tecladoView, tecladoPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
 // MenuPrincipal
 
-void FrontendApplicationBase::gotoMenuPrincipalScreenSlideTransitionEast()
+void FrontendApplicationBase::gotoMenuPrincipalScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoMenuPrincipalScreenSlideTransitionEastImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoMenuPrincipalScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMenuPrincipalScreenSlideTransitionEastImpl()
+void FrontendApplicationBase::gotoMenuPrincipalScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<MenuPrincipalView, MenuPrincipalPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MenuPrincipalView, MenuPrincipalPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 

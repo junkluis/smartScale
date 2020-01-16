@@ -34,6 +34,10 @@ MenuPrincipalViewBase::MenuPrincipalViewBase() :
     empezarBalanza.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     empezarBalanza.setAction(buttonCallback);
     Balanza.add(empezarBalanza);
+
+    image1.setXY(184, 198);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_CONT1_ID));
+    Balanza.add(image1);
     MenuSwap.add(Balanza);
 
     Perfil.setWidth(480);
@@ -62,104 +66,56 @@ MenuPrincipalViewBase::MenuPrincipalViewBase() :
     subtxt_perfiles.setLinespacing(0);
     subtxt_perfiles.setTypedText(touchgfx::TypedText(T_SINGLEUSEID30));
     Perfil.add(subtxt_perfiles);
+
+    image1_1.setXY(184, 198);
+    image1_1.setBitmap(touchgfx::Bitmap(BITMAP_CONT2_ID));
+    Perfil.add(image1_1);
     MenuSwap.add(Perfil);
-
-    Configuracion.setWidth(480);
-    Configuracion.setHeight(226);
-
-    imgConfig.setXY(45, 38);
-    imgConfig.setBitmap(touchgfx::Bitmap(BITMAP_MENUC_ID));
-    Configuracion.add(imgConfig);
-
-    txt_configuracion.setXY(240, 38);
-    txt_configuracion.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    txt_configuracion.setLinespacing(0);
-    txt_configuracion.setTypedText(touchgfx::TypedText(T_SINGLEUSEID22));
-    Configuracion.add(txt_configuracion);
-
-    empezarConfiguracion.setXY(240, 128);
-    empezarConfiguracion.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
-    empezarConfiguracion.setLabelText(touchgfx::TypedText(T_SINGLEUSEID23));
-    empezarConfiguracion.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    empezarConfiguracion.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    Configuracion.add(empezarConfiguracion);
-
-    subtxt_configuracion.setXY(240, 78);
-    subtxt_configuracion.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    subtxt_configuracion.setLinespacing(0);
-    subtxt_configuracion.setTypedText(touchgfx::TypedText(T_SINGLEUSEID31));
-    Configuracion.add(subtxt_configuracion);
-    MenuSwap.add(Configuracion);
-
-    Estadisticas.setWidth(480);
-    Estadisticas.setHeight(226);
-
-    imgEstat.setXY(45, 38);
-    imgEstat.setBitmap(touchgfx::Bitmap(BITMAP_MENUD_ID));
-    Estadisticas.add(imgEstat);
-
-    txt_balanzaInteligente_2_1.setXY(240, 38);
-    txt_balanzaInteligente_2_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    txt_balanzaInteligente_2_1.setLinespacing(0);
-    txt_balanzaInteligente_2_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID24));
-    Estadisticas.add(txt_balanzaInteligente_2_1);
-
-    empezarBalanza_2_1.setXY(240, 128);
-    empezarBalanza_2_1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
-    empezarBalanza_2_1.setLabelText(touchgfx::TypedText(T_SINGLEUSEID25));
-    empezarBalanza_2_1.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    empezarBalanza_2_1.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    Estadisticas.add(empezarBalanza_2_1);
-
-    textArea1_2.setXY(240, 78);
-    textArea1_2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    textArea1_2.setLinespacing(0);
-    textArea1_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID32));
-    Estadisticas.add(textArea1_2);
-    MenuSwap.add(Estadisticas);
-
-    Usuarios.setWidth(480);
-    Usuarios.setHeight(226);
-
-    imgUsr.setXY(45, 38);
-    imgUsr.setBitmap(touchgfx::Bitmap(BITMAP_MENUE_ID));
-    Usuarios.add(imgUsr);
-
-    txt_balanzaInteligente_2_2.setXY(240, 38);
-    txt_balanzaInteligente_2_2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    txt_balanzaInteligente_2_2.setLinespacing(0);
-    txt_balanzaInteligente_2_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID26));
-    Usuarios.add(txt_balanzaInteligente_2_2);
-
-    empezarBalanza_2_2.setXY(240, 128);
-    empezarBalanza_2_2.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
-    empezarBalanza_2_2.setLabelText(touchgfx::TypedText(T_SINGLEUSEID27));
-    empezarBalanza_2_2.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    empezarBalanza_2_2.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    Usuarios.add(empezarBalanza_2_2);
-
-    textArea1_3.setXY(240, 78);
-    textArea1_3.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    textArea1_3.setLinespacing(0);
-    textArea1_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID33));
-    Usuarios.add(textArea1_3);
-    MenuSwap.add(Usuarios);
 
     CerrarSesion.setWidth(480);
     CerrarSesion.setHeight(226);
 
     imgOut.setXY(45, 38);
-    imgOut.setBitmap(touchgfx::Bitmap(BITMAP_MENUF_ID));
+    imgOut.setBitmap(touchgfx::Bitmap(BITMAP_MENUE_ID));
     CerrarSesion.add(imgOut);
 
-    cerrarSesion.setXY(240, 83);
-    cerrarSesion.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
-    cerrarSesion.setLabelText(touchgfx::TypedText(T_SINGLEUSEID29));
-    cerrarSesion.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    cerrarSesion.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    cerrarSesion.setAction(buttonCallback);
-    CerrarSesion.add(cerrarSesion);
+    Empezar.setXY(240, 93);
+    Empezar.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    Empezar.setLabelText(touchgfx::TypedText(T_SINGLEUSEID29));
+    Empezar.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    Empezar.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    CerrarSesion.add(Empezar);
+
+    image1_2.setXY(186, 198);
+    image1_2.setBitmap(touchgfx::Bitmap(BITMAP_CONT3_ID));
+    CerrarSesion.add(image1_2);
+
+    txt_balanzaInteligente_1.setXY(240, 51);
+    txt_balanzaInteligente_1.setColor(touchgfx::Color::getColorFrom24BitRGB(43, 43, 43));
+    txt_balanzaInteligente_1.setLinespacing(0);
+    txt_balanzaInteligente_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID123));
+    CerrarSesion.add(txt_balanzaInteligente_1);
     MenuSwap.add(CerrarSesion);
+
+    CerrarSesion_1.setWidth(480);
+    CerrarSesion_1.setHeight(226);
+
+    imgOut_1.setXY(45, 38);
+    imgOut_1.setBitmap(touchgfx::Bitmap(BITMAP_MENUF_ID));
+    CerrarSesion_1.add(imgOut_1);
+
+    cerrarSesion_1.setXY(240, 83);
+    cerrarSesion_1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    cerrarSesion_1.setLabelText(touchgfx::TypedText(T_SINGLEUSEID122));
+    cerrarSesion_1.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    cerrarSesion_1.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    cerrarSesion_1.setAction(buttonCallback);
+    CerrarSesion_1.add(cerrarSesion_1);
+
+    image1_3_1.setXY(186, 198);
+    image1_3_1.setBitmap(touchgfx::Bitmap(BITMAP_CONT4_ID));
+    CerrarSesion_1.add(image1_3_1);
+    MenuSwap.add(CerrarSesion_1);
 
     MenuSwap.setSwipeCutoff(50);
     MenuSwap.setEndSwipeElasticWidth(50);
@@ -196,11 +152,11 @@ void MenuPrincipalViewBase::buttonCallbackHandler(const touchgfx::AbstractButton
         //Go to PerfilProductos with no screen transition
         application().gotoPerfilProductosScreenNoTransition();
     }
-    else if (&src == &cerrarSesion)
+    else if (&src == &cerrarSesion_1)
     {
-        //cerrarSesion
-        //When cerrarSesion clicked change screen to Screen1
-        //Go to Screen1 with screen transition towards East
-        application().gotoScreen1ScreenCoverTransitionEast();
+        //Interaction3
+        //When cerrarSesion_1 clicked change screen to ScreenSaver
+        //Go to ScreenSaver with no screen transition
+        application().gotoScreenSaverScreenNoTransition();
     }
 }

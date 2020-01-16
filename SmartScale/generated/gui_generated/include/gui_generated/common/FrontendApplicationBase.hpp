@@ -15,22 +15,12 @@ public:
     FrontendApplicationBase(Model& m, FrontendHeap& heap);
     virtual ~FrontendApplicationBase() { }
 
-    // Screen1
-    void gotoScreen1ScreenCoverTransitionSouth();
-
-    void gotoScreen1ScreenCoverTransitionEast();
-
-
     // ScreenSaver
     void gotoScreenSaverScreenNoTransition();
 
 
-    // teclado
-    void gototecladoScreenNoTransition();
-
-
     // MenuPrincipal
-    void gotoMenuPrincipalScreenSlideTransitionEast();
+    void gotoMenuPrincipalScreenNoTransition();
 
     void gotoMenuPrincipalScreenCoverTransitionNorth();
 
@@ -47,22 +37,12 @@ protected:
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // Screen1
-    void gotoScreen1ScreenCoverTransitionSouthImpl();
-
-    void gotoScreen1ScreenCoverTransitionEastImpl();
-
-
     // ScreenSaver
     void gotoScreenSaverScreenNoTransitionImpl();
 
 
-    // teclado
-    void gototecladoScreenNoTransitionImpl();
-
-
     // MenuPrincipal
-    void gotoMenuPrincipalScreenSlideTransitionEastImpl();
+    void gotoMenuPrincipalScreenNoTransitionImpl();
 
     void gotoMenuPrincipalScreenCoverTransitionNorthImpl();
 

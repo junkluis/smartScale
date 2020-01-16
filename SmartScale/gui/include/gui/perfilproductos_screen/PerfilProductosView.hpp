@@ -19,12 +19,17 @@ public:
 	virtual void Per5Config();
 	virtual void inputPerfilTitulo();
 	virtual void inputPerfilDescripcion();
+	virtual void EditarPerfil();
+	virtual void ingresarPesoEsperado();
+	virtual void vaciarPerfil();
+	virtual void ingresarDiferenciaPerm();
 
 	//Obtener los datos desde Model.hpp para presentarlo en los botones
 	std::string slots[5];
 	std::string slotDesc[5];
 	float esperado[5];
 	float diferencia[5];
+	std::string accion = (char*)malloc(sizeof(accion));
 
 protected:
 };

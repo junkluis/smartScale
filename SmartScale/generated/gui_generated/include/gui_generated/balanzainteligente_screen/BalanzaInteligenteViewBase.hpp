@@ -20,6 +20,7 @@
 #include <touchgfx/containers/ModalWindow.hpp>
 #include <touchgfx/Color.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/EasingEquations.hpp>
 #include <touchgfx/mixins/MoveAnimator.hpp>
 class BalanzaInteligenteViewBase : public touchgfx::View<BalanzaInteligentePresenter>
@@ -118,6 +119,12 @@ protected:
     touchgfx::Image image2;
     touchgfx::TextArea textArea7;
     touchgfx::ButtonWithLabel cerrarModal;
+
+    touchgfx::Line line1;
+    touchgfx::PainterRGB565 line1Painter;
+    touchgfx::ModalWindow modalWindow1;
+    touchgfx::TextArea textArea8;
+    touchgfx::ButtonWithLabel cerrarModalEnvio;
 
 
     /*

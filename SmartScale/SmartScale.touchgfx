@@ -4,427 +4,6 @@
       {
         "Components": [
           {
-            "RelativeFilename": "background-title.png",
-            "Alpha": 255,
-            "Name": "fondo",
-            "X": 0,
-            "Y": 0,
-            "Width": 480,
-            "Height": 272,
-            "Type": "Image",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId1",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "txt_titulo_inicio_sesion",
-            "X": 20,
-            "Y": 24,
-            "Width": 125,
-            "Height": 21,
-            "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "btn-pressed.png",
-            "Released": "btn.png",
-            "Alpha": 255,
-            "TextId": "SingleUseId2",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0",
-            "Name": "btn_iniciar_sesion",
-            "X": 4,
-            "Y": 219,
-            "Width": 472,
-            "Height": 49,
-            "Type": "ButtonWithLabel",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "text-field.png",
-            "Released": "text-field.png",
-            "Alpha": 255,
-            "Name": "img_usuario",
-            "X": 177,
-            "Y": 85,
-            "Width": 256,
-            "Height": 34,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "text-field.png",
-            "Released": "text-field.png",
-            "Alpha": 255,
-            "Name": "img_clave",
-            "X": 177,
-            "Y": 147,
-            "Width": 256,
-            "Height": 34,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId3",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "txt_usuario",
-            "X": 48,
-            "Y": 89,
-            "Width": 91,
-            "Height": 30,
-            "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId4",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "txt_clave",
-            "X": 78,
-            "Y": 149,
-            "Width": 66,
-            "Height": 30,
-            "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId5",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "AutoSize": false,
-            "LineSpacing": 0,
-            "Wildcard1": {
-              "TextId": "SingleUseId10",
-              "UseBuffer": true,
-              "BufferSize": 18
-            },
-            "Name": "input_user",
-            "X": 184,
-            "Y": 87,
-            "Width": 249,
-            "Height": 30,
-            "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId6",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "AutoSize": false,
-            "LineSpacing": 0,
-            "Wildcard1": {
-              "TextId": "SingleUseId9",
-              "UseBuffer": true,
-              "BufferSize": 10
-            },
-            "Name": "input_clave",
-            "X": 184,
-            "Y": 150,
-            "Width": 249,
-            "Height": 30,
-            "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Components": [
-              {
-                "RelativeFilename": "warning.png",
-                "Alpha": 255,
-                "Name": "iconoError",
-                "X": 25,
-                "Y": 23,
-                "Width": 100,
-                "Height": 100,
-                "Type": "Image",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
-                "Pressed": "__designer\\blue_buttons_round_edge_small_pressed.png",
-                "Released": "__designer\\blue_buttons_round_edge_small.png",
-                "Alpha": 255,
-                "TextId": "SingleUseId12",
-                "ReleasedColor": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "PressedColor": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "TextRotation": "0",
-                "Style": "Style4",
-                "Name": "cerrarModal",
-                "X": 85,
-                "Y": 158,
-                "Width": 170,
-                "Height": 60,
-                "Type": "ButtonWithLabel",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
-                "TextId": "SingleUseId13",
-                "TextRotation": "0",
-                "Color": {
-                  "Red": 0,
-                  "Green": 0,
-                  "Blue": 0
-                },
-                "Alpha": 255,
-                "AutoSize": false,
-                "LineSpacing": 0,
-                "Wildcard1": {
-                  "TextId": "SingleUseId15",
-                  "UseBuffer": true,
-                  "BufferSize": 15
-                },
-                "Name": "tituloError",
-                "X": 136,
-                "Y": 29,
-                "Width": 176,
-                "Height": 27,
-                "Type": "TextArea",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
-                "TextId": "SingleUseId14",
-                "TextRotation": "0",
-                "Color": {
-                  "Red": 0,
-                  "Green": 0,
-                  "Blue": 0
-                },
-                "Alpha": 255,
-                "AutoSize": false,
-                "LineSpacing": 0,
-                "Wildcard1": {
-                  "UseBuffer": true,
-                  "BufferSize": 30
-                },
-                "Name": "cuerpoError",
-                "X": 136,
-                "Y": 69,
-                "Width": 191,
-                "Height": 54,
-                "Type": "TextArea",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              }
-            ],
-            "FileName": "modal_background.png",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "ModalX": 70,
-            "ModalY": 16,
-            "ModalWidth": 340,
-            "ModalHeight": 240,
-            "ContX": 0,
-            "ContY": 0,
-            "Alpha": 150,
-            "Name": "alertaError",
-            "X": 0,
-            "Y": 0,
-            "Width": 480,
-            "Height": 272,
-            "Type": "ModalWindow",
-            "Visible": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          }
-        ],
-        "Interactions": [
-          {
-            "InteractionName": "accederTeclado",
-            "HasCompletedTrigger": true,
-            "Trigger": {
-              "TriggerComponent": "img_usuario",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "teclado",
-              "Type": "ActionGotoScreen"
-            }
-          },
-          {
-            "InteractionName": "accionIngresarUsuario",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "img_usuario",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "FunctionName": "ingresarUsuarioPorTeclado",
-              "Type": "ActionCustom"
-            }
-          },
-          {
-            "InteractionName": "actualizarCamposInicioSesion",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerScreenEntered"
-            },
-            "Action": {
-              "FunctionName": "actualizarCampos",
-              "Type": "ActionCustom"
-            }
-          },
-          {
-            "InteractionName": "accionIngresarClave",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "img_clave",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "FunctionName": "ingresarClavePorTeclado",
-              "Type": "ActionCustom"
-            }
-          },
-          {
-            "InteractionName": "AccederTeclado2",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "img_clave",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "teclado",
-              "Type": "ActionGotoScreen"
-            }
-          },
-          {
-            "InteractionName": "iniciarSesion",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "btn_iniciar_sesion",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "FunctionName": "iniciarSesion",
-              "Type": "ActionCustom"
-            }
-          },
-          {
-            "InteractionName": "cerrarModal",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "cerrarModal",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "ActionComponent": "alertaError",
-              "Type": "ActionHide"
-            }
-          }
-        ],
-        "Name": "Screen1",
-        "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
-      },
-      {
-        "Components": [
-          {
             "RelativeFilename": "__designer\\blue_backgrounds_main_bg_480x272px.png",
             "Alpha": 255,
             "Name": "image1",
@@ -458,116 +37,20 @@
         ],
         "Interactions": [
           {
-            "InteractionName": "Interaction1",
+            "InteractionName": "IniciarScreen",
             "HasCompletedTrigger": false,
             "Trigger": {
               "TriggerComponent": "button1",
               "Type": "TriggerClicked"
             },
             "Action": {
-              "ScreenTransitionType": "ScreenTransitionCover",
-              "ScreenTransitionDirection": "South",
-              "ActionComponent": "Screen1",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuPrincipal",
               "Type": "ActionGotoScreen"
             }
           }
         ],
         "Name": "ScreenSaver",
-        "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
-      },
-      {
-        "Components": [
-          {
-            "Color": {
-              "Red": 214,
-              "Green": 211,
-              "Blue": 214
-            },
-            "Alpha": 255,
-            "Name": "backgroundBox",
-            "X": 0,
-            "Y": 0,
-            "Width": 480,
-            "Height": 272,
-            "Type": "Box",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "btn-ok-pressed.png",
-            "Released": "btn-ok.png",
-            "Alpha": 255,
-            "Name": "btn_ok",
-            "X": 343,
-            "Y": 104,
-            "Width": 121,
-            "Height": 120,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId7",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "AutoSize": false,
-            "LineSpacing": 0,
-            "Wildcard1": {
-              "TextId": "SingleUseId8",
-              "UseBuffer": true,
-              "BufferSize": 10
-            },
-            "Name": "txt_accion",
-            "X": 342,
-            "Y": 30,
-            "Width": 122,
-            "Height": 35,
-            "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          }
-        ],
-        "Interactions": [
-          {
-            "InteractionName": "obtenerAccionDelTeclado",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerScreenEntered"
-            },
-            "Action": {
-              "FunctionName": "obtenerAccion",
-              "Type": "ActionCustom"
-            }
-          },
-          {
-            "InteractionName": "GuardarEntradaPorTeclado",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "btn_ok",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "FunctionName": "registrarEntradaTeclado",
-              "Type": "ActionCustom"
-            }
-          }
-        ],
-        "Name": "teclado",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       },
@@ -653,6 +136,21 @@
                     "Width": 170,
                     "Height": 60,
                     "Type": "ButtonWithLabel",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "RelativeFilename": "cont1.png",
+                    "Alpha": 255,
+                    "Name": "image1",
+                    "X": 184,
+                    "Y": 198,
+                    "Width": 108,
+                    "Height": 28,
+                    "Type": "Image",
                     "Visible": true,
                     "Draggable": false,
                     "Clickable": false,
@@ -764,6 +262,21 @@
                     "Clickable": false,
                     "Fadeable": false,
                     "Moveable": false
+                  },
+                  {
+                    "RelativeFilename": "cont2.png",
+                    "Alpha": 255,
+                    "Name": "image1_1",
+                    "X": 184,
+                    "Y": 198,
+                    "Width": 108,
+                    "Height": 28,
+                    "Type": "Image",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
                   }
                 ],
                 "IsCacheableContainer": false,
@@ -782,331 +295,13 @@
               {
                 "Components": [
                   {
-                    "RelativeFilename": "menuC.png",
-                    "Alpha": 255,
-                    "Name": "imgConfig",
-                    "X": 45,
-                    "Y": 38,
-                    "Width": 150,
-                    "Height": 150,
-                    "Type": "Image",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "TextId": "SingleUseId22",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 0,
-                      "Green": 0,
-                      "Blue": 0
-                    },
-                    "Alpha": 255,
-                    "AutoSize": true,
-                    "LineSpacing": 0,
-                    "Name": "txt_configuracion",
-                    "X": 240,
-                    "Y": 38,
-                    "Width": 195,
-                    "Height": 31,
-                    "Type": "TextArea",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-                    "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-                    "Alpha": 255,
-                    "TextId": "SingleUseId23",
-                    "ReleasedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "PressedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "TextRotation": "0",
-                    "Style": "Style4",
-                    "Name": "empezarConfiguracion",
-                    "X": 240,
-                    "Y": 128,
-                    "Width": 170,
-                    "Height": 60,
-                    "Type": "ButtonWithLabel",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "TextId": "SingleUseId31",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 0,
-                      "Green": 0,
-                      "Blue": 0
-                    },
-                    "Alpha": 255,
-                    "AutoSize": true,
-                    "LineSpacing": 0,
-                    "Name": "subtxt_configuracion",
-                    "X": 240,
-                    "Y": 78,
-                    "Width": 128,
-                    "Height": 26,
-                    "Type": "TextArea",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  }
-                ],
-                "IsCacheableContainer": false,
-                "Name": "Configuracion",
-                "X": 0,
-                "Y": 0,
-                "Width": 480,
-                "Height": 226,
-                "Type": "Container",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
-                "Components": [
-                  {
-                    "RelativeFilename": "menuD.png",
-                    "Alpha": 255,
-                    "Name": "imgEstat",
-                    "X": 45,
-                    "Y": 38,
-                    "Width": 120,
-                    "Height": 150,
-                    "Type": "Image",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "TextId": "SingleUseId24",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 0,
-                      "Green": 0,
-                      "Blue": 0
-                    },
-                    "Alpha": 255,
-                    "AutoSize": true,
-                    "LineSpacing": 0,
-                    "Name": "txt_balanzaInteligente_2_1",
-                    "X": 240,
-                    "Y": 38,
-                    "Width": 167,
-                    "Height": 31,
-                    "Type": "TextArea",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-                    "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-                    "Alpha": 255,
-                    "TextId": "SingleUseId25",
-                    "ReleasedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "PressedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "TextRotation": "0",
-                    "Style": "Style4",
-                    "Name": "empezarBalanza_2_1",
-                    "X": 240,
-                    "Y": 128,
-                    "Width": 170,
-                    "Height": 60,
-                    "Type": "ButtonWithLabel",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "TextId": "SingleUseId32",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 0,
-                      "Green": 0,
-                      "Blue": 0
-                    },
-                    "Alpha": 255,
-                    "AutoSize": true,
-                    "LineSpacing": 0,
-                    "Name": "textArea1_2",
-                    "X": 240,
-                    "Y": 78,
-                    "Width": 147,
-                    "Height": 26,
-                    "Type": "TextArea",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  }
-                ],
-                "IsCacheableContainer": false,
-                "Name": "Estadisticas",
-                "X": 0,
-                "Y": 0,
-                "Width": 480,
-                "Height": 226,
-                "Type": "Container",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
-                "Components": [
-                  {
                     "RelativeFilename": "menuE.png",
-                    "Alpha": 255,
-                    "Name": "imgUsr",
-                    "X": 45,
-                    "Y": 38,
-                    "Width": 150,
-                    "Height": 128,
-                    "Type": "Image",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "TextId": "SingleUseId26",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 0,
-                      "Green": 0,
-                      "Blue": 0
-                    },
-                    "Alpha": 255,
-                    "AutoSize": true,
-                    "LineSpacing": 0,
-                    "Name": "txt_balanzaInteligente_2_2",
-                    "X": 240,
-                    "Y": 38,
-                    "Width": 122,
-                    "Height": 31,
-                    "Type": "TextArea",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-                    "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-                    "Alpha": 255,
-                    "TextId": "SingleUseId27",
-                    "ReleasedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "PressedColor": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "TextRotation": "0",
-                    "Style": "Style4",
-                    "Name": "empezarBalanza_2_2",
-                    "X": 240,
-                    "Y": 128,
-                    "Width": 170,
-                    "Height": 60,
-                    "Type": "ButtonWithLabel",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  },
-                  {
-                    "TextId": "SingleUseId33",
-                    "TextRotation": "0",
-                    "Color": {
-                      "Red": 0,
-                      "Green": 0,
-                      "Blue": 0
-                    },
-                    "Alpha": 255,
-                    "AutoSize": true,
-                    "LineSpacing": 0,
-                    "Name": "textArea1_3",
-                    "X": 240,
-                    "Y": 78,
-                    "Width": 153,
-                    "Height": 26,
-                    "Type": "TextArea",
-                    "Visible": true,
-                    "Draggable": false,
-                    "Clickable": false,
-                    "Fadeable": false,
-                    "Moveable": false
-                  }
-                ],
-                "IsCacheableContainer": false,
-                "Name": "Usuarios",
-                "X": 0,
-                "Y": 0,
-                "Width": 480,
-                "Height": 226,
-                "Type": "Container",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
-                "Components": [
-                  {
-                    "RelativeFilename": "menuF.png",
                     "Alpha": 255,
                     "Name": "imgOut",
                     "X": 45,
                     "Y": 38,
                     "Width": 150,
-                    "Height": 150,
+                    "Height": 128,
                     "Type": "Image",
                     "Visible": true,
                     "Draggable": false,
@@ -1131,7 +326,105 @@
                     },
                     "TextRotation": "0",
                     "Style": "Style4",
-                    "Name": "cerrarSesion",
+                    "Name": "Empezar",
+                    "X": 240,
+                    "Y": 93,
+                    "Width": 170,
+                    "Height": 60,
+                    "Type": "ButtonWithLabel",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "RelativeFilename": "cont3.png",
+                    "Alpha": 255,
+                    "Name": "image1_2",
+                    "X": 186,
+                    "Y": 198,
+                    "Width": 108,
+                    "Height": 28,
+                    "Type": "Image",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "TextId": "SingleUseId123",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 43,
+                      "Green": 43,
+                      "Blue": 43
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txt_balanzaInteligente_1",
+                    "X": 240,
+                    "Y": 51,
+                    "Width": 173,
+                    "Height": 31,
+                    "Type": "TextArea",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "IsCacheableContainer": false,
+                "Name": "CerrarSesion",
+                "X": 0,
+                "Y": 0,
+                "Width": 480,
+                "Height": 226,
+                "Type": "Container",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Components": [
+                  {
+                    "RelativeFilename": "menuF.png",
+                    "Alpha": 255,
+                    "Name": "imgOut_1",
+                    "X": 45,
+                    "Y": 38,
+                    "Width": 150,
+                    "Height": 150,
+                    "Type": "Image",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+                    "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+                    "Alpha": 255,
+                    "TextId": "SingleUseId122",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0",
+                    "Style": "Style4",
+                    "Name": "cerrarSesion_1",
                     "X": 240,
                     "Y": 83,
                     "Width": 170,
@@ -1142,10 +435,25 @@
                     "Clickable": false,
                     "Fadeable": false,
                     "Moveable": false
+                  },
+                  {
+                    "RelativeFilename": "cont4.png",
+                    "Alpha": 255,
+                    "Name": "image1_3_1",
+                    "X": 186,
+                    "Y": 198,
+                    "Width": 108,
+                    "Height": 28,
+                    "Type": "Image",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
                   }
                 ],
                 "IsCacheableContainer": false,
-                "Name": "CerrarSesion",
+                "Name": "CerrarSesion_1",
                 "X": 0,
                 "Y": 0,
                 "Width": 480,
@@ -1221,20 +529,6 @@
             }
           },
           {
-            "InteractionName": "cerrarSesion",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "cerrarSesion",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "ScreenTransitionType": "ScreenTransitionCover",
-              "ScreenTransitionDirection": "East",
-              "ActionComponent": "Screen1",
-              "Type": "ActionGotoScreen"
-            }
-          },
-          {
             "InteractionName": "perfilesProductos",
             "HasCompletedTrigger": false,
             "Trigger": {
@@ -1246,87 +540,22 @@
               "ActionComponent": "PerfilProductos",
               "Type": "ActionGotoScreen"
             }
-          }
-        ],
-        "Name": "MenuPrincipal",
-        "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
-      },
-      {
-        "Components": [
-          {
-            "RelativeFilename": "background-title.png",
-            "Alpha": 255,
-            "Name": "manejoUsuarios",
-            "X": 0,
-            "Y": 0,
-            "Width": 480,
-            "Height": 272,
-            "Type": "Image",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
           },
           {
-            "TextId": "SingleUseId17",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "textArea1",
-            "X": 152,
-            "Y": 124,
-            "Width": 195,
-            "Height": 25,
-            "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "__designer\\blue_buttons_round_edge_small_pressed.png",
-            "Released": "__designer\\blue_buttons_round_edge_small.png",
-            "Alpha": 255,
-            "Style": "Style4",
-            "Name": "back",
-            "X": 155,
-            "Y": 174,
-            "Width": 170,
-            "Height": 60,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          }
-        ],
-        "Interactions": [
-          {
-            "InteractionName": "regresar",
+            "InteractionName": "Interaction3",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "TriggerComponent": "back",
+              "TriggerComponent": "cerrarSesion_1",
               "Type": "TriggerClicked"
             },
             "Action": {
-              "ScreenTransitionType": "ScreenTransitionSlide",
-              "ScreenTransitionDirection": "East",
-              "ActionComponent": "MenuPrincipal",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenSaver",
               "Type": "ActionGotoScreen"
             }
           }
         ],
-        "Name": "Screen2",
+        "Name": "MenuPrincipal",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       },
@@ -1766,7 +995,7 @@
             "Radius": 88,
             "LineWidth": 22,
             "StartAngle": 268,
-            "EndAngle": 268,
+            "EndAngle": 450,
             "CapPrecision": "Round",
             "Alpha": 255,
             "Name": "widgetCircular",
@@ -2103,8 +1332,8 @@
                 "Moveable": false
               },
               {
-                "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-                "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+                "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
                 "Alpha": 255,
                 "TextId": "SingleUseId80",
                 "ReleasedColor": {
@@ -2118,11 +1347,10 @@
                   "Blue": 255
                 },
                 "TextRotation": "0",
-                "Style": "Style4",
                 "Name": "cerrarModal",
                 "X": 82,
                 "Y": 153,
-                "Width": 170,
+                "Width": 60,
                 "Height": 60,
                 "Type": "ButtonWithLabel",
                 "Visible": true,
@@ -2146,6 +1374,112 @@
             "ContY": 0,
             "Alpha": 150,
             "Name": "alertaPerfil",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "ModalWindow",
+            "Visible": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "FileNameImage": "",
+            "Alpha": 210,
+            "StartX": 6,
+            "StartY": 5,
+            "EndX": 46,
+            "EndY": 5,
+            "LineWidth": 10,
+            "LineEndingStyle": "Butt",
+            "Name": "line1",
+            "X": 304,
+            "Y": 158,
+            "Width": 51,
+            "Height": 15,
+            "Type": "Line",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Components": [
+              {
+                "TextId": "SingleUseId124",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Name": "textArea8",
+                "X": 79,
+                "Y": 57,
+                "Width": 176,
+                "Height": 50,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+                "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId125",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style4",
+                "Name": "cerrarModalEnvio",
+                "X": 85,
+                "Y": 127,
+                "Width": 170,
+                "Height": 60,
+                "Type": "ButtonWithLabel",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "FileName": "modal_background.png",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "ModalX": 70,
+            "ModalY": 16,
+            "ModalWidth": 340,
+            "ModalHeight": 240,
+            "ContX": 0,
+            "ContY": 0,
+            "Alpha": 150,
+            "Name": "modalWindow1",
             "X": 0,
             "Y": 0,
             "Width": 480,
@@ -2279,6 +1613,18 @@
               "ActionComponent": "alertaPerfil",
               "Type": "ActionHide"
             }
+          },
+          {
+            "InteractionName": "cerrarModal2",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "cerrarModalEnvio",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ActionComponent": "modalWindow1",
+              "Type": "ActionHide"
+            }
           }
         ],
         "Name": "BalanzaInteligente",
@@ -2287,6 +1633,21 @@
       },
       {
         "Components": [
+          {
+            "RelativeFilename": "edit.png",
+            "Alpha": 255,
+            "Name": "lapiz2",
+            "X": 131,
+            "Y": 103,
+            "Width": 16,
+            "Height": 16,
+            "Type": "Image",
+            "Visible": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
           {
             "RelativeFilename": "background-title.png",
             "Alpha": 255,
@@ -2335,7 +1696,7 @@
                 "Type": "BoxWithBorderButtonStyle",
                 "X": 0,
                 "Y": 0,
-                "Width": 60,
+                "Width": 96,
                 "Height": 94,
                 "LockToFlexButtonSize": true,
                 "BorderSize": 5,
@@ -2362,12 +1723,12 @@
               }
             ],
             "Name": "btnPesoEsp",
-            "X": 150,
-            "Y": 136,
-            "Width": 60,
+            "X": 162,
+            "Y": 130,
+            "Width": 96,
             "Height": 94,
             "Type": "FlexButton",
-            "Visible": true,
+            "Visible": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -2383,7 +1744,7 @@
                 "Type": "BoxWithBorderButtonStyle",
                 "X": 0,
                 "Y": 0,
-                "Width": 60,
+                "Width": 93,
                 "Height": 94,
                 "LockToFlexButtonSize": true,
                 "BorderSize": 5,
@@ -2410,12 +1771,12 @@
               }
             ],
             "Name": "btnDiferenciaPerm",
-            "X": 272,
-            "Y": 137,
-            "Width": 60,
+            "X": 283,
+            "Y": 130,
+            "Width": 93,
             "Height": 94,
             "Type": "FlexButton",
-            "Visible": true,
+            "Visible": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -2431,8 +1792,8 @@
                 "Type": "BoxWithBorderButtonStyle",
                 "X": 0,
                 "Y": 0,
-                "Width": 339,
-                "Height": 31,
+                "Width": 15,
+                "Height": 16,
                 "LockToFlexButtonSize": true,
                 "BorderSize": 5,
                 "ColorReleased": {
@@ -2458,10 +1819,10 @@
               }
             ],
             "Name": "btnDescripcion",
-            "X": 128,
+            "X": 454,
             "Y": 96,
-            "Width": 339,
-            "Height": 31,
+            "Width": 15,
+            "Height": 16,
             "Type": "FlexButton",
             "Visible": true,
             "Draggable": false,
@@ -2511,7 +1872,7 @@
             "Width": 339,
             "Height": 25,
             "Type": "FlexButton",
-            "Visible": true,
+            "Visible": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -2835,10 +2196,10 @@
               "BufferSize": 30
             },
             "Name": "TxtDisplayPerfilDesc",
-            "X": 154,
-            "Y": 69,
+            "X": 153,
+            "Y": 78,
             "Width": 316,
-            "Height": 21,
+            "Height": 34,
             "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
@@ -2863,12 +2224,12 @@
               "BufferSize": 67
             },
             "Name": "TxtDisplayDesc",
-            "X": 154,
-            "Y": 103,
-            "Width": 324,
-            "Height": 16,
+            "X": 162,
+            "Y": 78,
+            "Width": 193,
+            "Height": 40,
             "Type": "TextArea",
-            "Visible": true,
+            "Visible": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -2890,8 +2251,8 @@
             "CapPrecision": "Butt",
             "Alpha": 255,
             "Name": "circle1",
-            "X": 150,
-            "Y": 166,
+            "X": 180,
+            "Y": 160,
             "Width": 60,
             "Height": 60,
             "Type": "Circle",
@@ -2918,8 +2279,8 @@
               "BufferSize": 6
             },
             "Name": "txtPesoEsperado",
-            "X": 157,
-            "Y": 181,
+            "X": 187,
+            "Y": 175,
             "Width": 47,
             "Height": 21,
             "Type": "TextArea",
@@ -2941,8 +2302,8 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea2_1",
-            "X": 169,
-            "Y": 203,
+            "X": 199,
+            "Y": 197,
             "Width": 22,
             "Height": 13,
             "Type": "TextArea",
@@ -2964,8 +2325,8 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea2_1_1",
-            "X": 157,
-            "Y": 138,
+            "X": 187,
+            "Y": 132,
             "Width": 46,
             "Height": 26,
             "Type": "TextArea",
@@ -2991,8 +2352,8 @@
             "CapPrecision": "Butt",
             "Alpha": 255,
             "Name": "circle1_2",
-            "X": 270,
-            "Y": 164,
+            "X": 300,
+            "Y": 158,
             "Width": 60,
             "Height": 60,
             "Type": "Circle",
@@ -3019,8 +2380,8 @@
               "BufferSize": 6
             },
             "Name": "txtDiferenciaPerm",
-            "X": 277,
-            "Y": 179,
+            "X": 307,
+            "Y": 173,
             "Width": 47,
             "Height": 21,
             "Type": "TextArea",
@@ -3042,8 +2403,8 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea2_1_3",
-            "X": 289,
-            "Y": 201,
+            "X": 319,
+            "Y": 195,
             "Width": 22,
             "Height": 13,
             "Type": "TextArea",
@@ -3065,8 +2426,8 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea2_1_1_2",
-            "X": 277,
-            "Y": 136,
+            "X": 307,
+            "Y": 130,
             "Width": 50,
             "Height": 26,
             "Type": "TextArea",
@@ -3079,13 +2440,13 @@
           {
             "RelativeFilename": "edit.png",
             "Alpha": 255,
-            "Name": "image1",
+            "Name": "lapiz1",
             "X": 131,
-            "Y": 74,
+            "Y": 82,
             "Width": 16,
             "Height": 16,
             "Type": "Image",
-            "Visible": true,
+            "Visible": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -3094,13 +2455,13 @@
           {
             "RelativeFilename": "edit.png",
             "Alpha": 255,
-            "Name": "image1_1",
-            "X": 131,
-            "Y": 103,
+            "Name": "lapiz3",
+            "X": 227,
+            "Y": 201,
             "Width": 16,
             "Height": 16,
             "Type": "Image",
-            "Visible": true,
+            "Visible": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -3109,51 +2470,13 @@
           {
             "RelativeFilename": "edit.png",
             "Alpha": 255,
-            "Name": "image1_2",
-            "X": 196,
-            "Y": 208,
+            "Name": "lapiz4",
+            "X": 346,
+            "Y": 200,
             "Width": 16,
             "Height": 16,
             "Type": "Image",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "RelativeFilename": "edit.png",
-            "Alpha": 255,
-            "Name": "image1_3",
-            "X": 316,
-            "Y": 207,
-            "Width": 16,
-            "Height": 16,
-            "Type": "Image",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId111",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 226,
-              "Green": 3,
-              "Blue": 3
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "textArea1",
-            "X": 180,
-            "Y": 240,
-            "Width": 131,
-            "Height": 19,
-            "Type": "TextArea",
-            "Visible": true,
+            "Visible": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -3176,6 +2499,118 @@
             "Height": 60,
             "Type": "ButtonWithIcon",
             "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "InitialStatePressed": false,
+            "Pressed": "Round_icon_button_pressed.png",
+            "Released": "Round_icon_button.png",
+            "Alpha": 255,
+            "Name": "btnEditarPerfil",
+            "X": 410,
+            "Y": 143,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ToggleButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Components": [
+              {
+                "TextId": "SingleUseId119",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Name": "textArea1",
+                "X": 172,
+                "Y": 67,
+                "Width": 131,
+                "Height": 50,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "RelativeFilename": "warning.png",
+                "Alpha": 255,
+                "Name": "image1",
+                "X": 51,
+                "Y": 35,
+                "Width": 100,
+                "Height": 100,
+                "Type": "Image",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+                "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId120",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style4",
+                "Name": "CerrarModal",
+                "X": 85,
+                "Y": 159,
+                "Width": 170,
+                "Height": 60,
+                "Type": "ButtonWithLabel",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "FileName": "modal_background.png",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "ModalX": 70,
+            "ModalY": 16,
+            "ModalWidth": 340,
+            "ModalHeight": 240,
+            "ContX": 0,
+            "ContY": 0,
+            "Alpha": 150,
+            "Name": "modalWindow1",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "ModalWindow",
+            "Visible": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -3255,16 +2690,6 @@
             }
           },
           {
-            "InteractionName": "Interaction1",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "Type": "ActionNone"
-            }
-          },
-          {
             "InteractionName": "inputPerfilTitulo",
             "HasCompletedTrigger": false,
             "Trigger": {
@@ -3277,381 +2702,86 @@
             }
           },
           {
-            "InteractionName": "inputPerfilDescripcion",
+            "InteractionName": "regresar",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "TriggerComponent": "btnDescripcion",
+              "TriggerComponent": "homeButton",
               "Type": "TriggerClicked"
             },
             "Action": {
-              "FunctionName": "inputPerfilDescripcion",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuPrincipal",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "EditarPerfil",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "btnEditarPerfil",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "EditarPerfil",
               "Type": "ActionCustom"
             }
           },
           {
-            "InteractionName": "Interaction2",
-            "HasCompletedTrigger": false,
+            "InteractionName": "ingresarPesoEsperado",
+            "HasCompletedTrigger": true,
             "Trigger": {
-              "TriggerComponent": "btnTitulo",
+              "TriggerComponent": "btnPesoEsp",
               "Type": "TriggerClicked"
             },
             "Action": {
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "teclado",
-              "Type": "ActionGotoScreen"
+              "FunctionName": "ingresarPesoEsperado",
+              "Type": "ActionCustom"
             }
           },
           {
-            "InteractionName": "Interaction3",
+            "InteractionName": "vaciarPerfil",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "TriggerComponent": "btnDescripcion",
+              "TriggerComponent": "eliminarDatos",
               "Type": "TriggerClicked"
             },
             "Action": {
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "teclado",
-              "Type": "ActionGotoScreen"
+              "FunctionName": "vaciarPerfil",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "ingresarDiferenciaPerm",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "TriggerComponent": "btnDiferenciaPerm",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "ingresarDiferenciaPerm",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "cerrarModal",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "CerrarModal",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ActionComponent": "modalWindow1",
+              "Type": "ActionHide"
             }
           }
         ],
         "Name": "PerfilProductos",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 7200
-      },
-      {
-        "Components": [
-          {
-            "RelativeFilename": "background-title.png",
-            "Alpha": 255,
-            "Name": "backgroundmenu",
-            "X": 0,
-            "Y": 0,
-            "Width": 480,
-            "Height": 272,
-            "Type": "Image",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId37",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "txt_tituloConfig",
-            "X": 20,
-            "Y": 24,
-            "Width": 110,
-            "Height": 21,
-            "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Alpha": 255,
-            "ButtonTrigger": {
-              "Type": "ClickButtonTrigger"
-            },
-            "ButtonStyles": [
-              {
-                "Type": "ImageButtonStyle",
-                "X": 0,
-                "Y": 0,
-                "LockFlexButtonToImageSize": false,
-                "ImageReleased": "home.png",
-                "ImagePressed": "home.png"
-              },
-              {
-                "Type": "BoxWithBorderButtonStyle",
-                "X": 0,
-                "Y": 0,
-                "Width": 65,
-                "Height": 39,
-                "LockToFlexButtonSize": true,
-                "BorderSize": 5,
-                "ColorReleased": {
-                  "Red": 49,
-                  "Green": 49,
-                  "Blue": 49
-                },
-                "ColorPressed": {
-                  "Red": 75,
-                  "Green": 83,
-                  "Blue": 86
-                },
-                "ColorBorderReleased": {
-                  "Red": 49,
-                  "Green": 49,
-                  "Blue": 49
-                },
-                "ColorBorderPressed": {
-                  "Red": 75,
-                  "Green": 83,
-                  "Blue": 86
-                }
-              }
-            ],
-            "Name": "homeButton",
-            "X": 411,
-            "Y": 5,
-            "Width": 65,
-            "Height": 39,
-            "Type": "FlexButton",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          }
-        ],
-        "Interactions": [],
-        "Name": "Configuracion",
-        "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
-      },
-      {
-        "Components": [
-          {
-            "RelativeFilename": "background-title.png",
-            "Alpha": 255,
-            "Name": "backgroundmenu",
-            "X": 0,
-            "Y": 0,
-            "Width": 480,
-            "Height": 272,
-            "Type": "Image",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId38",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "txt_tituloEstad",
-            "X": 20,
-            "Y": 24,
-            "Width": 97,
-            "Height": 21,
-            "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Alpha": 255,
-            "ButtonTrigger": {
-              "Type": "ClickButtonTrigger"
-            },
-            "ButtonStyles": [
-              {
-                "Type": "ImageButtonStyle",
-                "X": 0,
-                "Y": 0,
-                "LockFlexButtonToImageSize": false,
-                "ImageReleased": "home.png",
-                "ImagePressed": "home.png"
-              },
-              {
-                "Type": "BoxWithBorderButtonStyle",
-                "X": 0,
-                "Y": 0,
-                "Width": 65,
-                "Height": 39,
-                "LockToFlexButtonSize": true,
-                "BorderSize": 5,
-                "ColorReleased": {
-                  "Red": 49,
-                  "Green": 49,
-                  "Blue": 49
-                },
-                "ColorPressed": {
-                  "Red": 75,
-                  "Green": 83,
-                  "Blue": 86
-                },
-                "ColorBorderReleased": {
-                  "Red": 49,
-                  "Green": 49,
-                  "Blue": 49
-                },
-                "ColorBorderPressed": {
-                  "Red": 75,
-                  "Green": 83,
-                  "Blue": 86
-                }
-              }
-            ],
-            "Name": "homeButton",
-            "X": 411,
-            "Y": 5,
-            "Width": 65,
-            "Height": 39,
-            "Type": "FlexButton",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          }
-        ],
-        "Interactions": [],
-        "Name": "Estadisticas",
-        "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
-      },
-      {
-        "Components": [
-          {
-            "RelativeFilename": "background-title.png",
-            "Alpha": 255,
-            "Name": "backgroundmenu",
-            "X": 0,
-            "Y": 0,
-            "Width": 480,
-            "Height": 272,
-            "Type": "Image",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId39",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "txt_tituloUsr",
-            "X": 20,
-            "Y": 24,
-            "Width": 69,
-            "Height": 21,
-            "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Alpha": 255,
-            "ButtonTrigger": {
-              "Type": "ClickButtonTrigger"
-            },
-            "ButtonStyles": [
-              {
-                "Type": "ImageButtonStyle",
-                "X": 0,
-                "Y": 0,
-                "LockFlexButtonToImageSize": false,
-                "ImageReleased": "home.png",
-                "ImagePressed": "home.png"
-              },
-              {
-                "Type": "BoxWithBorderButtonStyle",
-                "X": 0,
-                "Y": 0,
-                "Width": 65,
-                "Height": 39,
-                "LockToFlexButtonSize": true,
-                "BorderSize": 5,
-                "ColorReleased": {
-                  "Red": 49,
-                  "Green": 49,
-                  "Blue": 49
-                },
-                "ColorPressed": {
-                  "Red": 75,
-                  "Green": 83,
-                  "Blue": 86
-                },
-                "ColorBorderReleased": {
-                  "Red": 49,
-                  "Green": 49,
-                  "Blue": 49
-                },
-                "ColorBorderPressed": {
-                  "Red": 75,
-                  "Green": 83,
-                  "Blue": 86
-                }
-              }
-            ],
-            "Name": "homeButton",
-            "X": 411,
-            "Y": 5,
-            "Width": 65,
-            "Height": 39,
-            "Type": "FlexButton",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          }
-        ],
-        "Interactions": [],
-        "Name": "Usuarios",
-        "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
       }
     ],
     "CustomContainerDefinitions": [],
     "TextEntries": [
-      {
-        "TextEntryId": "SingleUseId1",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId2",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId3",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId4",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId5",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId6",
-        "IsResource": false
-      },
       {
         "TextEntryId": "EnteredText",
         "IsResource": true
@@ -3663,42 +2793,6 @@
       {
         "TextEntryId": "AlphaMode",
         "IsResource": true
-      },
-      {
-        "TextEntryId": "SingleUseId7",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId8",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId9",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId10",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId12",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId13",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId14",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId15",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId17",
-        "IsResource": false
       },
       {
         "TextEntryId": "SingleUseId18",
@@ -3717,47 +2811,11 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId22",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId23",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId24",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId25",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId26",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId27",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId29",
         "IsResource": false
       },
       {
         "TextEntryId": "SingleUseId30",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId31",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId32",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId33",
         "IsResource": false
       },
       {
@@ -3770,18 +2828,6 @@
       },
       {
         "TextEntryId": "SingleUseId36",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId37",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId38",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId39",
         "IsResource": false
       },
       {
@@ -3941,10 +2987,6 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId92",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId93",
         "IsResource": false
       },
@@ -3973,10 +3015,6 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId108",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId109",
         "IsResource": false
       },
@@ -3985,7 +3023,35 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId111",
+        "TextEntryId": "SingleUseId92",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId108",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId119",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId120",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId122",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId123",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId124",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId125",
         "IsResource": false
       }
     ],

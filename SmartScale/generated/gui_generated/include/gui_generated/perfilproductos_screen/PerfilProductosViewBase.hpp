@@ -17,6 +17,10 @@
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
+#include <touchgfx/widgets/ToggleButton.hpp>
+#include <touchgfx/containers/ModalWindow.hpp>
+#include <touchgfx/Color.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 class PerfilProductosViewBase : public touchgfx::View<PerfilProductosPresenter>
 {
 public:
@@ -63,7 +67,22 @@ public:
         // Override and implement this function in PerfilProductos
     }
 
-    virtual void inputPerfilDescripcion()
+    virtual void EditarPerfil()
+    {
+        // Override and implement this function in PerfilProductos
+    }
+
+    virtual void ingresarPesoEsperado()
+    {
+        // Override and implement this function in PerfilProductos
+    }
+
+    virtual void vaciarPerfil()
+    {
+        // Override and implement this function in PerfilProductos
+    }
+
+    virtual void ingresarDiferenciaPerm()
     {
         // Override and implement this function in PerfilProductos
     }
@@ -76,6 +95,7 @@ protected:
     /*
      * Member Declarations
      */
+    touchgfx::Image lapiz2;
     touchgfx::Image backgroundmenu;
     touchgfx::TextArea txt_tituloPerfil;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > btnPesoEsp;
@@ -107,12 +127,16 @@ protected:
     touchgfx::TextAreaWithOneWildcard txtDiferenciaPerm;
     touchgfx::TextArea textArea2_1_3;
     touchgfx::TextArea textArea2_1_1_2;
-    touchgfx::Image image1;
-    touchgfx::Image image1_1;
-    touchgfx::Image image1_2;
-    touchgfx::Image image1_3;
-    touchgfx::TextArea textArea1;
+    touchgfx::Image lapiz1;
+    touchgfx::Image lapiz3;
+    touchgfx::Image lapiz4;
     touchgfx::ButtonWithIcon eliminarDatos;
+    touchgfx::ToggleButton btnEditarPerfil;
+    touchgfx::ModalWindow modalWindow1;
+    touchgfx::TextArea textArea1;
+    touchgfx::Image image1;
+    touchgfx::ButtonWithLabel CerrarModal;
+
 
     /*
      * Wildcard Buffers

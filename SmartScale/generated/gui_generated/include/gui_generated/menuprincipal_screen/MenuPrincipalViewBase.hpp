@@ -34,34 +34,25 @@ protected:
     touchgfx::Image imgBalanza;
     touchgfx::TextArea txt_balanzaInteligente;
     touchgfx::ButtonWithLabel empezarBalanza;
+    touchgfx::Image image1;
 
     touchgfx::Container Perfil;
     touchgfx::Image imgPerfil;
     touchgfx::TextArea txt_perfiles;
     touchgfx::ButtonWithLabel empezarPerfiles;
     touchgfx::TextArea subtxt_perfiles;
-
-    touchgfx::Container Configuracion;
-    touchgfx::Image imgConfig;
-    touchgfx::TextArea txt_configuracion;
-    touchgfx::ButtonWithLabel empezarConfiguracion;
-    touchgfx::TextArea subtxt_configuracion;
-
-    touchgfx::Container Estadisticas;
-    touchgfx::Image imgEstat;
-    touchgfx::TextArea txt_balanzaInteligente_2_1;
-    touchgfx::ButtonWithLabel empezarBalanza_2_1;
-    touchgfx::TextArea textArea1_2;
-
-    touchgfx::Container Usuarios;
-    touchgfx::Image imgUsr;
-    touchgfx::TextArea txt_balanzaInteligente_2_2;
-    touchgfx::ButtonWithLabel empezarBalanza_2_2;
-    touchgfx::TextArea textArea1_3;
+    touchgfx::Image image1_1;
 
     touchgfx::Container CerrarSesion;
     touchgfx::Image imgOut;
-    touchgfx::ButtonWithLabel cerrarSesion;
+    touchgfx::ButtonWithLabel Empezar;
+    touchgfx::Image image1_2;
+    touchgfx::TextArea txt_balanzaInteligente_1;
+
+    touchgfx::Container CerrarSesion_1;
+    touchgfx::Image imgOut_1;
+    touchgfx::ButtonWithLabel cerrarSesion_1;
+    touchgfx::Image image1_3_1;
 
     touchgfx::TextArea txt_tituloMenu;
 

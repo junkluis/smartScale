@@ -12,6 +12,10 @@ PerfilProductosViewBase::PerfilProductosViewBase() :
 {
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
 
+    lapiz2.setXY(131, 103);
+    lapiz2.setVisible(false);
+    lapiz2.setBitmap(touchgfx::Bitmap(BITMAP_EDIT_ID));
+
     backgroundmenu.setXY(0, 0);
     backgroundmenu.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_TITLE_ID));
 
@@ -20,29 +24,33 @@ PerfilProductosViewBase::PerfilProductosViewBase() :
     txt_tituloPerfil.setLinespacing(0);
     txt_tituloPerfil.setTypedText(touchgfx::TypedText(T_SINGLEUSEID36));
 
-    btnPesoEsp.setBoxWithBorderPosition(0, 0, 60, 94);
+    btnPesoEsp.setBoxWithBorderPosition(0, 0, 96, 94);
     btnPesoEsp.setBorderSize(5);
     btnPesoEsp.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(0, 102, 153), touchgfx::Color::getColorFrom24BitRGB(0, 153, 204), touchgfx::Color::getColorFrom24BitRGB(0, 51, 102), touchgfx::Color::getColorFrom24BitRGB(51, 102, 153));
-    btnPesoEsp.setPosition(150, 136, 60, 94);
+    btnPesoEsp.setPosition(162, 130, 96, 94);
+    btnPesoEsp.setVisible(false);
     btnPesoEsp.setAlpha(0);
+    btnPesoEsp.setAction(flexButtonCallback);
 
-    btnDiferenciaPerm.setBoxWithBorderPosition(0, 0, 60, 94);
+    btnDiferenciaPerm.setBoxWithBorderPosition(0, 0, 93, 94);
     btnDiferenciaPerm.setBorderSize(5);
     btnDiferenciaPerm.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(0, 102, 153), touchgfx::Color::getColorFrom24BitRGB(0, 153, 204), touchgfx::Color::getColorFrom24BitRGB(0, 51, 102), touchgfx::Color::getColorFrom24BitRGB(51, 102, 153));
-    btnDiferenciaPerm.setPosition(272, 137, 60, 94);
+    btnDiferenciaPerm.setPosition(283, 130, 93, 94);
+    btnDiferenciaPerm.setVisible(false);
     btnDiferenciaPerm.setAlpha(0);
+    btnDiferenciaPerm.setAction(flexButtonCallback);
 
-    btnDescripcion.setBoxWithBorderPosition(0, 0, 339, 31);
+    btnDescripcion.setBoxWithBorderPosition(0, 0, 15, 16);
     btnDescripcion.setBorderSize(5);
     btnDescripcion.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(0, 102, 153), touchgfx::Color::getColorFrom24BitRGB(0, 153, 204), touchgfx::Color::getColorFrom24BitRGB(0, 51, 102), touchgfx::Color::getColorFrom24BitRGB(51, 102, 153));
-    btnDescripcion.setPosition(128, 96, 339, 31);
+    btnDescripcion.setPosition(454, 96, 15, 16);
     btnDescripcion.setAlpha(0);
-    btnDescripcion.setAction(flexButtonCallback);
 
     btnTitulo.setBoxWithBorderPosition(0, 0, 339, 25);
     btnTitulo.setBorderSize(5);
     btnTitulo.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(0, 102, 153), touchgfx::Color::getColorFrom24BitRGB(0, 153, 204), touchgfx::Color::getColorFrom24BitRGB(0, 51, 102), touchgfx::Color::getColorFrom24BitRGB(51, 102, 153));
     btnTitulo.setPosition(128, 69, 339, 25);
+    btnTitulo.setVisible(false);
     btnTitulo.setAlpha(0);
     btnTitulo.setAction(flexButtonCallback);
 
@@ -121,22 +129,24 @@ PerfilProductosViewBase::PerfilProductosViewBase() :
     homeButton.setBitmaps(Bitmap(BITMAP_HOME_ID), Bitmap(BITMAP_HOME_ID));
     homeButton.setBitmapXY(0, 0);
     homeButton.setPosition(411, 5, 65, 39);
+    homeButton.setAction(flexButtonCallback);
 
-    TxtDisplayPerfilDesc.setPosition(154, 69, 316, 21);
+    TxtDisplayPerfilDesc.setPosition(153, 78, 316, 34);
     TxtDisplayPerfilDesc.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     TxtDisplayPerfilDesc.setLinespacing(0);
     Unicode::snprintf(TxtDisplayPerfilDescBuffer, TXTDISPLAYPERFILDESC_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID107).getText());
     TxtDisplayPerfilDesc.setWildcard(TxtDisplayPerfilDescBuffer);
     TxtDisplayPerfilDesc.setTypedText(touchgfx::TypedText(T_SINGLEUSEID91));
 
-    TxtDisplayDesc.setPosition(154, 103, 324, 16);
+    TxtDisplayDesc.setPosition(162, 78, 193, 40);
+    TxtDisplayDesc.setVisible(false);
     TxtDisplayDesc.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     TxtDisplayDesc.setLinespacing(0);
     Unicode::snprintf(TxtDisplayDescBuffer, TXTDISPLAYDESC_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID108).getText());
     TxtDisplayDesc.setWildcard(TxtDisplayDescBuffer);
     TxtDisplayDesc.setTypedText(touchgfx::TypedText(T_SINGLEUSEID92));
 
-    circle1.setPosition(150, 166, 60, 60);
+    circle1.setPosition(180, 160, 60, 60);
     circle1.setCenter(30, 30);
     circle1.setRadius(30);
     circle1.setLineWidth(0);
@@ -144,7 +154,7 @@ PerfilProductosViewBase::PerfilProductosViewBase() :
     circle1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     circle1.setPainter(circle1Painter);
 
-    txtPesoEsperado.setXY(157, 181);
+    txtPesoEsperado.setXY(187, 175);
     txtPesoEsperado.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     txtPesoEsperado.setLinespacing(0);
     Unicode::snprintf(txtPesoEsperadoBuffer, TXTPESOESPERADO_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID109).getText());
@@ -152,17 +162,17 @@ PerfilProductosViewBase::PerfilProductosViewBase() :
     txtPesoEsperado.resizeToCurrentText();
     txtPesoEsperado.setTypedText(touchgfx::TypedText(T_SINGLEUSEID93));
 
-    textArea2_1.setXY(169, 203);
+    textArea2_1.setXY(199, 197);
     textArea2_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea2_1.setLinespacing(0);
     textArea2_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID94));
 
-    textArea2_1_1.setXY(157, 138);
+    textArea2_1_1.setXY(187, 132);
     textArea2_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea2_1_1.setLinespacing(0);
     textArea2_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID95));
 
-    circle1_2.setPosition(270, 164, 60, 60);
+    circle1_2.setPosition(300, 158, 60, 60);
     circle1_2.setCenter(30, 30);
     circle1_2.setRadius(30);
     circle1_2.setLineWidth(0);
@@ -170,7 +180,7 @@ PerfilProductosViewBase::PerfilProductosViewBase() :
     circle1_2Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     circle1_2.setPainter(circle1_2Painter);
 
-    txtDiferenciaPerm.setXY(277, 179);
+    txtDiferenciaPerm.setXY(307, 173);
     txtDiferenciaPerm.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     txtDiferenciaPerm.setLinespacing(0);
     Unicode::snprintf(txtDiferenciaPermBuffer, TXTDIFERENCIAPERM_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID110).getText());
@@ -178,37 +188,61 @@ PerfilProductosViewBase::PerfilProductosViewBase() :
     txtDiferenciaPerm.resizeToCurrentText();
     txtDiferenciaPerm.setTypedText(touchgfx::TypedText(T_SINGLEUSEID99));
 
-    textArea2_1_3.setXY(289, 201);
+    textArea2_1_3.setXY(319, 195);
     textArea2_1_3.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea2_1_3.setLinespacing(0);
     textArea2_1_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID100));
 
-    textArea2_1_1_2.setXY(277, 136);
+    textArea2_1_1_2.setXY(307, 130);
     textArea2_1_1_2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea2_1_1_2.setLinespacing(0);
     textArea2_1_1_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID101));
 
-    image1.setXY(131, 74);
-    image1.setBitmap(touchgfx::Bitmap(BITMAP_EDIT_ID));
+    lapiz1.setXY(131, 82);
+    lapiz1.setVisible(false);
+    lapiz1.setBitmap(touchgfx::Bitmap(BITMAP_EDIT_ID));
 
-    image1_1.setXY(131, 103);
-    image1_1.setBitmap(touchgfx::Bitmap(BITMAP_EDIT_ID));
+    lapiz3.setXY(227, 201);
+    lapiz3.setVisible(false);
+    lapiz3.setBitmap(touchgfx::Bitmap(BITMAP_EDIT_ID));
 
-    image1_2.setXY(196, 208);
-    image1_2.setBitmap(touchgfx::Bitmap(BITMAP_EDIT_ID));
-
-    image1_3.setXY(316, 207);
-    image1_3.setBitmap(touchgfx::Bitmap(BITMAP_EDIT_ID));
-
-    textArea1.setXY(180, 240);
-    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(226, 3, 3));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID111));
+    lapiz4.setXY(346, 200);
+    lapiz4.setVisible(false);
+    lapiz4.setBitmap(touchgfx::Bitmap(BITMAP_EDIT_ID));
 
     eliminarDatos.setXY(410, 207);
     eliminarDatos.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_ERASE_ID), touchgfx::Bitmap(BITMAP_ERASE_ID));
     eliminarDatos.setIconXY(18, 18);
+    eliminarDatos.setAction(buttonCallback);
 
+    btnEditarPerfil.setXY(410, 143);
+    btnEditarPerfil.setBitmaps(touchgfx::Bitmap(BITMAP_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_ROUND_ICON_BUTTON_PRESSED_ID));
+    btnEditarPerfil.setAction(buttonCallback);
+
+    modalWindow1.setBackground(touchgfx::BitmapId(BITMAP_MODAL_BACKGROUND_ID), 70, 16);
+    modalWindow1.setShadeColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    modalWindow1.setShadeAlpha(150);
+    modalWindow1.hide();
+
+    textArea1.setXY(172, 67);
+    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea1.setLinespacing(0);
+    textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID119));
+    modalWindow1.add(textArea1);
+
+    image1.setXY(51, 35);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_WARNING_ID));
+    modalWindow1.add(image1);
+
+    CerrarModal.setXY(85, 159);
+    CerrarModal.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    CerrarModal.setLabelText(touchgfx::TypedText(T_SINGLEUSEID120));
+    CerrarModal.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    CerrarModal.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    CerrarModal.setAction(buttonCallback);
+    modalWindow1.add(CerrarModal);
+
+    add(lapiz2);
     add(backgroundmenu);
     add(txt_tituloPerfil);
     add(btnPesoEsp);
@@ -227,12 +261,12 @@ PerfilProductosViewBase::PerfilProductosViewBase() :
     add(txtDiferenciaPerm);
     add(textArea2_1_3);
     add(textArea2_1_1_2);
-    add(image1);
-    add(image1_1);
-    add(image1_2);
-    add(image1_3);
-    add(textArea1);
+    add(lapiz1);
+    add(lapiz3);
+    add(lapiz4);
     add(eliminarDatos);
+    add(btnEditarPerfil);
+    add(modalWindow1);
 }
 
 void PerfilProductosViewBase::setupScreen()
@@ -286,21 +320,45 @@ void PerfilProductosViewBase::buttonCallbackHandler(const touchgfx::AbstractButt
         //Call Per1Config
         Per1Config();
     }
+    else if (&src == &eliminarDatos)
+    {
+        //vaciarPerfil
+        //When eliminarDatos clicked call virtual function
+        //Call vaciarPerfil
+        vaciarPerfil();
+    }
+    else if (&src == &btnEditarPerfil)
+    {
+        //EditarPerfil
+        //When btnEditarPerfil clicked call virtual function
+        //Call EditarPerfil
+        EditarPerfil();
+    }
+    else if (&src == &CerrarModal)
+    {
+        //cerrarModal
+        //When CerrarModal clicked hide modalWindow1
+        //Hide modalWindow1
+        modalWindow1.setVisible(false);
+        modalWindow1.invalidate();
+    }
 }
 
 void PerfilProductosViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
 {
-    if (&src == &btnDescripcion)
+    if (&src == &btnPesoEsp)
     {
-        //inputPerfilDescripcion
-        //When btnDescripcion clicked call virtual function
-        //Call inputPerfilDescripcion
-        inputPerfilDescripcion();
-
-        //Interaction3
-        //When btnDescripcion clicked change screen to teclado
-        //Go to teclado with no screen transition
-        application().gototecladoScreenNoTransition();
+        //ingresarPesoEsperado
+        //When btnPesoEsp clicked call virtual function
+        //Call ingresarPesoEsperado
+        ingresarPesoEsperado();
+    }
+    else if (&src == &btnDiferenciaPerm)
+    {
+        //ingresarDiferenciaPerm
+        //When btnDiferenciaPerm clicked call virtual function
+        //Call ingresarDiferenciaPerm
+        ingresarDiferenciaPerm();
     }
     else if (&src == &btnTitulo)
     {
@@ -308,10 +366,12 @@ void PerfilProductosViewBase::flexButtonCallbackHandler(const touchgfx::Abstract
         //When btnTitulo clicked call virtual function
         //Call inputPerfilTitulo
         inputPerfilTitulo();
-
-        //Interaction2
-        //When btnTitulo clicked change screen to teclado
-        //Go to teclado with no screen transition
-        application().gototecladoScreenNoTransition();
+    }
+    else if (&src == &homeButton)
+    {
+        //regresar
+        //When homeButton clicked change screen to MenuPrincipal
+        //Go to MenuPrincipal with no screen transition
+        application().gotoMenuPrincipalScreenNoTransition();
     }
 }

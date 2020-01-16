@@ -41,6 +41,7 @@ build/MINGW32_NT-6.2/gui/src/teclado_screen/tecladoPresenter.o: \
  touchgfx/framework/include/mvp/Presenter.hpp \
  touchgfx/framework/include/mvp/MVPHeap.hpp \
  gui/include/gui/model/Model.hpp \
+ touchgfx/framework/include/touchgfx/Perfil.hpp \
  gui/include/gui/teclado_screen/tecladoPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  touchgfx/framework/include/touchgfx/widgets/Box.hpp \
@@ -144,6 +145,8 @@ touchgfx/framework/include/mvp/Presenter.hpp:
 touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 gui/include/gui/model/Model.hpp:
+
+touchgfx/framework/include/touchgfx/Perfil.hpp:
 
 gui/include/gui/teclado_screen/tecladoPresenter.hpp:
 

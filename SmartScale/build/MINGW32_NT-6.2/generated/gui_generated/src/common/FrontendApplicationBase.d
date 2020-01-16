@@ -37,58 +37,40 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  touchgfx/framework/include/touchgfx/JSMOCHelper.hpp \
  touchgfx/framework/include/mvp/Presenter.hpp \
  touchgfx/framework/include/mvp/MVPHeap.hpp \
- gui/include/gui/model/Model.hpp gui/include/gui/common/FrontendHeap.hpp \
+ gui/include/gui/model/Model.hpp \
+ touchgfx/framework/include/touchgfx/Perfil.hpp \
+ gui/include/gui/common/FrontendHeap.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp \
  touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
  touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp \
  touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
- touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
- touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
- gui/include/gui/screen1_screen/Screen1View.hpp \
- generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
- gui/include/gui/screen1_screen/Screen1Presenter.hpp \
- gui/include/gui/model/ModelListener.hpp \
- touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- touchgfx/framework/include/touchgfx/FontManager.hpp \
- touchgfx/framework/include/touchgfx/TypedText.hpp \
- touchgfx/framework/include/touchgfx/Texts.hpp \
- touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
- touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
- touchgfx/framework/include/touchgfx/widgets/Box.hpp \
- touchgfx/framework/include/touchgfx/Color.hpp \
  gui/include/gui/screensaver_screen/ScreenSaverView.hpp \
  generated/gui_generated/include/gui_generated/screensaver_screen/ScreenSaverViewBase.hpp \
  gui/include/gui/screensaver_screen/ScreenSaverPresenter.hpp \
- gui/include/gui/teclado_screen/tecladoView.hpp \
- generated/gui_generated/include/gui_generated/teclado_screen/tecladoViewBase.hpp \
- gui/include/gui/teclado_screen/tecladoPresenter.hpp \
- gui/include/gui/common/CustomKeyboard.hpp \
- touchgfx/framework/include/touchgfx/widgets/Keyboard.hpp \
- generated/texts/include/texts/TextKeysAndLanguages.hpp \
- gui/include/gui/common/KeyboardLayout.hpp \
- generated/fonts/include/fonts/ApplicationFontProvider.hpp \
- generated/images/include/BitmapDatabase.hpp \
- gui/include/gui/common/KeyboardKeyMapping.hpp \
+ gui/include/gui/model/ModelListener.hpp \
+ touchgfx/framework/include/touchgfx/widgets/Image.hpp \
+ touchgfx/framework/include/touchgfx/widgets/Button.hpp \
+ touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  gui/include/gui/menuprincipal_screen/MenuPrincipalView.hpp \
  generated/gui_generated/include/gui_generated/menuprincipal_screen/MenuPrincipalViewBase.hpp \
  gui/include/gui/menuprincipal_screen/MenuPrincipalPresenter.hpp \
  touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
  touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
  touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
- gui/include/gui/screen2_screen/Screen2View.hpp \
- generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
- gui/include/gui/screen2_screen/Screen2Presenter.hpp \
+ touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ touchgfx/framework/include/touchgfx/FontManager.hpp \
+ touchgfx/framework/include/touchgfx/TypedText.hpp \
+ touchgfx/framework/include/touchgfx/Texts.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  gui/include/gui/balanzainteligente_screen/BalanzaInteligenteView.hpp \
  generated/gui_generated/include/gui_generated/balanzainteligente_screen/BalanzaInteligenteViewBase.hpp \
  gui/include/gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp \
  touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp \
  touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp \
+ touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  touchgfx/framework/include/touchgfx/containers/buttons/Buttons.hpp \
  touchgfx/framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp \
  touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp \
@@ -119,6 +101,9 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
  touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
+ touchgfx/framework/include/touchgfx/Color.hpp \
+ touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
  touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
@@ -126,15 +111,7 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  generated/gui_generated/include/gui_generated/perfilproductos_screen/PerfilProductosViewBase.hpp \
  gui/include/gui/perfilproductos_screen/PerfilProductosPresenter.hpp \
  touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
- gui/include/gui/configuracion_screen/ConfiguracionView.hpp \
- generated/gui_generated/include/gui_generated/configuracion_screen/ConfiguracionViewBase.hpp \
- gui/include/gui/configuracion_screen/ConfiguracionPresenter.hpp \
- gui/include/gui/estadisticas_screen/EstadisticasView.hpp \
- generated/gui_generated/include/gui_generated/estadisticas_screen/EstadisticasViewBase.hpp \
- gui/include/gui/estadisticas_screen/EstadisticasPresenter.hpp \
- gui/include/gui/usuarios_screen/UsuariosView.hpp \
- generated/gui_generated/include/gui_generated/usuarios_screen/UsuariosViewBase.hpp \
- gui/include/gui/usuarios_screen/UsuariosPresenter.hpp
+ generated/texts/include/texts/TextKeysAndLanguages.hpp
 
 generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 
@@ -212,6 +189,8 @@ touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 gui/include/gui/model/Model.hpp:
 
+touchgfx/framework/include/touchgfx/Perfil.hpp:
+
 gui/include/gui/common/FrontendHeap.hpp:
 
 generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
@@ -224,43 +203,7 @@ touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 
-touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
-
 gui/include/gui/common/FrontendApplication.hpp:
-
-gui/include/gui/screen1_screen/Screen1View.hpp:
-
-generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
-
-gui/include/gui/screen1_screen/Screen1Presenter.hpp:
-
-gui/include/gui/model/ModelListener.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/Image.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
-
-touchgfx/framework/include/touchgfx/FontManager.hpp:
-
-touchgfx/framework/include/touchgfx/TypedText.hpp:
-
-touchgfx/framework/include/touchgfx/Texts.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
-
-touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/Box.hpp:
-
-touchgfx/framework/include/touchgfx/Color.hpp:
 
 gui/include/gui/screensaver_screen/ScreenSaverView.hpp:
 
@@ -268,25 +211,13 @@ generated/gui_generated/include/gui_generated/screensaver_screen/ScreenSaverView
 
 gui/include/gui/screensaver_screen/ScreenSaverPresenter.hpp:
 
-gui/include/gui/teclado_screen/tecladoView.hpp:
+gui/include/gui/model/ModelListener.hpp:
 
-generated/gui_generated/include/gui_generated/teclado_screen/tecladoViewBase.hpp:
+touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
-gui/include/gui/teclado_screen/tecladoPresenter.hpp:
+touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
-gui/include/gui/common/CustomKeyboard.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/Keyboard.hpp:
-
-generated/texts/include/texts/TextKeysAndLanguages.hpp:
-
-gui/include/gui/common/KeyboardLayout.hpp:
-
-generated/fonts/include/fonts/ApplicationFontProvider.hpp:
-
-generated/images/include/BitmapDatabase.hpp:
-
-gui/include/gui/common/KeyboardKeyMapping.hpp:
+touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
 gui/include/gui/menuprincipal_screen/MenuPrincipalView.hpp:
 
@@ -300,11 +231,15 @@ touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 
-gui/include/gui/screen2_screen/Screen2View.hpp:
+touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
-generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:
+touchgfx/framework/include/touchgfx/FontManager.hpp:
 
-gui/include/gui/screen2_screen/Screen2Presenter.hpp:
+touchgfx/framework/include/touchgfx/TypedText.hpp:
+
+touchgfx/framework/include/touchgfx/Texts.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 
 gui/include/gui/balanzainteligente_screen/BalanzaInteligenteView.hpp:
 
@@ -315,6 +250,10 @@ gui/include/gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp:
 touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:
 
 touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/Box.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 touchgfx/framework/include/touchgfx/containers/buttons/Buttons.hpp:
 
@@ -376,6 +315,12 @@ touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 
+touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
+
+touchgfx/framework/include/touchgfx/Color.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
+
 touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
 
 touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp:
@@ -390,20 +335,4 @@ gui/include/gui/perfilproductos_screen/PerfilProductosPresenter.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 
-gui/include/gui/configuracion_screen/ConfiguracionView.hpp:
-
-generated/gui_generated/include/gui_generated/configuracion_screen/ConfiguracionViewBase.hpp:
-
-gui/include/gui/configuracion_screen/ConfiguracionPresenter.hpp:
-
-gui/include/gui/estadisticas_screen/EstadisticasView.hpp:
-
-generated/gui_generated/include/gui_generated/estadisticas_screen/EstadisticasViewBase.hpp:
-
-gui/include/gui/estadisticas_screen/EstadisticasPresenter.hpp:
-
-gui/include/gui/usuarios_screen/UsuariosView.hpp:
-
-generated/gui_generated/include/gui_generated/usuarios_screen/UsuariosViewBase.hpp:
-
-gui/include/gui/usuarios_screen/UsuariosPresenter.hpp:
+generated/texts/include/texts/TextKeysAndLanguages.hpp:

@@ -27,10 +27,10 @@ void PerfilProductosView::CargarDatos() {
 		btnEditarPerfil.forceState(true);
 		PerfilProductosView::EditarPerfil();
 		
-		std::string titulo = (char*)(presenter->getTituloEditable());
+		//std::string titulo = (char*)(presenter->getTituloEditable());
 		//std::string descrip = (char*)(presenter->getDescriEditable());
 
-		Unicode::strncpy(TxtDisplayPerfilDescBuffer, titulo.c_str(), TXTDISPLAYPERFILDESC_SIZE);
+		Unicode::strncpy(TxtDisplayPerfilDescBuffer, (presenter->getTitulo(0)).c_str(), TXTDISPLAYPERFILDESC_SIZE);
 		//Unicode::strncpy(TxtDisplayDescBuffer, descrip.c_str(), TXTDISPLAYDESC_SIZE);
 		Unicode::snprintfFloat(txtPesoEsperadoBuffer, TXTPESOESPERADO_SIZE, "%0.2f", presenter->getPesoEditable());
 		Unicode::snprintfFloat(txtDiferenciaPermBuffer, TXTDIFERENCIAPERM_SIZE, "%0.2f", presenter->getDifeEditable());
@@ -63,13 +63,13 @@ void PerfilProductosView::CargarDatos() {
 }
 
 void PerfilProductosView::inputPerfilTitulo() {
-	accion = "Titulo";
-	presenter->setTecladoAccion(accion);
+	//accion = "Titulo";
+	//presenter->setTecladoAccion(accion);
 }
 
 void PerfilProductosView::inputPerfilDescripcion() {
-	accion = "Descripcion";
-	presenter->setTecladoAccion(accion);
+	//accion = "Descripcion";
+	//presenter->setTecladoAccion(accion);
 }
 
 void PerfilProductosView::EditarPerfil() {
@@ -94,7 +94,7 @@ void PerfilProductosView::EditarPerfil() {
 			btns[i].invalidate();
 		}
 
-		std::string titulo = (char*)(presenter->getTituloEditable());
+		//std::string titulo = (char*)(presenter->getTituloEditable());
 		float pesoEdit = presenter->getPesoEditable();
 		float difEdit = presenter->getDifeEditable();
 
@@ -102,11 +102,8 @@ void PerfilProductosView::EditarPerfil() {
 		float val2 = false;
 		float val3 = false;
 
-		int x = Unicode::strlen(titulo.c_str());
+		//int x = Unicode::strlen(titulo.c_str());
 
-		if (x > 0) {
-			val1 = true;
-		}
 		if (pesoEdit > 0 && pesoEdit < 99) {
 			val2 = true;
 		}
@@ -120,34 +117,14 @@ void PerfilProductosView::EditarPerfil() {
 			//GUARDAR PERFIL
 			presenter->setEditor(false);
 			int slot = presenter->getSeleccionSlot();
-			presenter->setTitulo(titulo, slot);
+			//presenter->setTitulo(titulo, slot);
 			presenter->setDescripcion("Sin Descripción", slot);
 			presenter->setPesoPromedio(pesoEdit, slot);
 			presenter->setDiferenciaPermitida(difEdit, slot);
-			Unicode::strncpy(TxtDisplayPerfilDescBuffer, titulo.c_str(), TXTDISPLAYPERFILDESC_SIZE);
+			//Unicode::strncpy(TxtDisplayPerfilDescBuffer, titulo.c_str(), TXTDISPLAYPERFILDESC_SIZE);
 			Unicode::snprintfFloat(txtPesoEsperadoBuffer, TXTPESOESPERADO_SIZE, "%0.2f", pesoEdit);
 			Unicode::snprintfFloat(txtDiferenciaPermBuffer, TXTDIFERENCIAPERM_SIZE, "%0.2f", difEdit);
-			if (slot == 0) {
-				Unicode::strncpy(txtSlot1PerBuffer, titulo.c_str(), TXTSLOT1PER_SIZE);
-				txtSlot1Per.invalidate();
-			}
-			else if (slot == 1) {
-				Unicode::strncpy(txtSlot2PerBuffer, titulo.c_str(), TXTSLOT2PER_SIZE);
-				txtSlot2Per.invalidate();
-			}
-			else if (slot == 2) {
-				Unicode::strncpy(txtSlot3PerBuffer, titulo.c_str(), TXTSLOT3PER_SIZE);
-				txtSlot3Per.invalidate();
-			}
-			else if (slot == 3) {
-				Unicode::strncpy(txtSlot4PerBuffer, titulo.c_str(), TXTSLOT4PER_SIZE);
-				txtSlot4Per.invalidate();
-			}
-			else if (slot == 4) {
-				Unicode::strncpy(txtSlot5PerBuffer, titulo.c_str(), TXTSLOT5PER_SIZE);
-				txtSlot5Per.invalidate();
-			}
-
+			
 			txtPesoEsperado.invalidate();
 			TxtDisplayDesc.invalidate();
 			TxtDisplayPerfilDesc.invalidate();
@@ -171,7 +148,7 @@ void PerfilProductosView::EditarPerfil() {
 		btnPesoEsp.setVisible(true);
 		btnDiferenciaPerm.setVisible(true);
 		btnDescripcion.setVisible(true);
-		btnTitulo.setVisible(true);
+		//btnTitulo.setVisible(true);
 
 		for (int i = 0; i < 4; i++) {
 			lapices[i].invalidate();

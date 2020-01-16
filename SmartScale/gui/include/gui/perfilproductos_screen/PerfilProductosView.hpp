@@ -25,8 +25,6 @@ public:
 	virtual void ingresarDiferenciaPerm();
 
 	//Obtener los datos desde Model.hpp para presentarlo en los botones
-	std::string slots[5];
-	std::string slotDesc[5];
 	float esperado[5];
 	float diferencia[5];
 	std::string accion = (char*)malloc(sizeof(accion));

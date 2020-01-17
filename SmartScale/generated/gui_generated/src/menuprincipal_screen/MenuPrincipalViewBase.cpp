@@ -40,61 +40,31 @@ MenuPrincipalViewBase::MenuPrincipalViewBase() :
     Balanza.add(image1);
     MenuSwap.add(Balanza);
 
-    Perfil.setWidth(480);
-    Perfil.setHeight(226);
-
-    imgPerfil.setXY(45, 38);
-    imgPerfil.setBitmap(touchgfx::Bitmap(BITMAP_MENUB_ID));
-    Perfil.add(imgPerfil);
-
-    txt_perfiles.setXY(240, 38);
-    txt_perfiles.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    txt_perfiles.setLinespacing(0);
-    txt_perfiles.setTypedText(touchgfx::TypedText(T_SINGLEUSEID20));
-    Perfil.add(txt_perfiles);
-
-    empezarPerfiles.setXY(240, 128);
-    empezarPerfiles.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
-    empezarPerfiles.setLabelText(touchgfx::TypedText(T_SINGLEUSEID21));
-    empezarPerfiles.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    empezarPerfiles.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    Perfil.add(empezarPerfiles);
-
-    subtxt_perfiles.setXY(240, 78);
-    subtxt_perfiles.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    subtxt_perfiles.setLinespacing(0);
-    subtxt_perfiles.setTypedText(touchgfx::TypedText(T_SINGLEUSEID30));
-    Perfil.add(subtxt_perfiles);
-
-    image1_1.setXY(184, 198);
-    image1_1.setBitmap(touchgfx::Bitmap(BITMAP_CONT2_ID));
-    Perfil.add(image1_1);
-    MenuSwap.add(Perfil);
-
-    CerrarSesion.setWidth(480);
-    CerrarSesion.setHeight(226);
+    Informacion.setWidth(480);
+    Informacion.setHeight(226);
 
     imgOut.setXY(45, 38);
     imgOut.setBitmap(touchgfx::Bitmap(BITMAP_MENUE_ID));
-    CerrarSesion.add(imgOut);
+    Informacion.add(imgOut);
 
-    Empezar.setXY(240, 93);
-    Empezar.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
-    Empezar.setLabelText(touchgfx::TypedText(T_SINGLEUSEID29));
-    Empezar.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    Empezar.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    CerrarSesion.add(Empezar);
+    EmpezarInformacion.setXY(240, 93);
+    EmpezarInformacion.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    EmpezarInformacion.setLabelText(touchgfx::TypedText(T_SINGLEUSEID29));
+    EmpezarInformacion.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    EmpezarInformacion.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    EmpezarInformacion.setAction(buttonCallback);
+    Informacion.add(EmpezarInformacion);
 
     image1_2.setXY(186, 198);
     image1_2.setBitmap(touchgfx::Bitmap(BITMAP_CONT3_ID));
-    CerrarSesion.add(image1_2);
+    Informacion.add(image1_2);
 
     txt_balanzaInteligente_1.setXY(240, 51);
     txt_balanzaInteligente_1.setColor(touchgfx::Color::getColorFrom24BitRGB(43, 43, 43));
     txt_balanzaInteligente_1.setLinespacing(0);
     txt_balanzaInteligente_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID123));
-    CerrarSesion.add(txt_balanzaInteligente_1);
-    MenuSwap.add(CerrarSesion);
+    Informacion.add(txt_balanzaInteligente_1);
+    MenuSwap.add(Informacion);
 
     CerrarSesion_1.setWidth(480);
     CerrarSesion_1.setHeight(226);
@@ -118,7 +88,6 @@ MenuPrincipalViewBase::MenuPrincipalViewBase() :
 
     MenuSwap.setSwipeCutoff(50);
     MenuSwap.setEndSwipeElasticWidth(50);
-    MenuSwap.setSelectedPage(0);
 
     txt_tituloMenu.setXY(20, 24);
     txt_tituloMenu.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
@@ -143,6 +112,13 @@ void MenuPrincipalViewBase::buttonCallbackHandler(const touchgfx::AbstractButton
         //When empezarBalanza clicked change screen to BalanzaInteligente
         //Go to BalanzaInteligente with screen transition towards South
         application().gotoBalanzaInteligenteScreenCoverTransitionSouth();
+    }
+    else if (&src == &EmpezarInformacion)
+    {
+        //Interaction4
+        //When EmpezarInformacion clicked change screen to Informacion
+        //Go to Informacion with no screen transition
+        application().gotoInformacionScreenNoTransition();
     }
     else if (&src == &cerrarSesion_1)
     {

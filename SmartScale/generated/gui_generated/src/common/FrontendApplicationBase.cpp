@@ -14,6 +14,8 @@
 #include <gui/menuprincipal_screen/MenuPrincipalPresenter.hpp>
 #include <gui/balanzainteligente_screen/BalanzaInteligenteView.hpp>
 #include <gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp>
+#include <gui/informacion_screen/InformacionView.hpp>
+#include <gui/informacion_screen/InformacionPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -80,5 +82,18 @@ void FrontendApplicationBase::gotoBalanzaInteligenteScreenCoverTransitionSouth()
 void FrontendApplicationBase::gotoBalanzaInteligenteScreenCoverTransitionSouthImpl()
 {
     touchgfx::makeTransition<BalanzaInteligenteView, BalanzaInteligentePresenter, touchgfx::CoverTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Informacion
+
+void FrontendApplicationBase::gotoInformacionScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoInformacionScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoInformacionScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<InformacionView, InformacionPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 

@@ -21,7 +21,7 @@ void BalanzaInteligenteView::tearDownScreen()
 void BalanzaInteligenteView::CalcularPeso()
 {
 	//Obtener peso del sensor
-	float peso;
+	float peso = 0;
 	float promedio;
 	float delta;
 	int perfilSeleccionado = presenter->getSeleccionSlot();
@@ -59,12 +59,30 @@ void BalanzaInteligenteView::CalcularPeso()
 	permitidoModal.invalidate();
 	pesoObtenidoModal.invalidate();
 
+	Unicode::snprintfFloat(pesoObtenidoEnviarBuffer, PESOOBTENIDOMODAL_SIZE, "%0.2f", peso);
+	Unicode::snprintfFloat(promedioEnviarBuffer, PESOOBTENIDOMODAL_SIZE, "%0.2f", presenter->getPesoPromedio(perfilSeleccionado - 1));
+	Unicode::snprintfFloat(diferenciaEnviarBuffer, PESOOBTENIDOMODAL_SIZE, "%0.2f", diferenciaObtenida);
+	Unicode::snprintfFloat(permitidoEnviarBuffer, PESOOBTENIDOMODAL_SIZE, "%0.2f", presenter->getDiferenciaPermitida(perfilSeleccionado - 1));
+	pesoObtenidoEnviar.invalidate();
+	promedioEnviar.invalidate();
+	diferenciaEnviar.invalidate();
+	permitidoEnviar.invalidate();
+
+	if (peso == 0) {
+		envioDatos.setVisible(false);
+		envioDatos.invalidate();
+	}
+	else {
+		envioDatos.setVisible(true);
+		envioDatos.invalidate();
+	}
+
 
 	widgetCircular.setArc(268, 268);
 	if (peso > (promedio + delta)) {
 		widgetCircularPainter.setColor(touchgfx::Color::getColorFrom24BitRGB(235, 55, 55));
 		TxtAlerta.setVisible(true);
-		Unicode::strncpy(TxtAlertaBuffer, "EXCEDENTE!", TXTALERTA_SIZE);
+		Unicode::strncpy(TxtAlertaBuffer, "EXCEDENTE", TXTALERTA_SIZE);
 		TxtAlerta.invalidate();
 		alertaPerfil.setVisible(true);
 		alertaPerfil.invalidate();
@@ -74,7 +92,7 @@ void BalanzaInteligenteView::CalcularPeso()
 	else if (peso < (promedio - delta)) {
 		widgetCircularPainter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 55));
 		TxtAlerta.setVisible(true);
-		Unicode::strncpy(TxtAlertaBuffer, "FALTANTE!", TXTALERTA_SIZE);
+		Unicode::strncpy(TxtAlertaBuffer, "FALTANTE", TXTALERTA_SIZE);
 		TxtAlerta.invalidate();
 		alertaPerfil.setVisible(true);
 		alertaPerfil.invalidate();
@@ -103,7 +121,7 @@ void BalanzaInteligenteView::CalcularPeso()
 
 void BalanzaInteligenteView::enviarMedianteSigfox() {
 	touchgfx_printf("ENVIAR PESO MEDIANTE SIGFOX");
-	modalWindow1.show();
+	envioSigfox.hide();
 }
 
 void BalanzaInteligenteView::cargarDatos(){

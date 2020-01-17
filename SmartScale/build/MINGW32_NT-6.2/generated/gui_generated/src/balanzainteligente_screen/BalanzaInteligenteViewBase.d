@@ -90,6 +90,7 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/balanzainteligente_screen/Balan
  touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
  touchgfx/framework/include/touchgfx/Color.hpp \
  touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
  touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  generated/images/include/BitmapDatabase.hpp \
@@ -274,6 +275,8 @@ touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
 touchgfx/framework/include/touchgfx/Color.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 
 touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 

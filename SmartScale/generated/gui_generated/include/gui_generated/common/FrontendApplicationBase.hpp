@@ -28,6 +28,10 @@ public:
     // BalanzaInteligente
     void gotoBalanzaInteligenteScreenCoverTransitionSouth();
 
+
+    // Informacion
+    void gotoInformacionScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -45,6 +49,10 @@ protected:
 
     // BalanzaInteligente
     void gotoBalanzaInteligenteScreenCoverTransitionSouthImpl();
+
+
+    // Informacion
+    void gotoInformacionScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

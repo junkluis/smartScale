@@ -20,8 +20,9 @@
 #include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/containers/ModalWindow.hpp>
 #include <touchgfx/Color.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/ButtonWithIcon.hpp>
 #include <touchgfx/EasingEquations.hpp>
 #include <touchgfx/mixins/MoveAnimator.hpp>
 class BalanzaInteligenteViewBase : public touchgfx::View<BalanzaInteligentePresenter>
@@ -108,6 +109,7 @@ protected:
     touchgfx::TextArea textArea2;
     touchgfx::Line line1;
     touchgfx::PainterRGB565 line1Painter;
+    touchgfx::Image image4;
     touchgfx::TextAreaWithOneWildcard TxtDisplayPerfil;
     touchgfx::TextArea textArea3_1;
     touchgfx::TextAreaWithOneWildcard txtResultadoSmall;
@@ -119,17 +121,7 @@ protected:
     touchgfx::Button BtnEnviar;
     touchgfx::TextArea textArea6;
     touchgfx::Image image1;
-    touchgfx::ModalWindow alertaPerfil;
-    touchgfx::Image image2;
-    touchgfx::TextArea textArea7;
-    touchgfx::ButtonWithLabel cerrarModal;
-
-    touchgfx::ModalWindow modalWindow1;
-    touchgfx::TextArea textArea8;
-    touchgfx::ButtonWithLabel cerrarModalEnvio;
-
     touchgfx::Image image3;
-    touchgfx::Image image4;
     touchgfx::ModalWindow datosDePeso;
     touchgfx::TextArea textArea9;
     touchgfx::Box box1_1;
@@ -144,6 +136,28 @@ protected:
     touchgfx::TextAreaWithOneWildcard diferenciaModal;
     touchgfx::TextAreaWithOneWildcard permitidoModal;
     touchgfx::ButtonWithLabel cerrarModalResultados;
+
+    touchgfx::ModalWindow alertaPerfil;
+    touchgfx::Image image2;
+    touchgfx::TextArea textArea7;
+    touchgfx::ButtonWithLabel cerrarModal;
+
+    touchgfx::ModalWindow envioSigfox;
+    touchgfx::TextArea textArea9_1;
+    touchgfx::Box box1_1_1;
+    touchgfx::Box box1_2;
+    touchgfx::TextArea textArea10_2;
+    touchgfx::TextArea textArea10_1_2;
+    touchgfx::TextArea textArea10_1_1_2;
+    touchgfx::TextArea textArea10_1_1_1_1;
+    touchgfx::TextAreaWithOneWildcard pesoObtenidoEnviar;
+    touchgfx::TextAreaWithOneWildcard promedioEnviar;
+    touchgfx::TextAreaWithOneWildcard diferenciaEnviar;
+    touchgfx::TextAreaWithOneWildcard permitidoEnviar;
+    touchgfx::ButtonWithIcon btnCerrarModalEnvio;
+    touchgfx::TextArea textArea11;
+    touchgfx::ButtonWithLabel envioDatos;
+    touchgfx::Image image6;
 
 
     /*
@@ -177,6 +191,14 @@ protected:
     touchgfx::Unicode::UnicodeChar diferenciaModalBuffer[DIFERENCIAMODAL_SIZE];
     static const uint16_t PERMITIDOMODAL_SIZE = 10;
     touchgfx::Unicode::UnicodeChar permitidoModalBuffer[PERMITIDOMODAL_SIZE];
+    static const uint16_t PESOOBTENIDOENVIAR_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar pesoObtenidoEnviarBuffer[PESOOBTENIDOENVIAR_SIZE];
+    static const uint16_t PROMEDIOENVIAR_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar promedioEnviarBuffer[PROMEDIOENVIAR_SIZE];
+    static const uint16_t DIFERENCIAENVIAR_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar diferenciaEnviarBuffer[DIFERENCIAENVIAR_SIZE];
+    static const uint16_t PERMITIDOENVIAR_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar permitidoEnviarBuffer[PERMITIDOENVIAR_SIZE];
 
 private:
 

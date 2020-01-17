@@ -862,6 +862,16 @@
               <FilePath>../../gui/src/common/frontendapplication.cpp</FilePath>
             </File>
             <File>
+              <FileName>InformacionPresenter.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/informacion_screen/informacionpresenter.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>InformacionView.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../gui/src/informacion_screen/informacionview.cpp</FilePath>
+            </File>
+            <File>
               <FileName>MenuPrincipalPresenter.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../gui/src/menuprincipal_screen/menuprincipalpresenter.cpp</FilePath>
@@ -915,16 +925,6 @@
               <FileName>blue_backgrounds_main_bg_480x272px.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/images/src/__designer/blue_backgrounds_main_bg_480x272px.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Blue_Buttons_Round_Edge_icon_button.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../../generated/images/src/__designer/blue_buttons_round_edge_icon_button.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Blue_Buttons_Round_Edge_icon_button_pressed.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../../generated/images/src/__designer/blue_buttons_round_edge_icon_button_pressed.cpp</FilePath>
             </File>
             <File>
               <FileName>Blue_Buttons_Round_Edge_small.cpp</FileName>
@@ -1025,6 +1025,21 @@
               <FileName>container.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/images/src/container.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Dark_Buttons_Round_Edge_icon_button.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/dark_buttons_round_edge_icon_button.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Dark_Buttons_Round_Edge_icon_button_pressed.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/dark_buttons_round_edge_icon_button_pressed.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Dark_Icons_Remove_32.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/__designer/dark_icons_remove_32.cpp</FilePath>
             </File>
             <File>
               <FileName>edit.cpp</FileName>
@@ -1150,6 +1165,11 @@
               <FileName>info.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/images/src/info.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>InformacionViewBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/gui_generated/src/informacion_screen/informacionviewbase.cpp</FilePath>
             </File>
             <File>
               <FileName>Kerning_FRADM_TTF_18_4bpp.cpp</FileName>

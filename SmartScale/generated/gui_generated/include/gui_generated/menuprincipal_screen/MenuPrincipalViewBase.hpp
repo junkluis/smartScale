@@ -36,16 +36,9 @@ protected:
     touchgfx::ButtonWithLabel empezarBalanza;
     touchgfx::Image image1;
 
-    touchgfx::Container Perfil;
-    touchgfx::Image imgPerfil;
-    touchgfx::TextArea txt_perfiles;
-    touchgfx::ButtonWithLabel empezarPerfiles;
-    touchgfx::TextArea subtxt_perfiles;
-    touchgfx::Image image1_1;
-
-    touchgfx::Container CerrarSesion;
+    touchgfx::Container Informacion;
     touchgfx::Image imgOut;
-    touchgfx::ButtonWithLabel Empezar;
+    touchgfx::ButtonWithLabel EmpezarInformacion;
     touchgfx::Image image1_2;
     touchgfx::TextArea txt_balanzaInteligente_1;
 

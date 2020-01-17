@@ -146,6 +146,9 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     line1.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
     line1.setAlpha(210);
 
+    image4.setXY(224, 190);
+    image4.setBitmap(touchgfx::Bitmap(BITMAP_HAND_ID));
+
     TxtDisplayPerfil.setPosition(354, 89, 116, 19);
     TxtDisplayPerfil.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     TxtDisplayPerfil.setLinespacing(0);
@@ -210,57 +213,13 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     image1.setXY(379, 220);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_SEND_ID));
 
-    alertaPerfil.setBackground(touchgfx::BitmapId(BITMAP_MODAL_BACKGROUND_ID), 70, 16);
-    alertaPerfil.setShadeColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    alertaPerfil.setShadeAlpha(150);
-    alertaPerfil.hide();
-
-    image2.setXY(42, 35);
-    image2.setBitmap(touchgfx::Bitmap(BITMAP_WARNING_ID));
-    alertaPerfil.add(image2);
-
-    textArea7.setXY(159, 58);
-    textArea7.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    textArea7.setLinespacing(0);
-    textArea7.setTypedText(touchgfx::TypedText(T_SINGLEUSEID79));
-    alertaPerfil.add(textArea7);
-
-    cerrarModal.setXY(82, 153);
-    cerrarModal.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID));
-    cerrarModal.setLabelText(touchgfx::TypedText(T_SINGLEUSEID80));
-    cerrarModal.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    cerrarModal.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    cerrarModal.setAction(buttonCallback);
-    alertaPerfil.add(cerrarModal);
-
-    modalWindow1.setBackground(touchgfx::BitmapId(BITMAP_MODAL_BACKGROUND_ID), 70, 16);
-    modalWindow1.setShadeColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    modalWindow1.setShadeAlpha(150);
-    modalWindow1.hide();
-
-    textArea8.setXY(79, 57);
-    textArea8.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    textArea8.setLinespacing(0);
-    textArea8.setTypedText(touchgfx::TypedText(T_SINGLEUSEID124));
-    modalWindow1.add(textArea8);
-
-    cerrarModalEnvio.setXY(85, 127);
-    cerrarModalEnvio.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
-    cerrarModalEnvio.setLabelText(touchgfx::TypedText(T_SINGLEUSEID125));
-    cerrarModalEnvio.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    cerrarModalEnvio.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    cerrarModalEnvio.setAction(buttonCallback);
-    modalWindow1.add(cerrarModalEnvio);
-
     image3.setXY(440, 73);
     image3.setBitmap(touchgfx::Bitmap(BITMAP_INFO_ID));
-
-    image4.setXY(224, 190);
-    image4.setBitmap(touchgfx::Bitmap(BITMAP_HAND_ID));
 
     datosDePeso.setBackground(touchgfx::BitmapId(BITMAP_MODAL_BACKGROUND_ID), 70, 16);
     datosDePeso.setShadeColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     datosDePeso.setShadeAlpha(150);
+    datosDePeso.hide();
 
     textArea9.setXY(33, 20);
     textArea9.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
@@ -350,6 +309,134 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     cerrarModalResultados.setAction(buttonCallback);
     datosDePeso.add(cerrarModalResultados);
 
+    alertaPerfil.setBackground(touchgfx::BitmapId(BITMAP_MODAL_BACKGROUND_ID), 70, 16);
+    alertaPerfil.setShadeColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    alertaPerfil.setShadeAlpha(150);
+    alertaPerfil.hide();
+
+    image2.setXY(42, 35);
+    image2.setBitmap(touchgfx::Bitmap(BITMAP_WARNING_ID));
+    alertaPerfil.add(image2);
+
+    textArea7.setXY(159, 58);
+    textArea7.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea7.setLinespacing(0);
+    textArea7.setTypedText(touchgfx::TypedText(T_SINGLEUSEID79));
+    alertaPerfil.add(textArea7);
+
+    cerrarModal.setXY(85, 157);
+    cerrarModal.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_SMALL_PRESSED_ID));
+    cerrarModal.setLabelText(touchgfx::TypedText(T_SINGLEUSEID80));
+    cerrarModal.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    cerrarModal.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    cerrarModal.setAction(buttonCallback);
+    alertaPerfil.add(cerrarModal);
+
+    envioSigfox.setBackground(touchgfx::BitmapId(BITMAP_MODAL_BACKGROUND_ID), 70, 16);
+    envioSigfox.setShadeColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    envioSigfox.setShadeAlpha(150);
+    envioSigfox.hide();
+
+    textArea9_1.setXY(33, 17);
+    textArea9_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea9_1.setLinespacing(0);
+    textArea9_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID140));
+    envioSigfox.add(textArea9_1);
+
+    box1_1_1.setPosition(3, 136, 334, 26);
+    box1_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(135, 135, 135));
+    box1_1_1.setAlpha(75);
+    envioSigfox.add(box1_1_1);
+
+    box1_2.setPosition(3, 88, 334, 26);
+    box1_2.setColor(touchgfx::Color::getColorFrom24BitRGB(135, 135, 135));
+    box1_2.setAlpha(75);
+    envioSigfox.add(box1_2);
+
+    textArea10_2.setXY(35, 58);
+    textArea10_2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea10_2.setLinespacing(0);
+    textArea10_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID141));
+    envioSigfox.add(textArea10_2);
+
+    textArea10_1_2.setXY(35, 91);
+    textArea10_1_2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea10_1_2.setLinespacing(0);
+    textArea10_1_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID142));
+    envioSigfox.add(textArea10_1_2);
+
+    textArea10_1_1_2.setXY(35, 115);
+    textArea10_1_1_2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea10_1_1_2.setLinespacing(0);
+    textArea10_1_1_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID143));
+    envioSigfox.add(textArea10_1_1_2);
+
+    textArea10_1_1_1_1.setXY(33, 140);
+    textArea10_1_1_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea10_1_1_1_1.setLinespacing(0);
+    textArea10_1_1_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID144));
+    envioSigfox.add(textArea10_1_1_1_1);
+
+    pesoObtenidoEnviar.setXY(201, 58);
+    pesoObtenidoEnviar.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    pesoObtenidoEnviar.setLinespacing(0);
+    Unicode::snprintf(pesoObtenidoEnviarBuffer, PESOOBTENIDOENVIAR_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID146).getText());
+    pesoObtenidoEnviar.setWildcard(pesoObtenidoEnviarBuffer);
+    pesoObtenidoEnviar.resizeToCurrentText();
+    pesoObtenidoEnviar.setTypedText(touchgfx::TypedText(T_SINGLEUSEID145));
+    envioSigfox.add(pesoObtenidoEnviar);
+
+    promedioEnviar.setXY(227, 90);
+    promedioEnviar.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    promedioEnviar.setLinespacing(0);
+    Unicode::snprintf(promedioEnviarBuffer, PROMEDIOENVIAR_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID148).getText());
+    promedioEnviar.setWildcard(promedioEnviarBuffer);
+    promedioEnviar.resizeToCurrentText();
+    promedioEnviar.setTypedText(touchgfx::TypedText(T_SINGLEUSEID147));
+    envioSigfox.add(promedioEnviar);
+
+    diferenciaEnviar.setXY(227, 115);
+    diferenciaEnviar.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    diferenciaEnviar.setLinespacing(0);
+    Unicode::snprintf(diferenciaEnviarBuffer, DIFERENCIAENVIAR_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID150).getText());
+    diferenciaEnviar.setWildcard(diferenciaEnviarBuffer);
+    diferenciaEnviar.resizeToCurrentText();
+    diferenciaEnviar.setTypedText(touchgfx::TypedText(T_SINGLEUSEID149));
+    envioSigfox.add(diferenciaEnviar);
+
+    permitidoEnviar.setXY(227, 140);
+    permitidoEnviar.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    permitidoEnviar.setLinespacing(0);
+    Unicode::snprintf(permitidoEnviarBuffer, PERMITIDOENVIAR_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID152).getText());
+    permitidoEnviar.setWildcard(permitidoEnviarBuffer);
+    permitidoEnviar.resizeToCurrentText();
+    permitidoEnviar.setTypedText(touchgfx::TypedText(T_SINGLEUSEID151));
+    envioSigfox.add(permitidoEnviar);
+
+    btnCerrarModalEnvio.setXY(59, 173);
+    btnCerrarModalEnvio.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_REMOVE_32_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_REMOVE_32_ID));
+    btnCerrarModalEnvio.setIconXY(15, 15);
+    btnCerrarModalEnvio.setAction(buttonCallback);
+    envioSigfox.add(btnCerrarModalEnvio);
+
+    textArea11.setXY(199, 184);
+    textArea11.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea11.setLinespacing(0);
+    textArea11.setTypedText(touchgfx::TypedText(T_SINGLEUSEID154));
+    envioSigfox.add(textArea11);
+
+    envioDatos.setXY(127, 173);
+    envioDatos.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    envioDatos.setLabelText(touchgfx::TypedText(T_SINGLEUSEID153));
+    envioDatos.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    envioDatos.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    envioDatos.setAction(buttonCallback);
+    envioSigfox.add(envioDatos);
+
+    image6.setXY(166, 194);
+    image6.setBitmap(touchgfx::Bitmap(BITMAP_SEND_ID));
+    envioSigfox.add(image6);
+
     add(backgroundmenu);
     add(boxWithBorder1);
     add(txt_tituloBalanza);
@@ -362,6 +449,7 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     add(verResultados);
     add(textArea2);
     add(line1);
+    add(image4);
     add(TxtDisplayPerfil);
     add(textArea3_1);
     add(txtResultadoSmall);
@@ -373,11 +461,10 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     add(BtnEnviar);
     add(textArea6);
     add(image1);
-    add(alertaPerfil);
-    add(modalWindow1);
     add(image3);
-    add(image4);
     add(datosDePeso);
+    add(alertaPerfil);
+    add(envioSigfox);
 }
 
 void BalanzaInteligenteViewBase::setupScreen()
@@ -440,10 +527,19 @@ void BalanzaInteligenteViewBase::buttonCallbackHandler(const touchgfx::AbstractB
     }
     else if (&src == &BtnEnviar)
     {
-        //Interaction1
-        //When BtnEnviar clicked call virtual function
-        //Call enviarMedianteSigfox
-        enviarMedianteSigfox();
+        //EnvioSigfox
+        //When BtnEnviar clicked show envioSigfox
+        //Show envioSigfox
+        envioSigfox.setVisible(true);
+        envioSigfox.invalidate();
+    }
+    else if (&src == &cerrarModalResultados)
+    {
+        //Interaction2
+        //When cerrarModalResultados clicked hide datosDePeso
+        //Hide datosDePeso
+        datosDePeso.setVisible(false);
+        datosDePeso.invalidate();
     }
     else if (&src == &cerrarModal)
     {
@@ -453,21 +549,20 @@ void BalanzaInteligenteViewBase::buttonCallbackHandler(const touchgfx::AbstractB
         alertaPerfil.setVisible(false);
         alertaPerfil.invalidate();
     }
-    else if (&src == &cerrarModalEnvio)
+    else if (&src == &btnCerrarModalEnvio)
     {
-        //cerrarModal2
-        //When cerrarModalEnvio clicked hide modalWindow1
-        //Hide modalWindow1
-        modalWindow1.setVisible(false);
-        modalWindow1.invalidate();
+        //hideEnvioSigfox
+        //When btnCerrarModalEnvio clicked hide envioSigfox
+        //Hide envioSigfox
+        envioSigfox.setVisible(false);
+        envioSigfox.invalidate();
     }
-    else if (&src == &cerrarModalResultados)
+    else if (&src == &envioDatos)
     {
-        //Interaction2
-        //When cerrarModalResultados clicked hide datosDePeso
-        //Hide datosDePeso
-        datosDePeso.setVisible(false);
-        datosDePeso.invalidate();
+        //enviarDatosSigfox
+        //When envioDatos clicked call virtual function
+        //Call enviarMedianteSigfox
+        enviarMedianteSigfox();
     }
 }
 

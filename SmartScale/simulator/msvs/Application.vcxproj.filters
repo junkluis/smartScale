@@ -187,6 +187,18 @@
     <Filter Include="Source Files\generated\gui_generated\balanzainteligente_screen">
       <UniqueIdentifier>4FFFA7E6-6DB9-9AD8-C030-93813DC26561</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\informacion_screen">
+      <UniqueIdentifier>090D2160-5C2A-50FF-DDFB-C43AF2544848</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\informacion_screen">
+      <UniqueIdentifier>6E88EB56-33DD-168F-2526-3A62F6BBAD66</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\informacion_screen">
+      <UniqueIdentifier>6582B0B0-5F9C-B63E-CDA8-393937134380</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\informacion_screen">
+      <UniqueIdentifier>07ACE90D-E3B1-2CD9-2F9B-BCEF6FB6E591</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -242,6 +254,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\balanzainteligente_screen\BalanzaInteligenteViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\balanzainteligente_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\informacion_screen\InformacionPresenter.cpp">
+      <Filter>Source Files\gui\informacion_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\informacion_screen\InformacionView.cpp">
+      <Filter>Source Files\gui\informacion_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\informacion_screen\InformacionViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\informacion_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -708,6 +729,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\balanzainteligente_screen\BalanzaInteligenteViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\balanzainteligente_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\informacion_screen\InformacionPresenter.hpp">
+      <Filter>Header Files\gui\informacion_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\informacion_screen\InformacionView.hpp">
+      <Filter>Header Files\gui\informacion_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\informacion_screen\InformacionViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\informacion_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

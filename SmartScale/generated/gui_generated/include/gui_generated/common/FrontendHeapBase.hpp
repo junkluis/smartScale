@@ -11,6 +11,7 @@
 
 #include <touchgfx/transitions/CoverTransition.hpp>
 
+
 #include <touchgfx/transitions/CoverTransition.hpp>
 
 #include <gui/common/FrontendApplication.hpp>
@@ -22,6 +23,8 @@
 #include <gui/menuprincipal_screen/MenuPrincipalPresenter.hpp>
 #include <gui/balanzainteligente_screen/BalanzaInteligenteView.hpp>
 #include <gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp>
+#include <gui/informacion_screen/InformacionView.hpp>
+#include <gui/informacion_screen/InformacionPresenter.hpp>
 
 
 /**
@@ -47,7 +50,8 @@ public:
     typedef touchgfx::meta::TypeList< ScreenSaverView,
             touchgfx::meta::TypeList< MenuPrincipalView,
             touchgfx::meta::TypeList< BalanzaInteligenteView,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< InformacionView,
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -62,7 +66,8 @@ public:
     typedef touchgfx::meta::TypeList< ScreenSaverPresenter,
             touchgfx::meta::TypeList< MenuPrincipalPresenter,
             touchgfx::meta::TypeList< BalanzaInteligentePresenter,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< InformacionPresenter,
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**

@@ -29,6 +29,9 @@
     <ClCompile Include="..\..\gui\src\balanzainteligente_screen\BalanzaInteligentePresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\balanzainteligente_screen\BalanzaInteligenteView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\balanzainteligente_screen\BalanzaInteligenteViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\informacion_screen\InformacionPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\informacion_screen\InformacionView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\informacion_screen\InformacionViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\assets\texts\texts.xlsx"/>
@@ -187,6 +190,9 @@
     <ClInclude Include="..\..\gui\include\gui\balanzainteligente_screen\BalanzaInteligentePresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\balanzainteligente_screen\BalanzaInteligenteView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\balanzainteligente_screen\BalanzaInteligenteViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\informacion_screen\InformacionPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\informacion_screen\InformacionView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\informacion_screen\InformacionViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\touchgfx.rc"/>

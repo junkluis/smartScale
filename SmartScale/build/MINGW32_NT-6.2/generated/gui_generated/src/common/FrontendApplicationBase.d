@@ -104,9 +104,13 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
  touchgfx/framework/include/touchgfx/Color.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
  touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
  touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
+ gui/include/gui/informacion_screen/InformacionView.hpp \
+ generated/gui_generated/include/gui_generated/informacion_screen/InformacionViewBase.hpp \
+ gui/include/gui/informacion_screen/InformacionPresenter.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp
 
 generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
@@ -317,10 +321,18 @@ touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
 
 touchgfx/framework/include/touchgfx/Color.hpp:
 
+touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
+
 touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
 
 touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
+
+gui/include/gui/informacion_screen/InformacionView.hpp:
+
+generated/gui_generated/include/gui_generated/informacion_screen/InformacionViewBase.hpp:
+
+gui/include/gui/informacion_screen/InformacionPresenter.hpp:
 
 generated/texts/include/texts/TextKeysAndLanguages.hpp:

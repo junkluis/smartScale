@@ -3,9 +3,17 @@
     "",
     "\\gui",
     "\\gui\\include",
-    "\\gui\\src",
-    "\\gui\\src\\screen1_screen"
+    "\\gui\\include\\gui",
+    "\\gui\\include\\gui\\model",
+    "\\touchgfx",
+    "\\touchgfx\\framework",
+    "\\touchgfx\\framework\\include",
+    "\\touchgfx\\framework\\source",
+    "\\touchgfx\\framework\\tools",
+    "\\touchgfx\\lib",
+    "\\touchgfx\\os",
+    "\\touchgfx_backup"
   ],
-  "SelectedNode": "\\gui\\src\\teclado_screen",
+  "SelectedNode": "\\touchgfx",
   "PreviewInSolutionExplorer": false
 }

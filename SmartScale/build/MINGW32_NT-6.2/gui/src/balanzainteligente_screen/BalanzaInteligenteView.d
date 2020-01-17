@@ -41,6 +41,7 @@ build/MINGW32_NT-6.2/gui/src/balanzainteligente_screen/BalanzaInteligenteView.o:
  touchgfx/framework/include/mvp/Presenter.hpp \
  touchgfx/framework/include/mvp/MVPHeap.hpp \
  gui/include/gui/model/Model.hpp \
+ touchgfx/framework/include/touchgfx/Perfil.hpp \
  gui/include/gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  touchgfx/framework/include/touchgfx/widgets/Image.hpp \
@@ -86,6 +87,7 @@ build/MINGW32_NT-6.2/gui/src/balanzainteligente_screen/BalanzaInteligenteView.o:
  touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
  touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
  touchgfx/framework/include/touchgfx/Color.hpp \
  touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
@@ -178,6 +180,8 @@ touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 gui/include/gui/model/Model.hpp:
 
+touchgfx/framework/include/touchgfx/Perfil.hpp:
+
 gui/include/gui/balanzainteligente_screen/BalanzaInteligentePresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
@@ -267,6 +271,8 @@ touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
 touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
 
 touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
 

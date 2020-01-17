@@ -27,9 +27,9 @@ void ScreenSaverViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& 
 {
     if (&src == &button1)
     {
-        //Interaction1
-        //When button1 clicked change screen to Screen1
-        //Go to Screen1 with screen transition towards South
-        application().gotoScreen1ScreenCoverTransitionSouth();
+        //IniciarScreen
+        //When button1 clicked change screen to MenuPrincipal
+        //Go to MenuPrincipal with no screen transition
+        application().gotoMenuPrincipalScreenNoTransition();
     }
 }

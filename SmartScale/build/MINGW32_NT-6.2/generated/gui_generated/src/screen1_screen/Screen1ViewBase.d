@@ -40,22 +40,37 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/screen1_screen/Screen1ViewBase.
  touchgfx/framework/include/mvp/Presenter.hpp \
  touchgfx/framework/include/mvp/MVPHeap.hpp \
  gui/include/gui/model/Model.hpp \
+ touchgfx/framework/include/touchgfx/Perfil.hpp \
  gui/include/gui/screen1_screen/Screen1Presenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
+ touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
+ touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
+ touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/Buttons.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/RepeatButtonTrigger.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/ToggleButtonTrigger.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/TouchButtonTrigger.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/IconButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/ImageButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/AnimatedImageButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/TextButtonStyle.hpp \
  touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  touchgfx/framework/include/touchgfx/FontManager.hpp \
  touchgfx/framework/include/touchgfx/TypedText.hpp \
  touchgfx/framework/include/touchgfx/Texts.hpp \
- touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
- touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/TiledImageButtonStyle.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp \
  touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
- touchgfx/framework/include/touchgfx/widgets/Box.hpp \
- touchgfx/framework/include/touchgfx/Color.hpp \
+ touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp \
  generated/images/include/BitmapDatabase.hpp \
+ touchgfx/framework/include/touchgfx/Color.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp
 
 generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
@@ -138,6 +153,8 @@ touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 gui/include/gui/model/Model.hpp:
 
+touchgfx/framework/include/touchgfx/Perfil.hpp:
+
 gui/include/gui/screen1_screen/Screen1Presenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
@@ -145,6 +162,38 @@ gui/include/gui/model/ModelListener.hpp:
 touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
+
+touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
+
+touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/Buttons.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/RepeatButtonTrigger.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/ToggleButtonTrigger.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/TouchButtonTrigger.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/IconButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/ImageButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/AnimatedImageButtonStyle.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/AnimatedImage.hpp:
+
+touchgfx/framework/include/touchgfx/containers/buttons/TextButtonStyle.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
@@ -154,20 +203,16 @@ touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 touchgfx/framework/include/touchgfx/Texts.hpp:
 
-touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+touchgfx/framework/include/touchgfx/containers/buttons/TiledImageButtonStyle.hpp:
 
-touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
-touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/Box.hpp:
-
-touchgfx/framework/include/touchgfx/Color.hpp:
+touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp:
 
 generated/images/include/BitmapDatabase.hpp:
+
+touchgfx/framework/include/touchgfx/Color.hpp:
 
 generated/texts/include/texts/TextKeysAndLanguages.hpp:

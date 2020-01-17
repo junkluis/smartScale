@@ -111,8 +111,12 @@ KEEP extern const touchgfx::GlyphNode glyphs_FRADM_TTF_18_4bpp[] FONT_TABLE_LOCA
     {  5295, 0x00BA,   6,   6,  12,   0,   6,   0,   0, 0x00 },
     {  5313, 0x00BF,   9,  12,   9,   0,   9,   0,   0, 0x00 },
     {  5373, 0x00D7,   8,   8,  10,   1,  11,   0,   0, 0x00 },
-    {  5405, 0x00F3,  10,  14,  14,   0,  10,   0,   0, 0x00 },
-    {  5475, 0x00F7,  10,   9,  11,   0,  11,   0,   0, 0x00 },
+    {  5405, 0x00E1,   9,  14,  14,   0,  10,   0,   0, 0x00 },
+    {  5475, 0x00E9,   9,  14,  14,   0,  10,   0,   0, 0x00 },
+    {  5545, 0x00ED,   5,  14,  14,   0,   5,   0,   0, 0x00 },
+    {  5587, 0x00F3,  10,  14,  14,   0,  10,   0,   0, 0x00 },
+    {  5657, 0x00F7,  10,   9,  11,   0,  11,   0,   0, 0x00 },
+    {  5702, 0x00FA,   8,  14,  14,   1,  10,   0,   0, 0x00 },
     {     0, 0x201D,   6,   5,  12,   1,   8,  46,   2, 0x00 },
     {    15, 0x2022,   6,   5,   9,   3,  12,   0,   0, 0x00 },
     {    30, 0x20AC,  11,  12,  12,   0,  11,   0,   0, 0x00 }
@@ -135,6 +139,6 @@ touchgfx::GeneratedFont& getFont_FRADM_TTF_18_4bpp();
 
 touchgfx::GeneratedFont& getFont_FRADM_TTF_18_4bpp()
 {
-    static touchgfx::GeneratedFont FRADM_TTF_18_4bpp(glyphs_FRADM_TTF_18_4bpp, 111, 18, 3, 4, 1, 1, 1, unicodes_FRADM_TTF_18_4bpp, kerning_FRADM_TTF_18_4bpp, 63, 0, 0);
+    static touchgfx::GeneratedFont FRADM_TTF_18_4bpp(glyphs_FRADM_TTF_18_4bpp, 115, 18, 3, 4, 1, 1, 1, unicodes_FRADM_TTF_18_4bpp, kerning_FRADM_TTF_18_4bpp, 63, 0, 0);
     return FRADM_TTF_18_4bpp;
 }

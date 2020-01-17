@@ -40,6 +40,7 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/perfilproductos_screen/PerfilPr
  touchgfx/framework/include/mvp/Presenter.hpp \
  touchgfx/framework/include/mvp/MVPHeap.hpp \
  gui/include/gui/model/Model.hpp \
+ touchgfx/framework/include/touchgfx/Perfil.hpp \
  gui/include/gui/perfilproductos_screen/PerfilProductosPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  touchgfx/framework/include/touchgfx/widgets/Image.hpp \
@@ -86,9 +87,12 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/perfilproductos_screen/PerfilPr
  touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
  touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
+ touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
+ touchgfx/framework/include/touchgfx/Color.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  generated/images/include/BitmapDatabase.hpp \
- generated/texts/include/texts/TextKeysAndLanguages.hpp \
- touchgfx/framework/include/touchgfx/Color.hpp
+ generated/texts/include/texts/TextKeysAndLanguages.hpp
 
 generated/gui_generated/include/gui_generated/perfilproductos_screen/PerfilProductosViewBase.hpp:
 
@@ -169,6 +173,8 @@ touchgfx/framework/include/mvp/Presenter.hpp:
 touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 gui/include/gui/model/Model.hpp:
+
+touchgfx/framework/include/touchgfx/Perfil.hpp:
 
 gui/include/gui/perfilproductos_screen/PerfilProductosPresenter.hpp:
 
@@ -262,8 +268,14 @@ touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 
+touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
+
+touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
+
+touchgfx/framework/include/touchgfx/Color.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
 generated/images/include/BitmapDatabase.hpp:
 
 generated/texts/include/texts/TextKeysAndLanguages.hpp:
-
-touchgfx/framework/include/touchgfx/Color.hpp:

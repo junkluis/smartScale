@@ -17,6 +17,7 @@
 #include <touchgfx/containers/buttons/Buttons.hpp>
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/containers/ModalWindow.hpp>
 #include <touchgfx/Color.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
@@ -103,6 +104,8 @@ protected:
     touchgfx::MoveAnimator< touchgfx::Circle > widgetCircular;
     touchgfx::PainterRGB565 widgetCircularPainter;
     touchgfx::TextArea textArea2;
+    touchgfx::Line line1;
+    touchgfx::PainterRGB565 line1Painter;
     touchgfx::TextAreaWithOneWildcard TxtDisplayPerfil;
     touchgfx::TextArea textArea3_1;
     touchgfx::TextAreaWithOneWildcard txtResultadoSmall;
@@ -118,6 +121,10 @@ protected:
     touchgfx::Image image2;
     touchgfx::TextArea textArea7;
     touchgfx::ButtonWithLabel cerrarModal;
+
+    touchgfx::ModalWindow modalWindow1;
+    touchgfx::TextArea textArea8;
+    touchgfx::ButtonWithLabel cerrarModalEnvio;
 
 
     /*

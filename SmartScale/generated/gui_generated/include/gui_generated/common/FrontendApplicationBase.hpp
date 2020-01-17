@@ -15,22 +15,12 @@ public:
     FrontendApplicationBase(Model& m, FrontendHeap& heap);
     virtual ~FrontendApplicationBase() { }
 
-    // Screen1
-    void gotoScreen1ScreenCoverTransitionSouth();
-
-    void gotoScreen1ScreenCoverTransitionEast();
-
-
     // ScreenSaver
     void gotoScreenSaverScreenNoTransition();
 
 
-    // teclado
-    void gototecladoScreenNoTransition();
-
-
     // MenuPrincipal
-    void gotoMenuPrincipalScreenSlideTransitionEast();
+    void gotoMenuPrincipalScreenNoTransition();
 
     void gotoMenuPrincipalScreenCoverTransitionNorth();
 
@@ -38,41 +28,23 @@ public:
     // BalanzaInteligente
     void gotoBalanzaInteligenteScreenCoverTransitionSouth();
 
-
-    // PerfilProductos
-    void gotoPerfilProductosScreenNoTransition();
-
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // Screen1
-    void gotoScreen1ScreenCoverTransitionSouthImpl();
-
-    void gotoScreen1ScreenCoverTransitionEastImpl();
-
-
     // ScreenSaver
     void gotoScreenSaverScreenNoTransitionImpl();
 
 
-    // teclado
-    void gototecladoScreenNoTransitionImpl();
-
-
     // MenuPrincipal
-    void gotoMenuPrincipalScreenSlideTransitionEastImpl();
+    void gotoMenuPrincipalScreenNoTransitionImpl();
 
     void gotoMenuPrincipalScreenCoverTransitionNorthImpl();
 
 
     // BalanzaInteligente
     void gotoBalanzaInteligenteScreenCoverTransitionSouthImpl();
-
-
-    // PerfilProductos
-    void gotoPerfilProductosScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

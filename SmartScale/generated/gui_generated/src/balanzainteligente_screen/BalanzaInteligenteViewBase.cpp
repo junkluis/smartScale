@@ -130,6 +130,15 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID49));
 
+    line1.setPosition(304, 158, 51, 15);
+    line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    line1.setPainter(line1Painter);
+    line1.setStart(6, 5);
+    line1.setEnd(46, 5);
+    line1.setLineWidth(10);
+    line1.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
+    line1.setAlpha(210);
+
     TxtDisplayPerfil.setPosition(360, 89, 116, 19);
     TxtDisplayPerfil.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     TxtDisplayPerfil.setLinespacing(0);
@@ -210,12 +219,31 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     alertaPerfil.add(textArea7);
 
     cerrarModal.setXY(82, 153);
-    cerrarModal.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    cerrarModal.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID));
     cerrarModal.setLabelText(touchgfx::TypedText(T_SINGLEUSEID80));
     cerrarModal.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     cerrarModal.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     cerrarModal.setAction(buttonCallback);
     alertaPerfil.add(cerrarModal);
+
+    modalWindow1.setBackground(touchgfx::BitmapId(BITMAP_MODAL_BACKGROUND_ID), 70, 16);
+    modalWindow1.setShadeColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    modalWindow1.setShadeAlpha(150);
+    modalWindow1.hide();
+
+    textArea8.setXY(79, 57);
+    textArea8.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea8.setLinespacing(0);
+    textArea8.setTypedText(touchgfx::TypedText(T_SINGLEUSEID124));
+    modalWindow1.add(textArea8);
+
+    cerrarModalEnvio.setXY(85, 127);
+    cerrarModalEnvio.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    cerrarModalEnvio.setLabelText(touchgfx::TypedText(T_SINGLEUSEID125));
+    cerrarModalEnvio.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    cerrarModalEnvio.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    cerrarModalEnvio.setAction(buttonCallback);
+    modalWindow1.add(cerrarModalEnvio);
 
     add(backgroundmenu);
     add(boxWithBorder1);
@@ -227,6 +255,7 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     add(txtResultadoPesar);
     add(widgetCircular);
     add(textArea2);
+    add(line1);
     add(TxtDisplayPerfil);
     add(textArea3_1);
     add(txtResultadoSmall);
@@ -239,6 +268,7 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     add(textArea6);
     add(image1);
     add(alertaPerfil);
+    add(modalWindow1);
 }
 
 void BalanzaInteligenteViewBase::setupScreen()
@@ -313,6 +343,14 @@ void BalanzaInteligenteViewBase::buttonCallbackHandler(const touchgfx::AbstractB
         //Hide alertaPerfil
         alertaPerfil.setVisible(false);
         alertaPerfil.invalidate();
+    }
+    else if (&src == &cerrarModalEnvio)
+    {
+        //cerrarModal2
+        //When cerrarModalEnvio clicked hide modalWindow1
+        //Hide modalWindow1
+        modalWindow1.setVisible(false);
+        modalWindow1.invalidate();
     }
 }
 

@@ -4,6 +4,7 @@
 #include <touchgfx/Utils.hpp>
 #include <string>
 #include <touchgfx/Unicode.hpp>
+#include <touchgfx/Perfil.hpp>
 
 
 
@@ -66,45 +67,29 @@ public:
         return clave;
     }
 
-	void setSlotInfo(std::string slot, int id) {
-		if (id == 1) {
-			slot1 = slot;
-		}
-		else if (id == 2) {
-			slot2 = slot;
-		}
-		else if (id == 3) {
-			slot3 = slot;
-		}
-		else if (id == 4) {
-			slot4 = slot;
-		}
-		else if (id == 5) {
-			slot5 = slot;
-		}
-		
+	void setNumPadAccion(std::string accion) {
+		numPadAccion = accion;
 	}
 
-	std::string getSlotInfo(int id) {
-		std::string slot;
-		if (id == 1) {
-			slot = slot1;
-		}
-		else if (id == 2) {
-			slot = slot2;
-		}
-		else if (id == 3) {
-			slot = slot3;
-		}
-		else if (id == 4) {
-			slot = slot4;
-		}
-		else if (id == 5) {
-			slot = slot5;
-		}
-		return slot;
+	std::string getNumPadAccion() {
+		return numPadAccion;
+	}
 
-	} 
+	void setPesoEsperado(float pesoEsperado) {
+		inputPesoEsperado = pesoEsperado;
+	}
+
+	float getPesoEsperado() {
+		return inputPesoEsperado;
+	}
+
+	void setDifPermitida(float diferenciaPermitida) {
+		inputDifPermitida = diferenciaPermitida;
+	}
+
+	float getDifPermitida() {
+		return inputDifPermitida;
+	}
 
 
 	void setTituloPerfil(touchgfx::Unicode::UnicodeChar* titulo) {
@@ -123,7 +108,6 @@ public:
 		return descPerfil;
 	}
 
-
 	void seleccionarSlot(int id) {
 		slotSeleccionado = id;
 	}
@@ -132,7 +116,82 @@ public:
 		return slotSeleccionado;
 	}
 
+	
+	//GET SET INFO SLOT
+	void setTitulo(std::string titulo, int id) {
+		titulos[id] = titulo;
+	}
 
+	std::string getTitulo(int id) {
+		return titulos[id];
+	}
+
+	void setDescripcion(std::string descr, int id) {
+		descripciones[id] = descr;
+	}
+
+	std::string getDescripcion(int id) {
+		return descripciones[id];
+	}
+
+	void setPesoPromedio(float peso, int id) {
+		pesosProm[id] = peso;
+	}
+
+	float getPesoPromedio(int id) {
+		return pesosProm[id];
+	}
+
+	void setDiferenciaPermitida(float diferencia, int id) {
+		difsPerm[id] = diferencia;
+	}
+
+	float getDiferenciaPermitida(int id) {
+		return difsPerm[id];
+	}
+	//FIN GET SET INFO SLOT
+
+	//FUNCIONES PARA EDITAR
+	void setEditor(bool mode) {
+		editor = mode;
+	}
+
+	bool getEditor() {
+		return editor;
+	}
+
+	void setTituloEditable(uint8_t* titulo) {
+		tituloEditable = titulo;
+	}
+
+	uint8_t* getTituloEditable() {
+		return tituloEditable;
+	}
+
+	void setDescriEditable(uint8_t* desc) {
+		descriEditable = desc;
+	}
+
+	uint8_t* getDescriEditable() {
+		return descriEditable;
+	}
+
+	void setPesoEditable(float peso) {
+		pesoEditable = peso;
+	}
+
+	float getPesoEditable() {
+		return pesoEditable;
+	}
+
+	void setDifeEditable(float diferencia) {
+		difeEditable = diferencia;
+	}
+
+	float getDifeEditable() {
+		return difeEditable;
+	}
+	//FIN FUNCIONES PARA EDITAR
 
 
 protected:
@@ -140,20 +199,39 @@ protected:
      * Pointer to the currently active presenter.
      */
     ModelListener* modelListener;
-    std::string tecladoAccion;
+
     touchgfx::Unicode::UnicodeChar* usuario;
     touchgfx::Unicode::UnicodeChar* clave;
 	touchgfx::Unicode::UnicodeChar* tituloPerfil;
 	touchgfx::Unicode::UnicodeChar* descPerfil;
 
-	std::string slot1;
-	std::string slot2;
-	std::string slot3;
-	std::string slot4;
-	std::string slot5;
+	float inputPesoEsperado = 0;
+	float inputDifPermitida = 0;
+
+	std::string tecladoAccion;
+	std::string numPadAccion;
+	// buffer  = (Unicode::UnicodeChar*) malloc(BUFFER_SIZE*sizeof(Unicode::UnicodeChar));
+
+	//SLOTs
+	std::string titulos[5] = {  "Nitrogeno",
+								"Aire Comp.",
+								"CO2",
+								"Perfil Vacio",
+								"Perfil Vacio" };
+
+	std::string descripciones[5] = {"", "", "", "", "" };
+
+	float pesosProm[5] = { 1.00, 1.50, 2.50, 0, 0 };
+	float difsPerm[5] = { 0.1, 0.2, 0.3, 0, 0 };
+
+	uint8_t* tituloEditable;
+	uint8_t* descriEditable = 0;
+	float pesoEditable = 0;
+	float difeEditable = 0;
 
 	int slotSeleccionado;
-    
+	bool editor;
+
 };
 
 #endif /* MODEL_HPP */

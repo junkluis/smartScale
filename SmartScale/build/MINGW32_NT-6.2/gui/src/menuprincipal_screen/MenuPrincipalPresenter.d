@@ -41,6 +41,7 @@ build/MINGW32_NT-6.2/gui/src/menuprincipal_screen/MenuPrincipalPresenter.o: \
  touchgfx/framework/include/mvp/Presenter.hpp \
  touchgfx/framework/include/mvp/MVPHeap.hpp \
  gui/include/gui/model/Model.hpp \
+ touchgfx/framework/include/touchgfx/Perfil.hpp \
  gui/include/gui/menuprincipal_screen/MenuPrincipalPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  touchgfx/framework/include/touchgfx/widgets/Image.hpp \
@@ -137,6 +138,8 @@ touchgfx/framework/include/mvp/Presenter.hpp:
 touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 gui/include/gui/model/Model.hpp:
+
+touchgfx/framework/include/touchgfx/Perfil.hpp:
 
 gui/include/gui/menuprincipal_screen/MenuPrincipalPresenter.hpp:
 

@@ -1230,6 +1230,24 @@
           </file>
         </group>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\ayuda1.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\ayuda2.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\ayuda3.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\ayuda4.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\ayuda5.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\ayuda6.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\background-title.cpp</name>
         </file>
         <file>

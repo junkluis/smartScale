@@ -14,6 +14,7 @@
 
 #include <touchgfx/transitions/CoverTransition.hpp>
 
+
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 

@@ -907,6 +907,36 @@
               <FilePath>../../generated/fonts/src/applicationfontprovider.cpp</FilePath>
             </File>
             <File>
+              <FileName>ayuda1.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/ayuda1.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ayuda2.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/ayuda2.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ayuda3.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/ayuda3.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ayuda4.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/ayuda4.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ayuda5.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/ayuda5.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ayuda6.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/ayuda6.cpp</FilePath>
+            </File>
+            <File>
               <FileName>background-title.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/images/src/background-title.cpp</FilePath>

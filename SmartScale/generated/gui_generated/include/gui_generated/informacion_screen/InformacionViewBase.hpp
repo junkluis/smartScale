@@ -10,7 +10,9 @@
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/containers/SwipeContainer.hpp>
 #include <touchgfx/containers/Container.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
+#include <touchgfx/containers/buttons/Buttons.hpp>
 class InformacionViewBase : public touchgfx::View<InformacionPresenter>
 {
 public:
@@ -28,22 +30,49 @@ protected:
      */
     touchgfx::Image image1;
     touchgfx::SwipeContainer swipeContainer1;
-    touchgfx::Container swipeContainer1Page1;
-
-
     touchgfx::Container swipeContainer1Page1_1;
+    touchgfx::Image image2_1;
+    touchgfx::TextArea textArea1_1;
+    touchgfx::TextArea textArea2_1;
 
+    touchgfx::Container swipeContainer1Page1;
+    touchgfx::Image image2;
+    touchgfx::TextArea textArea1;
+    touchgfx::TextArea textArea2;
 
-    touchgfx::Container swipeContainer1Page1_2;
+    touchgfx::Container swipeContainer1Page1_1_1;
+    touchgfx::Image image2_1_1;
+    touchgfx::TextArea textArea1_1_1;
+    touchgfx::TextArea textArea2_1_1;
 
+    touchgfx::Container swipeContainer1Page2;
+    touchgfx::Image image2_1_1_1;
+    touchgfx::TextArea textArea1_1_1_1;
+    touchgfx::TextArea textArea2_1_1_1;
 
-    touchgfx::Container swipeContainer1Page1_3;
+    touchgfx::Container swipeContainer1Page2_1;
+    touchgfx::Image image2_1_1_1_1;
+    touchgfx::TextArea textArea1_1_1_1_1;
+    touchgfx::TextArea textArea2_1_1_1_1;
 
+    touchgfx::Container swipeContainer1Page2_1_1;
+    touchgfx::Image image2_1_1_1_1_1;
+    touchgfx::TextArea textArea1_1_1_1_1_1;
+    touchgfx::TextArea textArea2_1_1_1_1_1;
 
-    touchgfx::Container swipeContainer1Page1_4;
-
+    touchgfx::ImageButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > > homeButton;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<InformacionViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
 };
 

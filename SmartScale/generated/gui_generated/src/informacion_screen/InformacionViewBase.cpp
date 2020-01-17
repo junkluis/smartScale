@@ -3,53 +3,166 @@
 /*********************************************************************************/
 #include <gui_generated/informacion_screen/InformacionViewBase.hpp>
 #include "BitmapDatabase.hpp"
+#include <texts/TextKeysAndLanguages.hpp>
+#include <touchgfx/Color.hpp>
 
-InformacionViewBase::InformacionViewBase()
+InformacionViewBase::InformacionViewBase() :
+    flexButtonCallback(this, &InformacionViewBase::flexButtonCallbackHandler)
 {
     image1.setXY(0, 0);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_TITLE_ID));
 
     swipeContainer1.setXY(0, 52);
 
-    swipeContainer1Page1.setWidth(480);
-    swipeContainer1Page1.setHeight(220);
-
-
-    swipeContainer1.add(swipeContainer1Page1);
-
     swipeContainer1Page1_1.setWidth(480);
     swipeContainer1Page1_1.setHeight(220);
 
+    image2_1.setXY(26, 46);
+    image2_1.setBitmap(touchgfx::Bitmap(BITMAP_AYUDA2_ID));
+    swipeContainer1Page1_1.add(image2_1);
 
+    textArea1_1.setXY(249, 46);
+    textArea1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea1_1.setLinespacing(0);
+    textArea1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID157));
+    swipeContainer1Page1_1.add(textArea1_1);
+
+    textArea2_1.setXY(250, 84);
+    textArea2_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea2_1.setLinespacing(0);
+    textArea2_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID158));
+    swipeContainer1Page1_1.add(textArea2_1);
     swipeContainer1.add(swipeContainer1Page1_1);
 
-    swipeContainer1Page1_2.setWidth(480);
-    swipeContainer1Page1_2.setHeight(220);
+    swipeContainer1Page1.setWidth(480);
+    swipeContainer1Page1.setHeight(220);
 
+    image2.setXY(26, 46);
+    image2.setBitmap(touchgfx::Bitmap(BITMAP_AYUDA1_ID));
+    swipeContainer1Page1.add(image2);
 
-    swipeContainer1.add(swipeContainer1Page1_2);
+    textArea1.setXY(249, 46);
+    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea1.setLinespacing(0);
+    textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID155));
+    swipeContainer1Page1.add(textArea1);
 
-    swipeContainer1Page1_3.setWidth(480);
-    swipeContainer1Page1_3.setHeight(220);
+    textArea2.setXY(250, 84);
+    textArea2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea2.setLinespacing(0);
+    textArea2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID156));
+    swipeContainer1Page1.add(textArea2);
+    swipeContainer1.add(swipeContainer1Page1);
 
+    swipeContainer1Page1_1_1.setWidth(480);
+    swipeContainer1Page1_1_1.setHeight(220);
 
-    swipeContainer1.add(swipeContainer1Page1_3);
+    image2_1_1.setXY(26, 46);
+    image2_1_1.setBitmap(touchgfx::Bitmap(BITMAP_AYUDA3_ID));
+    swipeContainer1Page1_1_1.add(image2_1_1);
 
-    swipeContainer1Page1_4.setWidth(480);
-    swipeContainer1Page1_4.setHeight(220);
+    textArea1_1_1.setXY(249, 46);
+    textArea1_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea1_1_1.setLinespacing(0);
+    textArea1_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID159));
+    swipeContainer1Page1_1_1.add(textArea1_1_1);
 
+    textArea2_1_1.setXY(250, 84);
+    textArea2_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea2_1_1.setLinespacing(0);
+    textArea2_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID160));
+    swipeContainer1Page1_1_1.add(textArea2_1_1);
+    swipeContainer1.add(swipeContainer1Page1_1_1);
 
-    swipeContainer1.add(swipeContainer1Page1_4);
+    swipeContainer1Page2.setWidth(480);
+    swipeContainer1Page2.setHeight(220);
+
+    image2_1_1_1.setXY(26, 46);
+    image2_1_1_1.setBitmap(touchgfx::Bitmap(BITMAP_AYUDA4_ID));
+    swipeContainer1Page2.add(image2_1_1_1);
+
+    textArea1_1_1_1.setXY(249, 46);
+    textArea1_1_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea1_1_1_1.setLinespacing(0);
+    textArea1_1_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID161));
+    swipeContainer1Page2.add(textArea1_1_1_1);
+
+    textArea2_1_1_1.setXY(250, 84);
+    textArea2_1_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea2_1_1_1.setLinespacing(0);
+    textArea2_1_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID162));
+    swipeContainer1Page2.add(textArea2_1_1_1);
+    swipeContainer1.add(swipeContainer1Page2);
+
+    swipeContainer1Page2_1.setWidth(480);
+    swipeContainer1Page2_1.setHeight(220);
+
+    image2_1_1_1_1.setXY(26, 46);
+    image2_1_1_1_1.setBitmap(touchgfx::Bitmap(BITMAP_AYUDA5_ID));
+    swipeContainer1Page2_1.add(image2_1_1_1_1);
+
+    textArea1_1_1_1_1.setXY(249, 46);
+    textArea1_1_1_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea1_1_1_1_1.setLinespacing(0);
+    textArea1_1_1_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID163));
+    swipeContainer1Page2_1.add(textArea1_1_1_1_1);
+
+    textArea2_1_1_1_1.setXY(250, 84);
+    textArea2_1_1_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea2_1_1_1_1.setLinespacing(0);
+    textArea2_1_1_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID164));
+    swipeContainer1Page2_1.add(textArea2_1_1_1_1);
+    swipeContainer1.add(swipeContainer1Page2_1);
+
+    swipeContainer1Page2_1_1.setWidth(480);
+    swipeContainer1Page2_1_1.setHeight(220);
+
+    image2_1_1_1_1_1.setXY(26, 46);
+    image2_1_1_1_1_1.setBitmap(touchgfx::Bitmap(BITMAP_AYUDA6_ID));
+    swipeContainer1Page2_1_1.add(image2_1_1_1_1_1);
+
+    textArea1_1_1_1_1_1.setXY(249, 46);
+    textArea1_1_1_1_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea1_1_1_1_1_1.setLinespacing(0);
+    textArea1_1_1_1_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID165));
+    swipeContainer1Page2_1_1.add(textArea1_1_1_1_1_1);
+
+    textArea2_1_1_1_1_1.setXY(250, 84);
+    textArea2_1_1_1_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea2_1_1_1_1_1.setLinespacing(0);
+    textArea2_1_1_1_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID166));
+    swipeContainer1Page2_1_1.add(textArea2_1_1_1_1_1);
+    swipeContainer1.add(swipeContainer1Page2_1_1);
 
     swipeContainer1.setSwipeCutoff(50);
     swipeContainer1.setEndSwipeElasticWidth(50);
     swipeContainer1.setSelectedPage(0);
 
+    homeButton.setBoxWithBorderPosition(0, 0, 65, 39);
+    homeButton.setBorderSize(5);
+    homeButton.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(49, 49, 49), touchgfx::Color::getColorFrom24BitRGB(75, 83, 86), touchgfx::Color::getColorFrom24BitRGB(49, 49, 49), touchgfx::Color::getColorFrom24BitRGB(75, 83, 86));
+    homeButton.setBitmaps(Bitmap(BITMAP_HOME_ID), Bitmap(BITMAP_HOME_ID));
+    homeButton.setBitmapXY(0, 0);
+    homeButton.setPosition(411, 5, 65, 39);
+    homeButton.setAction(flexButtonCallback);
+
     add(image1);
     add(swipeContainer1);
+    add(homeButton);
 }
 
 void InformacionViewBase::setupScreen()
 {
 
+}
+
+void InformacionViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
+{
+    if (&src == &homeButton)
+    {
+        //regresar
+        //When homeButton clicked change screen to MenuPrincipal
+        //Go to MenuPrincipal with no screen transition
+        application().gotoMenuPrincipalScreenNoTransition();
+    }
 }

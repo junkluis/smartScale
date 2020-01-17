@@ -88,6 +88,7 @@ MenuPrincipalViewBase::MenuPrincipalViewBase() :
 
     MenuSwap.setSwipeCutoff(50);
     MenuSwap.setEndSwipeElasticWidth(50);
+    MenuSwap.setSelectedPage(0);
 
     txt_tituloMenu.setXY(20, 24);
     txt_tituloMenu.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));

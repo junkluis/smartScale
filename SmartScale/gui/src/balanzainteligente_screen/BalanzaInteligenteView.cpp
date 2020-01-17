@@ -44,6 +44,21 @@ void BalanzaInteligenteView::CalcularPeso()
 	
 
 	porcentaje = ((peso * 185)/(promedio))+260;
+	float diferenciaObtenida = promedio - peso;
+	if (diferenciaObtenida < 0) {
+		diferenciaObtenida = diferenciaObtenida * (-1);
+	}
+
+	//Datos del Resultados Modal
+	Unicode::snprintfFloat(pesoObtenidoModalBuffer, PESOOBTENIDOMODAL_SIZE, "%0.2f", peso);
+	Unicode::snprintfFloat(promedioModalBuffer, PESOOBTENIDOMODAL_SIZE, "%0.2f", presenter->getPesoPromedio(perfilSeleccionado-1));
+	Unicode::snprintfFloat(diferenciaModalBuffer, PESOOBTENIDOMODAL_SIZE, "%0.2f", diferenciaObtenida);
+	Unicode::snprintfFloat(permitidoModalBuffer, PESOOBTENIDOMODAL_SIZE, "%0.2f", presenter->getDiferenciaPermitida(perfilSeleccionado-1));
+	promedioModal.invalidate();
+	diferenciaModal.invalidate();
+	permitidoModal.invalidate();
+	pesoObtenidoModal.invalidate();
+
 
 	widgetCircular.setArc(268, 268);
 	if (peso > (promedio + delta)) {

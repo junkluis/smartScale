@@ -1272,7 +1272,13 @@
           <name>$PROJ_DIR$\..\..\generated\images\src\erase.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\hand.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\home.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\generated\images\src\info.cpp</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\..\generated\images\src\keyboard_background.cpp</name>

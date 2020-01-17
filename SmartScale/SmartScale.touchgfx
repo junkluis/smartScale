@@ -998,6 +998,54 @@
             "Moveable": true
           },
           {
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 131,
+                "Height": 100,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "verResultados",
+            "X": 349,
+            "Y": 58,
+            "Width": 131,
+            "Height": 100,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
             "TextId": "SingleUseId49",
             "TextRotation": "0",
             "Color": {
@@ -1009,7 +1057,7 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea2",
-            "X": 360,
+            "X": 354,
             "Y": 65,
             "Width": 80,
             "Height": 21,
@@ -1063,7 +1111,7 @@
               "BufferSize": 16
             },
             "Name": "TxtDisplayPerfil",
-            "X": 360,
+            "X": 354,
             "Y": 89,
             "Width": 116,
             "Height": 19,
@@ -1086,7 +1134,7 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea3_1",
-            "X": 360,
+            "X": 354,
             "Y": 119,
             "Width": 49,
             "Height": 13,
@@ -1114,7 +1162,7 @@
               "BufferSize": 10
             },
             "Name": "txtResultadoSmall",
-            "X": 414,
+            "X": 408,
             "Y": 119,
             "Width": 55,
             "Height": 13,
@@ -1137,7 +1185,7 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea3_1_2",
-            "X": 361,
+            "X": 355,
             "Y": 136,
             "Width": 47,
             "Height": 13,
@@ -1165,7 +1213,7 @@
               "BufferSize": 16
             },
             "Name": "txtDispProm",
-            "X": 414,
+            "X": 408,
             "Y": 136,
             "Width": 55,
             "Height": 13,
@@ -1239,8 +1287,8 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea5_1",
-            "X": 223,
-            "Y": 191,
+            "X": 282,
+            "Y": 175,
             "Width": 34,
             "Height": 19,
             "Type": "TextArea",
@@ -1477,6 +1525,372 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "RelativeFilename": "info.png",
+            "Alpha": 255,
+            "Name": "image3",
+            "X": 440,
+            "Y": 73,
+            "Width": 31,
+            "Height": 31,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "hand.png",
+            "Alpha": 255,
+            "Name": "image4",
+            "X": 224,
+            "Y": 190,
+            "Width": 31,
+            "Height": 37,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Components": [
+              {
+                "TextId": "SingleUseId126",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Name": "textArea9",
+                "X": 33,
+                "Y": 20,
+                "Width": 155,
+                "Height": 31,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Color": {
+                  "Red": 135,
+                  "Green": 135,
+                  "Blue": 135
+                },
+                "Alpha": 75,
+                "Name": "box1_1",
+                "X": 3,
+                "Y": 146,
+                "Width": 334,
+                "Height": 26,
+                "Type": "Box",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Color": {
+                  "Red": 135,
+                  "Green": 135,
+                  "Blue": 135
+                },
+                "Alpha": 75,
+                "Name": "box1",
+                "X": 3,
+                "Y": 98,
+                "Width": 334,
+                "Height": 26,
+                "Type": "Box",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "TextId": "SingleUseId127",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Name": "textArea10",
+                "X": 35,
+                "Y": 58,
+                "Width": 144,
+                "Height": 25,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "TextId": "SingleUseId128",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Name": "textArea10_1",
+                "X": 35,
+                "Y": 101,
+                "Width": 109,
+                "Height": 19,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "TextId": "SingleUseId129",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Name": "textArea10_1_1",
+                "X": 35,
+                "Y": 125,
+                "Width": 144,
+                "Height": 19,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "TextId": "SingleUseId130",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Name": "textArea10_1_1_1",
+                "X": 33,
+                "Y": 150,
+                "Width": 150,
+                "Height": 19,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "RelativeFilename": "info.png",
+                "Alpha": 255,
+                "Name": "image5",
+                "X": 247,
+                "Y": 19,
+                "Width": 31,
+                "Height": 31,
+                "Type": "Image",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "TextId": "SingleUseId131",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Wildcard1": {
+                  "TextId": "SingleUseId137",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                },
+                "Name": "pesoObtenidoModal",
+                "X": 201,
+                "Y": 58,
+                "Width": 108,
+                "Height": 25,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "TextId": "SingleUseId132",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Wildcard1": {
+                  "TextId": "SingleUseId136",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                },
+                "Name": "promedioModal",
+                "X": 227,
+                "Y": 100,
+                "Width": 81,
+                "Height": 19,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "TextId": "SingleUseId133",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Wildcard1": {
+                  "TextId": "SingleUseId138",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                },
+                "Name": "diferenciaModal",
+                "X": 227,
+                "Y": 125,
+                "Width": 81,
+                "Height": 19,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "TextId": "SingleUseId134",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Wildcard1": {
+                  "TextId": "SingleUseId139",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                },
+                "Name": "permitidoModal",
+                "X": 227,
+                "Y": 150,
+                "Width": 81,
+                "Height": 19,
+                "Type": "TextArea",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Pressed": "__designer\\Blue_Buttons_Round_small_pressed.png",
+                "Released": "__designer\\Blue_Buttons_Round_small.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId135",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Name": "cerrarModalResultados",
+                "X": 85,
+                "Y": 181,
+                "Width": 170,
+                "Height": 60,
+                "Type": "ButtonWithLabel",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "FileName": "modal_background.png",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "ModalX": 70,
+            "ModalY": 16,
+            "ModalWidth": 340,
+            "ModalHeight": 240,
+            "ContX": 0,
+            "ContY": 0,
+            "Alpha": 150,
+            "Name": "datosDePeso",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "ModalWindow",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
         "Interactions": [
@@ -1610,6 +2024,30 @@
             },
             "Action": {
               "ActionComponent": "modalWindow1",
+              "Type": "ActionHide"
+            }
+          },
+          {
+            "InteractionName": "mostrarResultadosModal",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "verResultados",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ActionComponent": "datosDePeso",
+              "Type": "ActionShow"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "cerrarModalResultados",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ActionComponent": "datosDePeso",
               "Type": "ActionHide"
             }
           }
@@ -1791,6 +2229,62 @@
       },
       {
         "TextEntryId": "SingleUseId125",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId126",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId127",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId128",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId129",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId130",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId131",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId132",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId133",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId134",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId135",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId136",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId137",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId138",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId139",
         "IsResource": false
       }
     ],

@@ -125,7 +125,14 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     widgetCircularPainter.setColor(touchgfx::Color::getColorFrom24BitRGB(55, 210, 210));
     widgetCircular.setPainter(widgetCircularPainter);
 
-    textArea2.setXY(360, 65);
+    verResultados.setBoxWithBorderPosition(0, 0, 131, 100);
+    verResultados.setBorderSize(5);
+    verResultados.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(0, 102, 153), touchgfx::Color::getColorFrom24BitRGB(0, 153, 204), touchgfx::Color::getColorFrom24BitRGB(0, 51, 102), touchgfx::Color::getColorFrom24BitRGB(51, 102, 153));
+    verResultados.setPosition(349, 58, 131, 100);
+    verResultados.setAlpha(0);
+    verResultados.setAction(flexButtonCallback);
+
+    textArea2.setXY(354, 65);
     textArea2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID49));
@@ -139,19 +146,19 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     line1.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
     line1.setAlpha(210);
 
-    TxtDisplayPerfil.setPosition(360, 89, 116, 19);
+    TxtDisplayPerfil.setPosition(354, 89, 116, 19);
     TxtDisplayPerfil.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     TxtDisplayPerfil.setLinespacing(0);
     Unicode::snprintf(TxtDisplayPerfilBuffer, TXTDISPLAYPERFIL_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID74).getText());
     TxtDisplayPerfil.setWildcard(TxtDisplayPerfilBuffer);
     TxtDisplayPerfil.setTypedText(touchgfx::TypedText(T_SINGLEUSEID50));
 
-    textArea3_1.setXY(360, 119);
+    textArea3_1.setXY(354, 119);
     textArea3_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea3_1.setLinespacing(0);
     textArea3_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID51));
 
-    txtResultadoSmall.setXY(414, 119);
+    txtResultadoSmall.setXY(408, 119);
     txtResultadoSmall.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     txtResultadoSmall.setLinespacing(0);
     Unicode::snprintf(txtResultadoSmallBuffer, TXTRESULTADOSMALL_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID77).getText());
@@ -159,12 +166,12 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     txtResultadoSmall.resizeToCurrentText();
     txtResultadoSmall.setTypedText(touchgfx::TypedText(T_SINGLEUSEID52));
 
-    textArea3_1_2.setXY(361, 136);
+    textArea3_1_2.setXY(355, 136);
     textArea3_1_2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea3_1_2.setLinespacing(0);
     textArea3_1_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID53));
 
-    txtDispProm.setXY(414, 136);
+    txtDispProm.setXY(408, 136);
     txtDispProm.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     txtDispProm.setLinespacing(0);
     Unicode::snprintf(txtDispPromBuffer, TXTDISPPROM_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID75).getText());
@@ -186,7 +193,7 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     volverAPesar.setLinespacing(0);
     volverAPesar.setTypedText(touchgfx::TypedText(T_SINGLEUSEID56));
 
-    textArea5_1.setXY(223, 191);
+    textArea5_1.setXY(282, 175);
     textArea5_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     textArea5_1.setLinespacing(0);
     textArea5_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID57));
@@ -245,6 +252,104 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     cerrarModalEnvio.setAction(buttonCallback);
     modalWindow1.add(cerrarModalEnvio);
 
+    image3.setXY(440, 73);
+    image3.setBitmap(touchgfx::Bitmap(BITMAP_INFO_ID));
+
+    image4.setXY(224, 190);
+    image4.setBitmap(touchgfx::Bitmap(BITMAP_HAND_ID));
+
+    datosDePeso.setBackground(touchgfx::BitmapId(BITMAP_MODAL_BACKGROUND_ID), 70, 16);
+    datosDePeso.setShadeColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    datosDePeso.setShadeAlpha(150);
+
+    textArea9.setXY(33, 20);
+    textArea9.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea9.setLinespacing(0);
+    textArea9.setTypedText(touchgfx::TypedText(T_SINGLEUSEID126));
+    datosDePeso.add(textArea9);
+
+    box1_1.setPosition(3, 146, 334, 26);
+    box1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(135, 135, 135));
+    box1_1.setAlpha(75);
+    datosDePeso.add(box1_1);
+
+    box1.setPosition(3, 98, 334, 26);
+    box1.setColor(touchgfx::Color::getColorFrom24BitRGB(135, 135, 135));
+    box1.setAlpha(75);
+    datosDePeso.add(box1);
+
+    textArea10.setXY(35, 58);
+    textArea10.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea10.setLinespacing(0);
+    textArea10.setTypedText(touchgfx::TypedText(T_SINGLEUSEID127));
+    datosDePeso.add(textArea10);
+
+    textArea10_1.setXY(35, 101);
+    textArea10_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea10_1.setLinespacing(0);
+    textArea10_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID128));
+    datosDePeso.add(textArea10_1);
+
+    textArea10_1_1.setXY(35, 125);
+    textArea10_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea10_1_1.setLinespacing(0);
+    textArea10_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID129));
+    datosDePeso.add(textArea10_1_1);
+
+    textArea10_1_1_1.setXY(33, 150);
+    textArea10_1_1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    textArea10_1_1_1.setLinespacing(0);
+    textArea10_1_1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID130));
+    datosDePeso.add(textArea10_1_1_1);
+
+    image5.setXY(247, 19);
+    image5.setBitmap(touchgfx::Bitmap(BITMAP_INFO_ID));
+    datosDePeso.add(image5);
+
+    pesoObtenidoModal.setXY(201, 58);
+    pesoObtenidoModal.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    pesoObtenidoModal.setLinespacing(0);
+    Unicode::snprintf(pesoObtenidoModalBuffer, PESOOBTENIDOMODAL_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID137).getText());
+    pesoObtenidoModal.setWildcard(pesoObtenidoModalBuffer);
+    pesoObtenidoModal.resizeToCurrentText();
+    pesoObtenidoModal.setTypedText(touchgfx::TypedText(T_SINGLEUSEID131));
+    datosDePeso.add(pesoObtenidoModal);
+
+    promedioModal.setXY(227, 100);
+    promedioModal.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    promedioModal.setLinespacing(0);
+    Unicode::snprintf(promedioModalBuffer, PROMEDIOMODAL_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID136).getText());
+    promedioModal.setWildcard(promedioModalBuffer);
+    promedioModal.resizeToCurrentText();
+    promedioModal.setTypedText(touchgfx::TypedText(T_SINGLEUSEID132));
+    datosDePeso.add(promedioModal);
+
+    diferenciaModal.setXY(227, 125);
+    diferenciaModal.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    diferenciaModal.setLinespacing(0);
+    Unicode::snprintf(diferenciaModalBuffer, DIFERENCIAMODAL_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID138).getText());
+    diferenciaModal.setWildcard(diferenciaModalBuffer);
+    diferenciaModal.resizeToCurrentText();
+    diferenciaModal.setTypedText(touchgfx::TypedText(T_SINGLEUSEID133));
+    datosDePeso.add(diferenciaModal);
+
+    permitidoModal.setXY(227, 150);
+    permitidoModal.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    permitidoModal.setLinespacing(0);
+    Unicode::snprintf(permitidoModalBuffer, PERMITIDOMODAL_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID139).getText());
+    permitidoModal.setWildcard(permitidoModalBuffer);
+    permitidoModal.resizeToCurrentText();
+    permitidoModal.setTypedText(touchgfx::TypedText(T_SINGLEUSEID134));
+    datosDePeso.add(permitidoModal);
+
+    cerrarModalResultados.setXY(85, 181);
+    cerrarModalResultados.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_SMALL_PRESSED_ID));
+    cerrarModalResultados.setLabelText(touchgfx::TypedText(T_SINGLEUSEID135));
+    cerrarModalResultados.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    cerrarModalResultados.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    cerrarModalResultados.setAction(buttonCallback);
+    datosDePeso.add(cerrarModalResultados);
+
     add(backgroundmenu);
     add(boxWithBorder1);
     add(txt_tituloBalanza);
@@ -254,6 +359,7 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     add(btnPesar);
     add(txtResultadoPesar);
     add(widgetCircular);
+    add(verResultados);
     add(textArea2);
     add(line1);
     add(TxtDisplayPerfil);
@@ -269,6 +375,9 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
     add(image1);
     add(alertaPerfil);
     add(modalWindow1);
+    add(image3);
+    add(image4);
+    add(datosDePeso);
 }
 
 void BalanzaInteligenteViewBase::setupScreen()
@@ -352,6 +461,14 @@ void BalanzaInteligenteViewBase::buttonCallbackHandler(const touchgfx::AbstractB
         modalWindow1.setVisible(false);
         modalWindow1.invalidate();
     }
+    else if (&src == &cerrarModalResultados)
+    {
+        //Interaction2
+        //When cerrarModalResultados clicked hide datosDePeso
+        //Hide datosDePeso
+        datosDePeso.setVisible(false);
+        datosDePeso.invalidate();
+    }
 }
 
 void BalanzaInteligenteViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
@@ -362,5 +479,13 @@ void BalanzaInteligenteViewBase::flexButtonCallbackHandler(const touchgfx::Abstr
         //When homeButton clicked change screen to MenuPrincipal
         //Go to MenuPrincipal with screen transition towards North
         application().gotoMenuPrincipalScreenCoverTransitionNorth();
+    }
+    else if (&src == &verResultados)
+    {
+        //mostrarResultadosModal
+        //When verResultados clicked show datosDePeso
+        //Show datosDePeso
+        datosDePeso.setVisible(true);
+        datosDePeso.invalidate();
     }
 }

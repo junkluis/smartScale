@@ -1137,9 +1137,19 @@
               <FilePath>../../generated/fonts/src/generatedfont.cpp</FilePath>
             </File>
             <File>
+              <FileName>hand.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/hand.cpp</FilePath>
+            </File>
+            <File>
               <FileName>home.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../../generated/images/src/home.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>info.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../../generated/images/src/info.cpp</FilePath>
             </File>
             <File>
               <FileName>Kerning_FRADM_TTF_18_4bpp.cpp</FileName>

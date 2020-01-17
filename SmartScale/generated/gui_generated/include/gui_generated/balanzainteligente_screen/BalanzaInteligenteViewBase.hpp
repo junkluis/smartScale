@@ -21,6 +21,7 @@
 #include <touchgfx/containers/ModalWindow.hpp>
 #include <touchgfx/Color.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/EasingEquations.hpp>
 #include <touchgfx/mixins/MoveAnimator.hpp>
 class BalanzaInteligenteViewBase : public touchgfx::View<BalanzaInteligentePresenter>
@@ -103,6 +104,7 @@ protected:
     touchgfx::TextAreaWithOneWildcard txtResultadoPesar;
     touchgfx::MoveAnimator< touchgfx::Circle > widgetCircular;
     touchgfx::PainterRGB565 widgetCircularPainter;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > verResultados;
     touchgfx::TextArea textArea2;
     touchgfx::Line line1;
     touchgfx::PainterRGB565 line1Painter;
@@ -125,6 +127,23 @@ protected:
     touchgfx::ModalWindow modalWindow1;
     touchgfx::TextArea textArea8;
     touchgfx::ButtonWithLabel cerrarModalEnvio;
+
+    touchgfx::Image image3;
+    touchgfx::Image image4;
+    touchgfx::ModalWindow datosDePeso;
+    touchgfx::TextArea textArea9;
+    touchgfx::Box box1_1;
+    touchgfx::Box box1;
+    touchgfx::TextArea textArea10;
+    touchgfx::TextArea textArea10_1;
+    touchgfx::TextArea textArea10_1_1;
+    touchgfx::TextArea textArea10_1_1_1;
+    touchgfx::Image image5;
+    touchgfx::TextAreaWithOneWildcard pesoObtenidoModal;
+    touchgfx::TextAreaWithOneWildcard promedioModal;
+    touchgfx::TextAreaWithOneWildcard diferenciaModal;
+    touchgfx::TextAreaWithOneWildcard permitidoModal;
+    touchgfx::ButtonWithLabel cerrarModalResultados;
 
 
     /*
@@ -150,6 +169,14 @@ protected:
     touchgfx::Unicode::UnicodeChar txtDispPromBuffer[TXTDISPPROM_SIZE];
     static const uint16_t TXTALERTA_SIZE = 10;
     touchgfx::Unicode::UnicodeChar TxtAlertaBuffer[TXTALERTA_SIZE];
+    static const uint16_t PESOOBTENIDOMODAL_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar pesoObtenidoModalBuffer[PESOOBTENIDOMODAL_SIZE];
+    static const uint16_t PROMEDIOMODAL_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar promedioModalBuffer[PROMEDIOMODAL_SIZE];
+    static const uint16_t DIFERENCIAMODAL_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar diferenciaModalBuffer[DIFERENCIAMODAL_SIZE];
+    static const uint16_t PERMITIDOMODAL_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar permitidoModalBuffer[PERMITIDOMODAL_SIZE];
 
 private:
 

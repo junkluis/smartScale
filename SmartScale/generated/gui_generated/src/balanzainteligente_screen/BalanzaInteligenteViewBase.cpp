@@ -31,22 +31,27 @@ BalanzaInteligenteViewBase::BalanzaInteligenteViewBase() :
 
     btnSlot5.setXY(0, 245);
     btnSlot5.setBitmaps(touchgfx::Bitmap(BITMAP_BOTONPERFIL_ID), touchgfx::Bitmap(BITMAP_BOTONPERFILPRESSED_ID));
+    btnSlot5.setAction(buttonCallback);
     perfilesButtons.add(btnSlot5);
 
     btnSlot4.setXY(0, 184);
     btnSlot4.setBitmaps(touchgfx::Bitmap(BITMAP_BOTONPERFIL_ID), touchgfx::Bitmap(BITMAP_BOTONPERFILPRESSED_ID));
+    btnSlot4.setAction(buttonCallback);
     perfilesButtons.add(btnSlot4);
 
     btnSlot3.setXY(0, 123);
     btnSlot3.setBitmaps(touchgfx::Bitmap(BITMAP_BOTONPERFIL_ID), touchgfx::Bitmap(BITMAP_BOTONPERFILPRESSED_ID));
+    btnSlot3.setAction(buttonCallback);
     perfilesButtons.add(btnSlot3);
 
     btnSlot2.setXY(0, 62);
     btnSlot2.setBitmaps(touchgfx::Bitmap(BITMAP_BOTONPERFIL_ID), touchgfx::Bitmap(BITMAP_BOTONPERFILPRESSED_ID));
+    btnSlot2.setAction(buttonCallback);
     perfilesButtons.add(btnSlot2);
 
     btnSlot1.setXY(0, 1);
     btnSlot1.setBitmaps(touchgfx::Bitmap(BITMAP_BOTONPERFIL_ID), touchgfx::Bitmap(BITMAP_BOTONPERFILPRESSED_ID));
+    btnSlot1.setAction(buttonCallback);
     perfilesButtons.add(btnSlot1);
 
     txtSlot5.setPosition(0, 263, 112, 24);
@@ -478,7 +483,42 @@ void BalanzaInteligenteViewBase::afterTransition()
 
 void BalanzaInteligenteViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &btnPesar)
+    if (&src == &btnSlot5)
+    {
+        //Slot5Config
+        //When btnSlot5 clicked call virtual function
+        //Call Slot5Config
+        Slot5Config();
+    }
+    else if (&src == &btnSlot4)
+    {
+        //Slot4Config
+        //When btnSlot4 clicked call virtual function
+        //Call Slot4Config
+        Slot4Config();
+    }
+    else if (&src == &btnSlot3)
+    {
+        //Slot3Config
+        //When btnSlot3 clicked call virtual function
+        //Call Slot3Config
+        Slot3Config();
+    }
+    else if (&src == &btnSlot2)
+    {
+        //Slot2Config
+        //When btnSlot2 clicked call virtual function
+        //Call Slot2Config
+        Slot2Config();
+    }
+    else if (&src == &btnSlot1)
+    {
+        //Slot1Config
+        //When btnSlot1 clicked call virtual function
+        //Call Slot1Config
+        Slot1Config();
+    }
+    else if (&src == &btnPesar)
     {
         //CalcularPeso
         //When btnPesar clicked call virtual function

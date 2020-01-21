@@ -1,19 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\gui",
-    "\\gui\\include",
-    "\\gui\\include\\gui",
-    "\\gui\\include\\gui\\model",
+    "\\generated",
+    "\\generated\\gui_generated",
+    "\\generated\\gui_generated\\include",
+    "\\generated\\gui_generated\\include\\gui_generated",
+    "\\generated\\gui_generated\\include\\gui_generated\\balanzainteligente_screen",
     "\\touchgfx",
     "\\touchgfx\\framework",
     "\\touchgfx\\framework\\include",
-    "\\touchgfx\\framework\\source",
-    "\\touchgfx\\framework\\tools",
-    "\\touchgfx\\lib",
-    "\\touchgfx\\os",
-    "\\touchgfx_backup"
+    "\\touchgfx\\framework\\include\\touchgfx",
+    "\\touchgfx\\framework\\include\\touchgfx\\widgets"
   ],
-  "SelectedNode": "\\touchgfx",
+  "SelectedNode": "\\touchgfx\\framework\\include\\touchgfx\\widgets\\ToggleButton.hpp",
   "PreviewInSolutionExplorer": false
 }

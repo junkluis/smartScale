@@ -139,12 +139,14 @@ void BalanzaInteligenteView::cargarDatos(){
 	Unicode::strncpy(txtSlot4Buffer, (presenter->getTitulo(3)).c_str(), TXTSLOT4_SIZE);
 	Unicode::strncpy(txtSlot5Buffer, (presenter->getTitulo(4)).c_str(), TXTSLOT5_SIZE);
 
-
 	txtSlot1.invalidate();
 	txtSlot2.invalidate();
 	txtSlot3.invalidate();
 	txtSlot4.invalidate();
 	txtSlot5.invalidate();
+
+	btnSlot1.forceState(true);
+	btnSlot1.invalidate();
 
 }
 
@@ -154,6 +156,19 @@ void BalanzaInteligenteView::Slot1Config() {
 	Unicode::snprintfFloat(txtDispPromBuffer, TXTDISPPROM_SIZE, "%0.2f", presenter->getPesoPromedio(0));
 	TxtDisplayPerfil.invalidate();
 	txtDispProm.invalidate();
+
+	btnSlot1.forceState(true);
+	btnSlot2.forceState(false);
+	btnSlot3.forceState(false);
+	btnSlot4.forceState(false);
+	btnSlot5.forceState(false);
+
+	btnSlot1.invalidate();
+	btnSlot2.invalidate();
+	btnSlot3.invalidate();
+	btnSlot4.invalidate();
+	btnSlot5.invalidate();
+
 }
 
 void BalanzaInteligenteView::Slot2Config() {
@@ -162,6 +177,18 @@ void BalanzaInteligenteView::Slot2Config() {
 	Unicode::snprintfFloat(txtDispPromBuffer, TXTDISPPROM_SIZE, "%0.2f", presenter->getPesoPromedio(1));
 	TxtDisplayPerfil.invalidate();
 	txtDispProm.invalidate();
+
+	btnSlot1.forceState(false);
+	btnSlot2.forceState(true);
+	btnSlot3.forceState(false);
+	btnSlot4.forceState(false);
+	btnSlot5.forceState(false);
+
+	btnSlot1.invalidate();
+	btnSlot2.invalidate();
+	btnSlot3.invalidate();
+	btnSlot4.invalidate();
+	btnSlot5.invalidate();
 }
 
 void BalanzaInteligenteView::Slot3Config() {
@@ -170,6 +197,18 @@ void BalanzaInteligenteView::Slot3Config() {
 	Unicode::snprintfFloat(txtDispPromBuffer, TXTDISPPROM_SIZE, "%0.2f", presenter->getPesoPromedio(2));
 	TxtDisplayPerfil.invalidate();
 	txtDispProm.invalidate();
+
+	btnSlot1.forceState(false);
+	btnSlot2.forceState(false);
+	btnSlot3.forceState(true);
+	btnSlot4.forceState(false);
+	btnSlot5.forceState(false);
+
+	btnSlot1.invalidate();
+	btnSlot2.invalidate();
+	btnSlot3.invalidate();
+	btnSlot4.invalidate();
+	btnSlot5.invalidate();
 }
 
 void BalanzaInteligenteView::Slot4Config() {
@@ -178,6 +217,18 @@ void BalanzaInteligenteView::Slot4Config() {
 	Unicode::snprintfFloat(txtDispPromBuffer, TXTDISPPROM_SIZE, "%0.2f", presenter->getPesoPromedio(3));
 	TxtDisplayPerfil.invalidate();
 	txtDispProm.invalidate();
+
+	btnSlot1.forceState(false);
+	btnSlot2.forceState(false);
+	btnSlot3.forceState(false);
+	btnSlot4.forceState(true);
+	btnSlot5.forceState(false);
+
+	btnSlot1.invalidate();
+	btnSlot2.invalidate();
+	btnSlot3.invalidate();
+	btnSlot4.invalidate();
+	btnSlot5.invalidate();
 }
 
 void BalanzaInteligenteView::Slot5Config() {
@@ -186,6 +237,18 @@ void BalanzaInteligenteView::Slot5Config() {
 	Unicode::snprintfFloat(txtDispPromBuffer, TXTDISPPROM_SIZE, "%0.2f", presenter->getPesoPromedio(4));
 	TxtDisplayPerfil.invalidate();
 	txtDispProm.invalidate();
+
+	btnSlot1.forceState(false);
+	btnSlot2.forceState(false);
+	btnSlot3.forceState(false);
+	btnSlot4.forceState(false);
+	btnSlot5.forceState(true);
+
+	btnSlot1.invalidate();
+	btnSlot2.invalidate();
+	btnSlot3.invalidate();
+	btnSlot4.invalidate();
+	btnSlot5.invalidate();
 }
 
 void BalanzaInteligenteView::handleTickEvent() {

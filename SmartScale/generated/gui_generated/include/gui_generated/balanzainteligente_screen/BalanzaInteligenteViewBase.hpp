@@ -47,6 +47,11 @@ public:
         // Override and implement this function in BalanzaInteligente
     }
 
+    virtual void Slot1Config()
+    {
+        // Override and implement this function in BalanzaInteligente
+    }
+
     virtual void Slot2Config()
     {
         // Override and implement this function in BalanzaInteligente

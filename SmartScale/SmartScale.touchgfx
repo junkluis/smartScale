@@ -2134,6 +2134,7 @@
             "InteractionName": "Slot1Config",
             "HasCompletedTrigger": false,
             "Trigger": {
+              "TriggerComponent": "btnSlot1",
               "Type": "TriggerClicked"
             },
             "Action": {

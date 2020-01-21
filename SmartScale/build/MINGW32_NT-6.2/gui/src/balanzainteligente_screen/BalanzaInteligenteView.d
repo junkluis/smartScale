@@ -53,6 +53,7 @@ build/MINGW32_NT-6.2/gui/src/balanzainteligente_screen/BalanzaInteligenteView.o:
  touchgfx/framework/include/touchgfx/Texts.hpp \
  touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp \
  touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
@@ -95,7 +96,6 @@ build/MINGW32_NT-6.2/gui/src/balanzainteligente_screen/BalanzaInteligenteView.o:
  touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
- touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  generated/images/include/BitmapDatabase.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp
 
@@ -205,6 +205,8 @@ touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 
+touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
+
 touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
@@ -288,8 +290,6 @@ touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
 
 touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp:
-
-touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 
 generated/images/include/BitmapDatabase.hpp:
 

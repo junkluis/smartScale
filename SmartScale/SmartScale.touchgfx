@@ -506,6 +506,7 @@
           {
             "Components": [
               {
+                "InitialStatePressed": false,
                 "Pressed": "botonPerfilPressed.png",
                 "Released": "botonPerfil.png",
                 "Alpha": 255,
@@ -514,7 +515,75 @@
                 "Y": 245,
                 "Width": 112,
                 "Height": 60,
-                "Type": "Button",
+                "Type": "ToggleButton",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "InitialStatePressed": false,
+                "Pressed": "botonPerfilPressed.png",
+                "Released": "botonPerfil.png",
+                "Alpha": 255,
+                "Name": "btnSlot4",
+                "X": 0,
+                "Y": 184,
+                "Width": 112,
+                "Height": 60,
+                "Type": "ToggleButton",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "InitialStatePressed": false,
+                "Pressed": "botonPerfilPressed.png",
+                "Released": "botonPerfil.png",
+                "Alpha": 255,
+                "Name": "btnSlot3",
+                "X": 0,
+                "Y": 123,
+                "Width": 112,
+                "Height": 60,
+                "Type": "ToggleButton",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "InitialStatePressed": false,
+                "Pressed": "botonPerfilPressed.png",
+                "Released": "botonPerfil.png",
+                "Alpha": 255,
+                "Name": "btnSlot2",
+                "X": 0,
+                "Y": 62,
+                "Width": 112,
+                "Height": 60,
+                "Type": "ToggleButton",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "InitialStatePressed": false,
+                "Pressed": "botonPerfilPressed.png",
+                "Released": "botonPerfil.png",
+                "Alpha": 255,
+                "Name": "btnSlot1",
+                "X": 0,
+                "Y": 1,
+                "Width": 112,
+                "Height": 60,
+                "Type": "ToggleButton",
                 "Visible": true,
                 "Draggable": false,
                 "Clickable": false,
@@ -550,22 +619,6 @@
                 "Moveable": false
               },
               {
-                "Pressed": "botonPerfilPressed.png",
-                "Released": "botonPerfil.png",
-                "Alpha": 255,
-                "Name": "btnSlot4",
-                "X": 0,
-                "Y": 184,
-                "Width": 112,
-                "Height": 60,
-                "Type": "Button",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
                 "TextId": "SingleUseId67",
                 "TextRotation": "0",
                 "Color": {
@@ -587,22 +640,6 @@
                 "Width": 112,
                 "Height": 24,
                 "Type": "TextArea",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
-                "Pressed": "botonPerfilPressed.png",
-                "Released": "botonPerfil.png",
-                "Alpha": 255,
-                "Name": "btnSlot3",
-                "X": 0,
-                "Y": 123,
-                "Width": 112,
-                "Height": 60,
-                "Type": "Button",
                 "Visible": true,
                 "Draggable": false,
                 "Clickable": false,
@@ -638,22 +675,6 @@
                 "Moveable": false
               },
               {
-                "Pressed": "botonPerfilPressed.png",
-                "Released": "botonPerfil.png",
-                "Alpha": 255,
-                "Name": "btnSlot2",
-                "X": 0,
-                "Y": 62,
-                "Width": 112,
-                "Height": 60,
-                "Type": "Button",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
                 "TextId": "SingleUseId65",
                 "TextRotation": "0",
                 "Color": {
@@ -675,22 +696,6 @@
                 "Width": 112,
                 "Height": 24,
                 "Type": "TextArea",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
-                "Pressed": "botonPerfilPressed.png",
-                "Released": "botonPerfil.png",
-                "Alpha": 255,
-                "Name": "btnSlot1",
-                "X": 0,
-                "Y": 1,
-                "Width": 112,
-                "Height": 60,
-                "Type": "Button",
                 "Visible": true,
                 "Draggable": false,
                 "Clickable": false,
@@ -2129,7 +2134,6 @@
             "InteractionName": "Slot1Config",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "TriggerComponent": "btnSlot1",
               "Type": "TriggerClicked"
             },
             "Action": {
@@ -2201,7 +2205,6 @@
             "InteractionName": "cerrarModal2",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "TriggerComponent": "cerrarModalEnvio",
               "Type": "TriggerClicked"
             },
             "Action": {

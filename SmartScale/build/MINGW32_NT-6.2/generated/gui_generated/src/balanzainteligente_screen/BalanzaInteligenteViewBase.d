@@ -52,6 +52,7 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/balanzainteligente_screen/Balan
  touchgfx/framework/include/touchgfx/Texts.hpp \
  touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp \
  touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
@@ -199,6 +200,8 @@ touchgfx/framework/include/touchgfx/Texts.hpp:
 touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/Box.hpp:
+
+touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 

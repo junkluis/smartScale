@@ -11,10 +11,11 @@
 #include <touchgfx/widgets/BoxWithBorder.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/ScrollableContainer.hpp>
-#include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/ToggleButton.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 #include <touchgfx/containers/buttons/Buttons.hpp>
+#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
@@ -42,11 +43,6 @@ public:
     }
 
     virtual void cargarDatos()
-    {
-        // Override and implement this function in BalanzaInteligente
-    }
-
-    virtual void Slot1Config()
     {
         // Override and implement this function in BalanzaInteligente
     }
@@ -88,15 +84,15 @@ protected:
     touchgfx::BoxWithBorder boxWithBorder1;
     touchgfx::TextArea txt_tituloBalanza;
     touchgfx::ScrollableContainer perfilesButtons;
-    touchgfx::Button btnSlot5;
+    touchgfx::ToggleButton btnSlot5;
+    touchgfx::ToggleButton btnSlot4;
+    touchgfx::ToggleButton btnSlot3;
+    touchgfx::ToggleButton btnSlot2;
+    touchgfx::ToggleButton btnSlot1;
     touchgfx::TextAreaWithOneWildcard txtSlot5;
-    touchgfx::Button btnSlot4;
     touchgfx::TextAreaWithOneWildcard txtSlot4;
-    touchgfx::Button btnSlot3;
     touchgfx::TextAreaWithOneWildcard txtSlot3;
-    touchgfx::Button btnSlot2;
     touchgfx::TextAreaWithOneWildcard txtSlot2;
-    touchgfx::Button btnSlot1;
     touchgfx::TextAreaWithOneWildcard txtSlot1;
 
     touchgfx::ImageButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > > homeButton;
